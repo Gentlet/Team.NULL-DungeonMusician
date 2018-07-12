@@ -1,0 +1,55 @@
+
+aid_keyboard_0.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+5_aid/ui_slot_hunt_aid_3_0
+  rotate: false
+  xy: 2, 2
+  size: 270, 505
+  orig: 270, 505
+  offset: 0, 0
+  index: -1
+5_aid/ui_slot_hunt_aid_3_1
+  rotate: false
+  xy: 407, 176
+  size: 101, 60
+  orig: 101, 60
+  offset: 0, 0
+  index: -1
+5_aid/ui_slot_hunt_aid_3_2
+  rotate: false
+  xy: 401, 119
+  size: 76, 55
+  orig: 76, 55
+  offset: 0, 0
+  index: -1
+5_aid/ui_slot_hunt_aid_3_3
+  rotate: false
+  xy: 274, 232
+  size: 131, 275
+  orig: 131, 275
+  offset: 0, 0
+  index: -1
+5_aid/ui_slot_hunt_aid_3_4
+  rotate: true
+  xy: 407, 238
+  size: 269, 101
+  orig: 269, 101
+  offset: 0, 0
+  index: -1
+5_aid/ui_slot_hunt_aid_3_5
+  rotate: false
+  xy: 274, 80
+  size: 125, 150
+  orig: 125, 150
+  offset: 0, 0
+  index: -1
+5_aid/ui_slot_hunt_aid_3_6
+  rotate: true
+  xy: 274, 14
+  size: 64, 134
+  orig: 64, 134
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,41 @@
+
+mob_hippo_0.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+4_mob/mob_9_0
+  rotate: true
+  xy: 2, 2
+  size: 86, 172
+  orig: 86, 172
+  offset: 0, 0
+  index: -1
+4_mob/mob_9_1
+  rotate: false
+  xy: 2, 90
+  size: 349, 410
+  orig: 349, 410
+  offset: 0, 0
+  index: -1
+4_mob/mob_9_2
+  rotate: false
+  xy: 353, 415
+  size: 27, 38
+  orig: 27, 38
+  offset: 0, 0
+  index: -1
+4_mob/mob_9_3
+  rotate: false
+  xy: 176, 45
+  size: 31, 43
+  orig: 31, 43
+  offset: 0, 0
+  index: -1
+4_mob/mob_9_4
+  rotate: false
+  xy: 353, 455
+  size: 40, 45
+  orig: 40, 45
+  offset: 0, 0
+  index: -1

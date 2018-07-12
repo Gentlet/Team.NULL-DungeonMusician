@@ -1,0 +1,48 @@
+
+mob_totem_0.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+4_mob/mob_4_0
+  rotate: false
+  xy: 280, 198
+  size: 235, 279
+  orig: 235, 279
+  offset: 0, 0
+  index: -1
+4_mob/mob_4_1
+  rotate: true
+  xy: 2, 2
+  size: 38, 114
+  orig: 38, 114
+  offset: 0, 0
+  index: -1
+4_mob/mob_4_2
+  rotate: false
+  xy: 2, 42
+  size: 276, 435
+  orig: 276, 435
+  offset: 0, 0
+  index: -1
+4_mob/mob_4_3
+  rotate: false
+  xy: 435, 161
+  size: 35, 35
+  orig: 35, 35
+  offset: 0, 0
+  index: -1
+4_mob/mob_4_4
+  rotate: false
+  xy: 517, 380
+  size: 77, 97
+  orig: 77, 97
+  offset: 0, 0
+  index: -1
+4_mob/mob_4_5
+  rotate: false
+  xy: 280, 65
+  size: 153, 131
+  orig: 153, 131
+  offset: 0, 0
+  index: -1

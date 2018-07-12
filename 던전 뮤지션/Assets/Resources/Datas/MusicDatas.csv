@@ -1,0 +1,4 @@
+*bundle number,music number,song name,mood number,image
+*0~~,0~~,song,1~4,example.png
+*int,int,string,int,string
+0,0,music,1,UI/0_common/ui_gold

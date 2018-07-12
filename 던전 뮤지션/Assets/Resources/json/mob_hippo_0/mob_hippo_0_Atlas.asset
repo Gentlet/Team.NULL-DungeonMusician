@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6b194f808b1af6499c93410e504af42, type: 3}
+  m_Name: mob_hippo_0_Atlas
+  m_EditorClassIdentifier: 
+  atlasFile: {fileID: 4900000, guid: edb2804764f63c141a83a486e8cd7908, type: 3}
+  materials:
+  - {fileID: 2100000, guid: fc26d4e1960e16c40a5a7c66176f61fb, type: 2}

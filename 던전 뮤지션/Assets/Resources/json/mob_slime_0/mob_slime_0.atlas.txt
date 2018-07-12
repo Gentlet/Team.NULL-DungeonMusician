@@ -1,0 +1,48 @@
+
+mob_slime_0.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+4_mob/mob_0_0
+  rotate: false
+  xy: 2, 140
+  size: 420, 356
+  orig: 420, 356
+  offset: 0, 0
+  index: -1
+4_mob/mob_0_1
+  rotate: true
+  xy: 183, 75
+  size: 63, 72
+  orig: 63, 72
+  offset: 0, 0
+  index: -1
+4_mob/mob_0_2
+  rotate: false
+  xy: 424, 408
+  size: 70, 88
+  orig: 70, 88
+  offset: 0, 0
+  index: -1
+4_mob/mob_0_3
+  rotate: false
+  xy: 2, 74
+  size: 179, 64
+  orig: 179, 64
+  offset: 0, 0
+  index: -1
+4_mob/mob_0_4
+  rotate: false
+  xy: 424, 334
+  size: 63, 72
+  orig: 63, 72
+  offset: 0, 0
+  index: -1
+4_mob/mob_0_5
+  rotate: true
+  xy: 2, 2
+  size: 70, 88
+  orig: 70, 88
+  offset: 0, 0
+  index: -1

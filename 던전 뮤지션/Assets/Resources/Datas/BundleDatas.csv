@@ -1,0 +1,4 @@
+*bundle number,bundle name,image
+*0~~,example,example.png
+*int,string,string
+0,songofmusic,UI/0_common/ui_gold

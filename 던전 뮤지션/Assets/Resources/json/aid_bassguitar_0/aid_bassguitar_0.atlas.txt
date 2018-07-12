@@ -1,0 +1,41 @@
+
+aid_bassguitar_0.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+5_aid/ui_slot_hunt_aid_2_0
+  rotate: false
+  xy: 2, 2
+  size: 270, 505
+  orig: 270, 505
+  offset: 0, 0
+  index: -1
+5_aid/ui_slot_hunt_aid_2_1
+  rotate: false
+  xy: 274, 251
+  size: 191, 256
+  orig: 191, 256
+  offset: 0, 0
+  index: -1
+5_aid/ui_slot_hunt_aid_2_2
+  rotate: false
+  xy: 467, 335
+  size: 254, 172
+  orig: 254, 172
+  offset: 0, 0
+  index: -1
+5_aid/ui_slot_hunt_aid_2_3
+  rotate: false
+  xy: 274, 110
+  size: 83, 139
+  orig: 83, 139
+  offset: 0, 0
+  index: -1
+5_aid/ui_slot_hunt_aid_2_4
+  rotate: false
+  xy: 467, 259
+  size: 53, 74
+  orig: 53, 74
+  offset: 0, 0
+  index: -1

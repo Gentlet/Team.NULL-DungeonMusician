@@ -1,0 +1,4 @@
+*relics num,relics name,explain,image
+*0,aaa,aaa relics,example.png
+*int,string,string,string
+0,aaa,bbb,example.png

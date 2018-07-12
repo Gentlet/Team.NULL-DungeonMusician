@@ -1,0 +1,41 @@
+
+aid_drum_0.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+5_aid/ui_slot_hunt_aid_1_0
+  rotate: false
+  xy: 2, 2
+  size: 270, 505
+  orig: 270, 505
+  offset: 0, 0
+  index: -1
+5_aid/ui_slot_hunt_aid_1_1
+  rotate: false
+  xy: 274, 214
+  size: 190, 293
+  orig: 190, 293
+  offset: 0, 0
+  index: -1
+5_aid/ui_slot_hunt_aid_1_2
+  rotate: false
+  xy: 372, 48
+  size: 69, 92
+  orig: 69, 92
+  offset: 0, 0
+  index: -1
+5_aid/ui_slot_hunt_aid_1_3
+  rotate: false
+  xy: 274, 46
+  size: 96, 94
+  orig: 96, 94
+  offset: 0, 0
+  index: -1
+5_aid/ui_slot_hunt_aid_1_4
+  rotate: false
+  xy: 274, 142
+  size: 178, 70
+  orig: 178, 70
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,146 @@
+
+mob_witch_0.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+4_mob/mob_2_0
+  rotate: false
+  xy: 410, 583
+  size: 239, 216
+  orig: 239, 216
+  offset: 0, 0
+  index: -1
+4_mob/mob_2_0_w
+  rotate: false
+  xy: 2, 129
+  size: 239, 216
+  orig: 239, 216
+  offset: 0, 0
+  index: -1
+4_mob/mob_2_1
+  rotate: false
+  xy: 2, 2
+  size: 185, 125
+  orig: 185, 125
+  offset: 0, 0
+  index: -1
+4_mob/mob_2_1_w
+  rotate: true
+  xy: 243, 160
+  size: 185, 125
+  orig: 185, 125
+  offset: 0, 0
+  index: -1
+4_mob/mob_2_2
+  rotate: false
+  xy: 742, 864
+  size: 187, 146
+  orig: 187, 146
+  offset: 0, 0
+  index: -1
+4_mob/mob_2_2_w
+  rotate: true
+  xy: 651, 612
+  size: 187, 146
+  orig: 187, 146
+  offset: 0, 0
+  index: -1
+4_mob/mob_2_3
+  rotate: true
+  xy: 931, 853
+  size: 157, 91
+  orig: 157, 91
+  offset: 0, 0
+  index: -1
+4_mob/mob_2_3_w
+  rotate: true
+  xy: 334, 399
+  size: 157, 91
+  orig: 157, 91
+  offset: 0, 0
+  index: -1
+4_mob/mob_2_4
+  rotate: false
+  xy: 651, 599
+  size: 17, 11
+  orig: 17, 11
+  offset: 0, 0
+  index: -1
+4_mob/mob_2_4_w
+  rotate: false
+  xy: 410, 570
+  size: 17, 11
+  orig: 17, 11
+  offset: 0, 0
+  index: -1
+4_mob/mob_2_5
+  rotate: true
+  xy: 334, 354
+  size: 43, 72
+  orig: 43, 72
+  offset: 0, 0
+  index: -1
+4_mob/mob_2_5_w
+  rotate: false
+  xy: 370, 280
+  size: 43, 72
+  orig: 43, 72
+  offset: 0, 0
+  index: -1
+4_mob/mob_2_6
+  rotate: false
+  xy: 742, 803
+  size: 162, 59
+  orig: 162, 59
+  offset: 0, 0
+  index: -1
+4_mob/mob_2_6_w
+  rotate: true
+  xy: 799, 639
+  size: 162, 59
+  orig: 162, 59
+  offset: 0, 0
+  index: -1
+4_mob/mob_2_7
+  rotate: false
+  xy: 2, 785
+  size: 406, 225
+  orig: 406, 225
+  offset: 0, 0
+  index: -1
+4_mob/mob_2_7_w
+  rotate: false
+  xy: 2, 558
+  size: 406, 225
+  orig: 406, 225
+  offset: 0, 0
+  index: -1
+4_mob/mob_2_8
+  rotate: false
+  xy: 410, 801
+  size: 330, 209
+  orig: 330, 209
+  offset: 0, 0
+  index: -1
+4_mob/mob_2_8_w
+  rotate: false
+  xy: 2, 347
+  size: 330, 209
+  orig: 330, 209
+  offset: 0, 0
+  index: -1
+4_mob/mob_2_9
+  rotate: false
+  xy: 189, 7
+  size: 59, 120
+  orig: 59, 120
+  offset: 0, 0
+  index: -1
+4_mob/mob_2_9_w
+  rotate: false
+  xy: 860, 681
+  size: 59, 120
+  orig: 59, 120
+  offset: 0, 0
+  index: -1

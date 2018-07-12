@@ -1,0 +1,41 @@
+
+mob_whale_0.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+4_mob/mob_5_0
+  rotate: true
+  xy: 863, 455
+  size: 319, 107
+  orig: 319, 107
+  offset: 0, 0
+  index: -1
+4_mob/mob_5_1
+  rotate: false
+  xy: 2, 222
+  size: 859, 552
+  orig: 859, 552
+  offset: 0, 0
+  index: -1
+4_mob/mob_5_2
+  rotate: false
+  xy: 302, 181
+  size: 36, 39
+  orig: 36, 39
+  offset: 0, 0
+  index: -1
+4_mob/mob_5_3
+  rotate: false
+  xy: 2, 2
+  size: 66, 84
+  orig: 66, 84
+  offset: 0, 0
+  index: -1
+4_mob/mob_5_4
+  rotate: false
+  xy: 2, 88
+  size: 298, 132
+  orig: 298, 132
+  offset: 0, 0
+  index: -1

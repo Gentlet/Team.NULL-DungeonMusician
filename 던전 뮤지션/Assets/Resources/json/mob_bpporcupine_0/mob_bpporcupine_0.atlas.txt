@@ -1,0 +1,69 @@
+
+mob_bpporcupine_0.png
+size: 512,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+4_mob/mob_8_0
+  rotate: true
+  xy: 448, 219
+  size: 261, 12
+  orig: 261, 12
+  offset: 0, 0
+  index: -1
+4_mob/mob_8_1
+  rotate: false
+  xy: 2, 64
+  size: 343, 60
+  orig: 343, 60
+  offset: 0, 0
+  index: -1
+4_mob/mob_8_2
+  rotate: false
+  xy: 2, 126
+  size: 343, 86
+  orig: 343, 86
+  offset: 0, 0
+  index: -1
+4_mob/mob_8_3
+  rotate: false
+  xy: 2, 2
+  size: 339, 60
+  orig: 339, 60
+  offset: 0, 0
+  index: -1
+4_mob/mob_8_4
+  rotate: false
+  xy: 2, 214
+  size: 444, 266
+  orig: 444, 266
+  offset: 0, 0
+  index: -1
+4_mob/mob_8_5
+  rotate: false
+  xy: 347, 140
+  size: 67, 72
+  orig: 67, 72
+  offset: 0, 0
+  index: -1
+4_mob/mob_8_6
+  rotate: false
+  xy: 347, 66
+  size: 67, 72
+  orig: 67, 72
+  offset: 0, 0
+  index: -1
+4_mob/mob_8_7
+  rotate: false
+  xy: 462, 386
+  size: 31, 41
+  orig: 31, 41
+  offset: 0, 0
+  index: -1
+4_mob/mob_8_8
+  rotate: false
+  xy: 462, 429
+  size: 37, 51
+  orig: 37, 51
+  offset: 0, 0
+  index: -1

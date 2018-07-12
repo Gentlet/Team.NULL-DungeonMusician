@@ -1,0 +1,5 @@
+*bundle number,song number,time,line,type,value
+*(bundle number),(song number),0.00~~,1~4,NORMAL. LONG. SLIDER,NORMAL -> 0. LONG -> size. SLIDER -> 0
+*string,string,float,int,string,float
+0,0,1,3,LONG,10
+0,0,4,4,SLIDER,0

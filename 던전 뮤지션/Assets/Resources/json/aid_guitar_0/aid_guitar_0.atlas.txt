@@ -1,0 +1,48 @@
+
+aid_guitar_0.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+5_aid/ui_slot_hunt_aid_0_0
+  rotate: false
+  xy: 2, 2
+  size: 270, 505
+  orig: 270, 505
+  offset: 0, 0
+  index: -1
+5_aid/ui_slot_hunt_aid_0_1
+  rotate: false
+  xy: 401, 264
+  size: 64, 83
+  orig: 64, 83
+  offset: 0, 0
+  index: -1
+5_aid/ui_slot_hunt_aid_0_2
+  rotate: false
+  xy: 274, 121
+  size: 125, 386
+  orig: 125, 386
+  offset: 0, 0
+  index: -1
+5_aid/ui_slot_hunt_aid_0_3
+  rotate: false
+  xy: 401, 349
+  size: 212, 158
+  orig: 212, 158
+  offset: 0, 0
+  index: -1
+5_aid/ui_slot_hunt_aid_0_4
+  rotate: false
+  xy: 615, 447
+  size: 49, 60
+  orig: 49, 60
+  offset: 0, 0
+  index: -1
+5_aid/ui_slot_hunt_aid_0_5
+  rotate: true
+  xy: 274, 31
+  size: 88, 124
+  orig: 88, 124
+  offset: 0, 0
+  index: -1

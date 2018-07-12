@@ -1,0 +1,62 @@
+
+mob_warrior_0.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+4_mob/mob_6_0
+  rotate: false
+  xy: 2, 2
+  size: 117, 8
+  orig: 117, 8
+  offset: 0, 0
+  index: -1
+4_mob/mob_6_1
+  rotate: false
+  xy: 667, 177
+  size: 42, 25
+  orig: 42, 25
+  offset: 0, 0
+  index: -1
+4_mob/mob_6_2
+  rotate: true
+  xy: 2, 163
+  size: 39, 551
+  orig: 39, 551
+  offset: 0, 0
+  index: -1
+4_mob/mob_6_3
+  rotate: false
+  xy: 342, 109
+  size: 56, 52
+  orig: 56, 52
+  offset: 0, 0
+  index: -1
+4_mob/mob_6_4
+  rotate: false
+  xy: 2, 12
+  size: 152, 149
+  orig: 152, 149
+  offset: 0, 0
+  index: -1
+4_mob/mob_6_5
+  rotate: true
+  xy: 555, 176
+  size: 26, 110
+  orig: 26, 110
+  offset: 0, 0
+  index: -1
+4_mob/mob_6_6
+  rotate: false
+  xy: 156, 27
+  size: 88, 134
+  orig: 88, 134
+  offset: 0, 0
+  index: -1
+4_mob/mob_6_7
+  rotate: false
+  xy: 246, 43
+  size: 94, 118
+  orig: 94, 118
+  offset: 0, 0
+  index: -1

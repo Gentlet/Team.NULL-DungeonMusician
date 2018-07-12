@@ -1,0 +1,76 @@
+
+mob_witch_0.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+mob/mob_2_0
+  rotate: false
+  xy: 410, 283
+  size: 239, 216
+  orig: 239, 216
+  offset: 0, 0
+  index: -1
+mob/mob_2_1
+  rotate: true
+  xy: 840, 314
+  size: 185, 125
+  orig: 185, 125
+  offset: 0, 0
+  index: -1
+mob/mob_2_2
+  rotate: false
+  xy: 651, 353
+  size: 187, 146
+  orig: 187, 146
+  offset: 0, 0
+  index: -1
+mob/mob_2_3
+  rotate: true
+  xy: 334, 115
+  size: 157, 91
+  orig: 157, 91
+  offset: 0, 0
+  index: -1
+mob/mob_2_4
+  rotate: false
+  xy: 334, 102
+  size: 17, 11
+  orig: 17, 11
+  offset: 0, 0
+  index: -1
+mob/mob_2_5
+  rotate: false
+  xy: 967, 427
+  size: 43, 72
+  orig: 43, 72
+  offset: 0, 0
+  index: -1
+mob/mob_2_6
+  rotate: false
+  xy: 2, 2
+  size: 162, 59
+  orig: 162, 59
+  offset: 0, 0
+  index: -1
+mob/mob_2_7
+  rotate: false
+  xy: 2, 274
+  size: 406, 225
+  orig: 406, 225
+  offset: 0, 0
+  index: -1
+mob/mob_2_8
+  rotate: false
+  xy: 2, 63
+  size: 330, 209
+  orig: 330, 209
+  offset: 0, 0
+  index: -1
+mob/mob_2_9
+  rotate: true
+  xy: 651, 292
+  size: 59, 120
+  orig: 59, 120
+  offset: 0, 0
+  index: -1
