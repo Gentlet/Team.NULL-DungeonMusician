@@ -17,7 +17,7 @@ public class ObjectStatus : MonoBehaviour
 
 
 
-    protected void Upgrade()
+    public void Upgrade()
     {
         level++;
         upgrademoney = (int)(level * upgraderate);
