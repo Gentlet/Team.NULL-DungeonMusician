@@ -230,7 +230,7 @@ MonoBehaviour:
   idle: idle_0
   attack: atk_0
   effect: 
-  IsCanvas: 0
+  IsCanvas: 1
 --- !u!114 &114523036909456200
 MonoBehaviour:
   m_ObjectHideFlags: 1
