@@ -18,9 +18,9 @@ public class Player : SingletonGameObject<Player> {
     private int gold;
     private int revivepoint;
 
-    private float strength;
-    private float criticalrate;
-    private float criticaldamage;
+    private float strength = 1f;
+    private float criticalrate = 50;
+    private float criticaldamage = 50;
     private float healthdrainrate;
 
     private float extragoldrate;
