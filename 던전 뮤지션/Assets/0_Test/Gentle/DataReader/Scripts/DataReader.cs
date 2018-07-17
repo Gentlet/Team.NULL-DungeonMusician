@@ -100,7 +100,7 @@ public struct Relics
 
 public class DataReader : MonoBehaviour {
 
-    private void Start()
+    private void Awake()
     {
         FileNameReader();
     }
@@ -242,19 +242,19 @@ public class DataReader : MonoBehaviour {
                     {
                         if (GameManager.Instance.ReadDatas.bundles[j].musics[k].musicnum == notes[i].musicnum)
                         {
-                            if (GameManager.Instance.ReadDatas.bundles[j].musics[k].notes.Count != 0)
+                            for (int l = 0; l < GameManager.Instance.ReadDatas.bundles[j].musics[k].notes.Count + 1; l++)
                             {
-                                for (int l = 0; l < GameManager.Instance.ReadDatas.bundles[j].musics[k].notes.Count; l++)
+                                if (l == GameManager.Instance.ReadDatas.bundles[j].musics[k].notes.Count)
                                 {
-                                    if (GameManager.Instance.ReadDatas.bundles[j].musics[k].notes[l].time > notes[i].time)
-                                    {
-                                        GameManager.Instance.ReadDatas.bundles[j].musics[k].notes.Insert(l, notes[i]);
-                                        break;
-                                    }
+                                    GameManager.Instance.ReadDatas.bundles[j].musics[k].notes.Add(notes[i]);
+                                    break;
+                                }
+                                else if (GameManager.Instance.ReadDatas.bundles[j].musics[k].notes[l].time >= notes[i].time)
+                                {
+                                    GameManager.Instance.ReadDatas.bundles[j].musics[k].notes.Insert(l, notes[i]);
+                                    break;
                                 }
                             }
-                            else
-                                GameManager.Instance.ReadDatas.bundles[j].musics[k].notes.Add(notes[i]);
                             break;
                         }
                     }
