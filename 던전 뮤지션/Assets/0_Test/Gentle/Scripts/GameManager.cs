@@ -56,6 +56,10 @@ public class GameManager : SingletonGameObject<GameManager>
     {
         notevalues.notes = new List<Note>();
         notevalues.recording = false;
+    }
+
+    private void Start()
+    {
         StartMusic(0, 0);
     }
 
