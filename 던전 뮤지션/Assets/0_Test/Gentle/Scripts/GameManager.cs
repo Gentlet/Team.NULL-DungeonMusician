@@ -56,7 +56,7 @@ public class GameManager : SingletonGameObject<GameManager>
     {
         notevalues.notes = new List<Note>();
         notevalues.recording = false;
-
+        StartMusic(0, 0);
     }
 
     private void Update()
@@ -126,18 +126,17 @@ public class GameManager : SingletonGameObject<GameManager>
             }
         }
 
-        StartCoroutine(PlayMusic(music.notes));
+        for (int i = 0; i < music.notes.Count; i++)
+        {
+            StartCoroutine(PlayMusic(music.notes[i]));
+        }
     }
 
-    private IEnumerator PlayMusic(List<NoteData> notes)
+    private IEnumerator PlayMusic(NoteData notes)
     {
-        float time = 0;
-        for (int i = 0; i < notes.Count; i++)
-        {
-            yield return new WaitForSeconds(notes[i].time - time);
+        yield return new WaitForSeconds(notes.time);
 
-            CreateNote(notes[i].line, notes[i].type, notes[i].value);
-        }
+        CreateNote(notes.line, notes.type, notes.value);
     }
 
     public void StartRecord()

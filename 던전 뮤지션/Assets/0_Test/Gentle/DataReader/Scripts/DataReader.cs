@@ -246,7 +246,7 @@ public class DataReader : MonoBehaviour {
                             {
                                 for (int l = 0; l < GameManager.Instance.ReadDatas.bundles[j].musics[k].notes.Count; l++)
                                 {
-                                    if (GameManager.Instance.ReadDatas.bundles[j].musics[k].notes[l].time > notes[i].time)
+                                    if (GameManager.Instance.ReadDatas.bundles[j].musics[k].notes[l].time >= notes[i].time)
                                     {
                                         GameManager.Instance.ReadDatas.bundles[j].musics[k].notes.Insert(l, notes[i]);
                                         break;
