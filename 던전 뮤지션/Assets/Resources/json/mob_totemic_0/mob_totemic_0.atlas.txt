@@ -1,0 +1,139 @@
+
+mob_totemic_0.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+4_mob/mob_10_0
+  rotate: false
+  xy: 511, 253
+  size: 60, 60
+  orig: 60, 60
+  offset: 0, 0
+  index: -1
+4_mob/mob_10_1
+  rotate: false
+  xy: 310, 315
+  size: 283, 17
+  orig: 283, 17
+  offset: 0, 0
+  index: -1
+4_mob/mob_10_10
+  rotate: true
+  xy: 584, 392
+  size: 56, 272
+  orig: 56, 272
+  offset: 0, 0
+  index: -1
+4_mob/mob_10_11
+  rotate: true
+  xy: 584, 334
+  size: 56, 272
+  orig: 56, 272
+  offset: 0, 0
+  index: -1
+4_mob/mob_10_12
+  rotate: true
+  xy: 2, 123
+  size: 56, 272
+  orig: 56, 272
+  offset: 0, 0
+  index: -1
+4_mob/mob_10_13
+  rotate: false
+  xy: 369, 215
+  size: 140, 98
+  orig: 140, 98
+  offset: 0, 0
+  index: -1
+4_mob/mob_10_14
+  rotate: false
+  xy: 2, 307
+  size: 306, 199
+  orig: 306, 199
+  offset: 0, 0
+  index: -1
+4_mob/mob_10_15
+  rotate: false
+  xy: 2, 181
+  size: 248, 124
+  orig: 248, 124
+  offset: 0, 0
+  index: -1
+4_mob/mob_10_16
+  rotate: true
+  xy: 858, 338
+  size: 168, 119
+  orig: 168, 119
+  offset: 0, 0
+  index: -1
+4_mob/mob_10_17
+  rotate: false
+  xy: 2, 2
+  size: 168, 119
+  orig: 168, 119
+  offset: 0, 0
+  index: -1
+4_mob/mob_10_18
+  rotate: false
+  xy: 172, 2
+  size: 168, 119
+  orig: 168, 119
+  offset: 0, 0
+  index: -1
+4_mob/mob_10_2
+  rotate: true
+  xy: 252, 188
+  size: 117, 115
+  orig: 117, 115
+  offset: 0, 0
+  index: -1
+4_mob/mob_10_3
+  rotate: false
+  xy: 786, 232
+  size: 132, 100
+  orig: 132, 100
+  offset: 0, 0
+  index: -1
+4_mob/mob_10_4
+  rotate: false
+  xy: 595, 236
+  size: 189, 96
+  orig: 189, 96
+  offset: 0, 0
+  index: -1
+4_mob/mob_10_5
+  rotate: false
+  xy: 979, 460
+  size: 16, 46
+  orig: 16, 46
+  offset: 0, 0
+  index: -1
+4_mob/mob_10_6
+  rotate: true
+  xy: 310, 450
+  size: 56, 272
+  orig: 56, 272
+  offset: 0, 0
+  index: -1
+4_mob/mob_10_7
+  rotate: true
+  xy: 310, 392
+  size: 56, 272
+  orig: 56, 272
+  offset: 0, 0
+  index: -1
+4_mob/mob_10_8
+  rotate: true
+  xy: 584, 450
+  size: 56, 272
+  orig: 56, 272
+  offset: 0, 0
+  index: -1
+4_mob/mob_10_9
+  rotate: true
+  xy: 310, 334
+  size: 56, 272
+  orig: 56, 272
+  offset: 0, 0
+  index: -1
