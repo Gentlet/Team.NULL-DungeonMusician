@@ -1,0 +1,41 @@
+
+mob_chimesquid_0.png
+size: 512,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+4_mob/mob_11_0
+  rotate: true
+  xy: 2, 69
+  size: 23, 248
+  orig: 23, 248
+  offset: 0, 0
+  index: -1
+4_mob/mob_11_1
+  rotate: true
+  xy: 342, 103
+  size: 137, 164
+  orig: 137, 164
+  offset: 0, 0
+  index: -1
+4_mob/mob_11_2
+  rotate: true
+  xy: 2, 94
+  size: 146, 338
+  orig: 146, 338
+  offset: 0, 0
+  index: -1
+4_mob/mob_11_3
+  rotate: false
+  xy: 46, 24
+  size: 28, 43
+  orig: 28, 43
+  offset: 0, 0
+  index: -1
+4_mob/mob_11_4
+  rotate: false
+  xy: 2, 2
+  size: 42, 65
+  orig: 42, 65
+  offset: 0, 0
+  index: -1
