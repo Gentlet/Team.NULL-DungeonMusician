@@ -720,6 +720,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sprite: {fileID: 55521467}
+  notedata:
+    bundlenum: 0
+    musicnum: 0
+    time: 0
+    line: {fileID: 0}
+    type: 0
+    value: 0
 --- !u!212 &55521467
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2424,6 +2431,7 @@ MonoBehaviour:
     relicses: []
   notetype: 0
   size: 0
+  audio: {fileID: 913208479}
 --- !u!4 &157516677
 Transform:
   m_ObjectHideFlags: 0
@@ -3309,6 +3317,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sprite: {fileID: 229799855}
+  notedata:
+    bundlenum: 0
+    musicnum: 0
+    time: 0
+    line: {fileID: 0}
+    type: 0
+    value: 0
 --- !u!212 &229799855
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6830,6 +6845,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sprite: {fileID: 596965420}
+  notedata:
+    bundlenum: 0
+    musicnum: 0
+    time: 0
+    line: {fileID: 0}
+    type: 0
+    value: 0
 --- !u!212 &596965420
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10214,7 +10236,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 4cb6aae05a4fa0f48888dc08a70e5e14, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
@@ -16664,6 +16686,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sprite: {fileID: 1455893454}
+  notedata:
+    bundlenum: 0
+    musicnum: 0
+    time: 0
+    line: {fileID: 0}
+    type: 0
+    value: 0
 --- !u!212 &1455893454
 SpriteRenderer:
   m_ObjectHideFlags: 0

@@ -245,6 +245,15 @@ public class Note : MonoBehaviour
             }
 
             transform.position = value;
+
+
+            if (NoteType.LONG <= type && type <= NoteType.LONG_END)
+            {
+                Vector2 dpos = longnotes[2].transform.position - longnotes[0].transform.position;
+
+                for (int i = 0; i < longnotes.Length; i++)
+                    longnotes[i].transform.position += (Vector3)dpos;
+            }
         }
     }
 

@@ -51,6 +51,7 @@ public class GameManager : SingletonGameObject<GameManager>
     public NoteType notetype;
 
     public float size;
+    public AudioSource audio;
 
     private void Awake()
     {
@@ -60,6 +61,7 @@ public class GameManager : SingletonGameObject<GameManager>
 
     private void Start()
     {
+        audio.Play();
         StartMusic(0, 0);
     }
 
@@ -138,7 +140,7 @@ public class GameManager : SingletonGameObject<GameManager>
 
             note.NoteDataInit(notedata);
 
-            note.Position = note.Line.EndPos + (note.Variation * (notedata.time / Time.fixedDeltaTime) * -1f) + (note.Variation * notevalues.speed * 100f);
+            note.Position = note.Line.EndPos + (note.Variation * (notedata.time / Time.fixedDeltaTime) * -1f) + (note.Variation * 10f);
         }
 
         /*for (int i = 0; i < music.notes.Count; i++)
