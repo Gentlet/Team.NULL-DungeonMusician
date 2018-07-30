@@ -11,6 +11,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6b194f808b1af6499c93410e504af42, type: 3}
   m_Name: mob_totemic_0_Atlas
   m_EditorClassIdentifier: 
-  atlasFile: {fileID: 4900000, guid: 6c59cab9362c3b9418ef13e00948d641, type: 3}
+  atlasFile: {fileID: 4900000, guid: f53db083abb5fa1408d45c2e0c43cebc, type: 3}
   materials:
-  - {fileID: 2100000, guid: 619e3732dd7d3924a8d18a4d4d47e890, type: 2}
+  - {fileID: 2100000, guid: 4da498e2341d19c40b3c53bf778000bb, type: 2}
