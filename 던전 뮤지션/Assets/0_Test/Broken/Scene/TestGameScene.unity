@@ -1423,7 +1423,7 @@ MonoBehaviour:
     longnotesprite: {fileID: 21300000, guid: d491b747be5d5fb46b674ebfc00d4a53, type: 3}
     slidernotesprite: {fileID: 21300000, guid: 81b95385c34138c4ea629381d299330f, type: 3}
     notes: []
-    speed: 0.2
+    speed: 0.1
     combo: 0
     recording: 0
     reverse: 0
@@ -1432,6 +1432,7 @@ MonoBehaviour:
     relicses: []
   notetype: 0
   size: 0
+  audio: {fileID: 2059109701}
 --- !u!4 &76542794
 Transform:
   m_ObjectHideFlags: 0
@@ -3646,6 +3647,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sprite: {fileID: 250287787}
+  notedata:
+    bundlenum: 0
+    musicnum: 0
+    time: 0
+    line: {fileID: 0}
+    type: 0
+    value: 0
 --- !u!1 &251871584
 GameObject:
   m_ObjectHideFlags: 0
@@ -12818,6 +12826,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sprite: {fileID: 984872519}
+  notedata:
+    bundlenum: 0
+    musicnum: 0
+    time: 0
+    line: {fileID: 0}
+    type: 0
+    value: 0
 --- !u!1 &985380037
 GameObject:
   m_ObjectHideFlags: 0
@@ -15086,6 +15101,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sprite: {fileID: 1080396084}
+  notedata:
+    bundlenum: 0
+    musicnum: 0
+    time: 0
+    line: {fileID: 0}
+    type: 0
+    value: 0
 --- !u!212 &1080396084
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -29959,6 +29981,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sprite: {fileID: 1971704293}
+  notedata:
+    bundlenum: 0
+    musicnum: 0
+    time: 0
+    line: {fileID: 0}
+    type: 0
+    value: 0
 --- !u!1 &1973321745
 GameObject:
   m_ObjectHideFlags: 0
