@@ -132,11 +132,13 @@ public class GameManager : SingletonGameObject<GameManager>
             }
         }
 
-        foreach (NoteData notedate in music.notes)
+        foreach (NoteData notedata in music.notes)
         {
-            Note note = CreateNote(notedate.line, notedate.type, notedate.value);
+            Note note = CreateNote(notedata.line, notedata.type, notedata.value);
 
-            note.transform.position = note.Line.EndPos + (note.Variation * (notedate.time / Time.fixedDeltaTime) * -1f);
+            note.NoteDataInit(notedata);
+
+            note.Position = note.Line.EndPos + (note.Variation * (notedata.time / Time.fixedDeltaTime) * -1f) + (note.Variation * notevalues.speed * 100f);
         }
 
         /*for (int i = 0; i < music.notes.Count; i++)

@@ -34,9 +34,11 @@ public class Note : MonoBehaviour
     private bool isrecording;
     private bool ischanged;
 
+    public NoteData notedata;
+
     private void FixedUpdate()
     {
-        Position += Variation;
+        transform.position += (Vector3)Variation;
 
         transform.localScale = line.StartObjectScale + (line.EndObjectScale - line.StartObjectScale) / (line.Distance / Vector2.Distance(line.StartPos, transform.position));
 
@@ -103,6 +105,11 @@ public class Note : MonoBehaviour
         }
 
         return this;
+    }
+
+    public void NoteDataInit(NoteData notedata)
+    {
+        this.notedata = notedata;
     }
 
     public void AddLongNote(Note note)
@@ -211,6 +218,8 @@ public class Note : MonoBehaviour
 
     public void DestroyNote()
     {
+        Debug.Log(notedata.time);
+
         GameManager.Instance.Notes.Remove(this);
         Destroy(gameObject);
     }
@@ -225,6 +234,16 @@ public class Note : MonoBehaviour
         }
         set
         {
+            if(NoteType.LONG <= type && type <= NoteType.LONG_END)
+            {
+                Vector2 pos = value - (Vector2)transform.position;
+
+                for (int i = 0; i < longnotes.Length; i++)
+                {
+                    longnotes[i].transform.position = (Vector2)longnotes[i].transform.position + pos;
+                }
+            }
+
             transform.position = value;
         }
     }
