@@ -77,7 +77,7 @@ public class GameManager : SingletonGameObject<GameManager>
             StartMusic(0, 0);
     }
 
-    public void CreateNote(Line line, NoteType type, float size = 0f)
+    public Note CreateNote(Line line, NoteType type, float size = 0f)
     {
         for (int i = 0; i < Lines.Length; i++)
         {
@@ -108,6 +108,8 @@ public class GameManager : SingletonGameObject<GameManager>
                 break;
             }
         }
+
+        return Notes[Notes.Count - 1];
     }
 
     public void StartMusic(int bundlenum, int musicnum)
@@ -130,17 +132,17 @@ public class GameManager : SingletonGameObject<GameManager>
             }
         }
 
-        for (int i = 0; i < music.notes.Count; i++)
+        foreach (NoteData notedate in music.notes)
+        {
+            Note note = CreateNote(notedate.line, notedate.type, notedate.value);
+
+            note.transform.position = note.Line.EndPos + (note.Variation * (notedate.time / Time.fixedDeltaTime) * -1f);
+        }
+
+        /*for (int i = 0; i < music.notes.Count; i++)
         {
             StartCoroutine(PlayMusic(music.notes[i]));
-        }
-    }
-
-    private IEnumerator PlayMusic(NoteData notes)
-    {
-        yield return new WaitForSeconds(notes.time);
-
-        CreateNote(notes.line, notes.type, notes.value);
+        }*/
     }
 
     public void StartRecord()

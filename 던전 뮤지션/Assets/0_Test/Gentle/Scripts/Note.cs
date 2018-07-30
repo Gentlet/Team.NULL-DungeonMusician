@@ -34,10 +34,9 @@ public class Note : MonoBehaviour
     private bool isrecording;
     private bool ischanged;
 
-    private void Update()
+    private void FixedUpdate()
     {
-        Position += line.Direction * speed;
-
+        Position += Variation;
 
         transform.localScale = line.StartObjectScale + (line.EndObjectScale - line.StartObjectScale) / (line.Distance / Vector2.Distance(line.StartPos, transform.position));
 
@@ -334,6 +333,14 @@ public class Note : MonoBehaviour
         get
         {
             return ischanged;
+        }
+    }
+
+    public Vector2 Variation
+    {
+        get
+        {
+            return line.Direction * speed;
         }
     }
     #endregion
