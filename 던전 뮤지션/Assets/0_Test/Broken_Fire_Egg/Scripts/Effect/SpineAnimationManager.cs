@@ -64,14 +64,19 @@ public class SpineAnimationManager : MonoBehaviour
     public void HittAnimation()
     {
         if (IsCanvas == true)
-            Invoke("IdleAnimation", SG.AnimationState.SetAnimation(0, hit, false).animationEnd);
+        {
+            if (SG.AnimationState.GetCurrent(0).animation != SG.SkeletonData.FindAnimation(hit))
+                Invoke("IdleAnimation", SG.AnimationState.SetAnimation(0, hit, false).animationEnd);
+        }
         else
-            Invoke("IdleAnimation", SA.AnimationState.SetAnimation(0, hit, false).animationEnd);
+        {
+            if (SA.state.GetCurrent(0).animation != SA.SkeletonDataAsset.GetSkeletonData(false).FindAnimation(hit))
+                Invoke("IdleAnimation", SA.AnimationState.SetAnimation(0, hit, false).animationEnd);
+        }
     }
-
     public void IdleAnimation()
     {
-        if (SA == null)
+        if (IsCanvas == true)
             SG.AnimationState.SetAnimation(0, idle, true);
         else
             SA.AnimationState.SetAnimation(0, idle, true);
