@@ -7,6 +7,8 @@ public class EnemyManager : SingletonGameObject<EnemyManager> {
     [SerializeField]
     private Canvas canvas;
     [SerializeField]
+    private GameObject gameui;
+    [SerializeField]
     private Enemy[] enemyprefabs;
     [SerializeField]
     private Enemy enemy;
@@ -16,7 +18,7 @@ public class EnemyManager : SingletonGameObject<EnemyManager> {
 
     public void CreateEnemy(int num = -1)
     {
-        enemy = Instantiate(enemyprefabs[(num == -1 ? killcount : num)], canvas.transform);
+        enemy = Instantiate(enemyprefabs[(num == -1 ? killcount : num)], gameui.transform);
     }
 
     public void KillEnemy(int gold)
