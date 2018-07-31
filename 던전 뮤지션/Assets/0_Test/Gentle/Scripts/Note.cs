@@ -218,7 +218,7 @@ public class Note : MonoBehaviour
 
     public void DestroyNote()
     {
-        Debug.Log(notedata.time);
+        //Debug.Log(notedata.time);
 
         GameManager.Instance.Notes.Remove(this);
         Destroy(gameObject);

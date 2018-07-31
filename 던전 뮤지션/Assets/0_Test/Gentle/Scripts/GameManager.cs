@@ -65,6 +65,11 @@ public class GameManager : SingletonGameObject<GameManager>
         StartMusic(0, 0);
     }
 
+    private void FixedUpdate()
+    {
+        Debug.Log(Time.fixedDeltaTime);
+    }
+
     private void Update()
     {
         for (int i = 0; i < 4; i++)
