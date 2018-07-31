@@ -56,11 +56,6 @@ public class GameManager : SingletonGameObject<GameManager>
         notevalues.notes = new List<Note>();
     }
 
-    private void FixedUpdate()
-    {
-        Debug.Log(Time.fixedDeltaTime);
-    }
-
     private void Update()
     {
         for (int i = 0; i < 4; i++)

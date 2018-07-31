@@ -2451,8 +2451,8 @@ MonoBehaviour:
   readdatas:
     bundles: []
     relicses: []
-  notetype: 0
-  size: 0
+  notetype: 1
+  size: 4
   audio: {fileID: 913208479}
 --- !u!4 &157516677
 Transform:
@@ -2479,6 +2479,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvas: {fileID: 1691983593}
+  gameui: {fileID: 0}
   enemyprefabs:
   - {fileID: 114895133466056136, guid: a2314d19d79c079449590b18e93466ce, type: 2}
   - {fileID: 114059551163402890, guid: fbf312ff70693154d97d0161b7a7034a, type: 2}
@@ -22323,7 +22324,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spine: {fileID: 283208898}
   info: "Lv.01 \uAC15\uC5EC\uBA85"
-  maxhp: 100
+  maxhp: 100000
   gold: 0
   test: {x: 0, y: 0.1}
   time: 0

@@ -11,6 +11,8 @@ public class TouchSim : SingletonGameObject<TouchSim>
 
     void Update()
     {
+        Debug.Log((int)phase);
+
         if (state == 4)
         {
             state = 0;
