@@ -70,11 +70,20 @@ public class GameManager : SingletonGameObject<GameManager>
                 CreateNote(Lines[i], notetype, size);
             }
         }
-        
+
+        if (Input.GetKeyDown(KeyCode.M))
+            PlayGame();
+
     }
-    
+
     public void PlayGame()
     {
+        for (int i = 0; i < notevalues.notes.Count; i++)
+        {
+            GameObject.Destroy(notevalues.notes[i].gameObject);
+        }
+        notevalues.notes.Clear();
+
         StartMusic(0, 0);
     }
 
@@ -115,7 +124,6 @@ public class GameManager : SingletonGameObject<GameManager>
 
     public void StartMusic(int bundlenum, int musicnum)
     {
-        audio.Stop();
         audio.Play();
 
         Music music = new Music();
@@ -142,13 +150,8 @@ public class GameManager : SingletonGameObject<GameManager>
 
             note.NoteDataInit(notedata);
 
-            note.Position = note.Line.EndPos + (note.Variation * (notedata.time / Time.fixedDeltaTime) * -1f) + (note.Variation * 10f);
+            note.Position = note.Line.EndPos + (note.Variation * (notedata.time / Time.fixedDeltaTime) * -1f);
         }
-
-        /*for (int i = 0; i < music.notes.Count; i++)
-        {
-            StartCoroutine(PlayMusic(music.notes[i]));
-        }*/
     }
 
     public Note NearestNote(Line line)
