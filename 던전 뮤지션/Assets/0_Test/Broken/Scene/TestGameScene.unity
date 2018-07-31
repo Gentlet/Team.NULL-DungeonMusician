@@ -1456,8 +1456,8 @@ MonoBehaviour:
   readdatas:
     bundles: []
     relicses: []
-  notetype: 0
-  size: 0
+  notetype: 1
+  size: 4
   audio: {fileID: 2059109701}
 --- !u!4 &76542794
 Transform:
@@ -10249,7 +10249,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spine: {fileID: 1547575317}
   info: "Lv.01 \uAC15\uC5EC\uBA85"
-  maxhp: 100
+  maxhp: 3000
   gold: 0
   test: {x: 0, y: 0.1}
   time: 0

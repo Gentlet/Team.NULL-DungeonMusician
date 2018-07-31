@@ -308,7 +308,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spine: {fileID: 114315991528357706}
   info: "Lv.01 \uAC15\uC5EC\uBA85"
-  maxhp: 100
+  maxhp: 3000
   gold: 0
   test: {x: 0, y: 0.1}
   time: 0
