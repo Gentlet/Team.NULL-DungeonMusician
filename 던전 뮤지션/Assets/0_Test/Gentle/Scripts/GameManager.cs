@@ -21,8 +21,6 @@ public struct NoteValues
     public int combo;
 
     [HideInInspector]
-    public bool recording;
-    [HideInInspector]
     public bool reverse;
 }
 
@@ -56,13 +54,6 @@ public class GameManager : SingletonGameObject<GameManager>
     private void Awake()
     {
         notevalues.notes = new List<Note>();
-        notevalues.recording = false;
-    }
-
-    private void Start()
-    {
-        audio.Play();
-        StartMusic(0, 0);
     }
 
     private void FixedUpdate()
@@ -79,9 +70,12 @@ public class GameManager : SingletonGameObject<GameManager>
                 CreateNote(Lines[i], notetype, size);
             }
         }
-
-        if (Input.GetKeyDown(KeyCode.M))
-            StartMusic(0, 0);
+        
+    }
+    
+    public void PlayGame()
+    {
+        StartMusic(0, 0);
     }
 
     public Note CreateNote(Line line, NoteType type, float size = 0f)
@@ -92,13 +86,13 @@ public class GameManager : SingletonGameObject<GameManager>
             {
                 if (type != NoteType.LONG)
                 {
-                    Notes.Add(Instantiate(Originalnote[i], transform).Init(line, type, notevalues.speed, size, notevalues.recording));
+                    Notes.Add(Instantiate(Originalnote[i], transform).Init(line, type, notevalues.speed, size));
                 }
                 else
                 {
                     for (int j = 0; j < 3; j++)
                     {
-                        Notes.Add(Instantiate(Originalnote[i], transform).Init(line, (type + j + 1), notevalues.speed, size, notevalues.recording));
+                        Notes.Add(Instantiate(Originalnote[i], transform).Init(line, (type + j + 1), notevalues.speed, size));
                     }
 
                     for (int j = 0; j < 3; j++)
@@ -121,6 +115,9 @@ public class GameManager : SingletonGameObject<GameManager>
 
     public void StartMusic(int bundlenum, int musicnum)
     {
+        audio.Stop();
+        audio.Play();
+
         Music music = new Music();
 
         for (int i = 0; i < readdatas.bundles.Count; i++)
@@ -152,11 +149,6 @@ public class GameManager : SingletonGameObject<GameManager>
         {
             StartCoroutine(PlayMusic(music.notes[i]));
         }*/
-    }
-
-    public void StartRecord()
-    {
-        notevalues.recording = true;
     }
 
     public Note NearestNote(Line line)

@@ -27,6 +27,11 @@ public class EnemyManager : SingletonGameObject<EnemyManager> {
 
             killcount += 1;
             Player.Instance.Gold += gold;
+
+            if(0 < enemyprefabs.Length)
+            {
+                CreateEnemy(Random.Range(0, enemyprefabs.Length));
+            }
         }
     }
 
