@@ -31,7 +31,6 @@ public class Note : MonoBehaviour
     private bool isactive;
     private bool isdestroy;
 
-    private bool isrecording;
     private bool ischanged;
 
     public NoteData notedata;
@@ -42,7 +41,7 @@ public class Note : MonoBehaviour
 
         transform.localScale = line.StartObjectScale + (line.EndObjectScale - line.StartObjectScale) / (line.Distance / Vector2.Distance(line.StartPos, transform.position));
 
-        if(type == NoteType.LONG_LINE)
+        if (type == NoteType.LONG_LINE)
         {
             Vector3 scale = transform.localScale;
             scale.y = size * 1.27f;
@@ -52,14 +51,11 @@ public class Note : MonoBehaviour
         }
 
 
-        if (isrecording == false && EndPos.y < -7f)
-            DestroyNote();
-
-        if (isrecording == true && EndPos.y > 6f)
+        if (EndPos.y < -7f)
             DestroyNote();
     }
 
-    public Note Init(Line line, NoteType type, float speed, float size, bool isrecording)
+    public Note Init(Line line, NoteType type, float speed, float size)
     {
         sprite = GetComponent<SpriteRenderer>();
 
@@ -73,7 +69,6 @@ public class Note : MonoBehaviour
         this.line = line;
         this.type = type;
         this.speed = speed;
-        this.isrecording = isrecording;
 
         this.size = size;
 
@@ -190,10 +185,10 @@ public class Note : MonoBehaviour
     public bool ChanageLine()
     {
         //이동될 부분에 이미 노트가 있는지 확인하고 배치
-        
+
         if ((NoteType.LONG <= type && type <= NoteType.LONG_END) || ischanged == true)
             return false;
-        
+
         float dis = Vector2.Distance(line.StartPos, Position);
         Line nline = line;
         int num = 0;
@@ -218,7 +213,7 @@ public class Note : MonoBehaviour
 
     public void DestroyNote()
     {
-        Debug.Log(notedata.time);
+        //Debug.Log(notedata.time);
 
         GameManager.Instance.Notes.Remove(this);
         Destroy(gameObject);
@@ -234,7 +229,7 @@ public class Note : MonoBehaviour
         }
         set
         {
-            if(NoteType.LONG <= type && type <= NoteType.LONG_END)
+            if (NoteType.LONG <= type && type <= NoteType.LONG_END)
             {
                 Vector2 pos = value - (Vector2)transform.position;
 
@@ -339,11 +334,11 @@ public class Note : MonoBehaviour
     {
         get
         {
-            return (speed < 0f); 
+            return (speed < 0f);
         }
         set
         {
-            if(value == true)
+            if (value == true)
             {
                 if (IsReverse == false)
                     speed *= -1f;

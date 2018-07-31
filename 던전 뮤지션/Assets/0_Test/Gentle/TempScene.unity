@@ -2422,7 +2422,7 @@ MonoBehaviour:
     longnotesprite: {fileID: 21300000, guid: d491b747be5d5fb46b674ebfc00d4a53, type: 3}
     slidernotesprite: {fileID: 21300000, guid: 81b95385c34138c4ea629381d299330f, type: 3}
     notes: []
-    speed: 0.2
+    speed: 0.1
     combo: 0
     recording: 0
     reverse: 0
