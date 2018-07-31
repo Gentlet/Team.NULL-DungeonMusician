@@ -40,6 +40,9 @@ public class Line : MonoBehaviour
 
                 if (rank > 0)
                 {
+                    if (NoteType.LONG <= note.Type && note.Type <= NoteType.LONG_END)
+                        rank *= 0.3f;
+
                     float damage = rank * Player.Instance.Strength * (Random.Range(0f, 100f) < Player.Instance.Criticalrate ? Player.Instance.Criticaldamage : 1f);
                     EnemyManager.Instance.Enemy.AttackEnemy(damage);
                     Player.Instance.Health += damage * Player.Instance.Healthdrainrate;
