@@ -6,17 +6,25 @@ using UnityEngine;
 public class SpineAnimateOnce : MonoBehaviour {
 
     public SkeletonGraphic SG;
-    private void Start()
-    {
-        SG = GetComponent<SkeletonGraphic>();
-    }
+    public SkeletonAnimation SA;
+    public bool IsCancas;
     private void OnEnable()
     {
-        StartCoroutine(WaitDie());
+        
+        if (IsCancas)
+            StartCoroutine(WaitDieSG());
+        else
+            StartCoroutine(WaitDieSA());
+        
     }
-    IEnumerator WaitDie()
+    IEnumerator WaitDieSG()
     {
         yield return new WaitForSpineAnimationComplete(SG.AnimationState.SetAnimation(0, "eft_0", false));
+        gameObject.SetActive(false);
+    }
+    IEnumerator WaitDieSA()
+    {
+        yield return new WaitForSpineAnimationComplete(SA.AnimationState.SetAnimation(0, "eft_0", false));
         gameObject.SetActive(false);
     }
 }
