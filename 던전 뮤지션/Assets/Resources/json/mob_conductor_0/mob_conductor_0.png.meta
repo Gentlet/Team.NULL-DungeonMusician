@@ -1,9 +1,17 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 5dcd6efcee5e9a04da6e0603409b250f
 TextureImporter:
   fileIDToRecycleName: {}
   externalObjects: {}
   serializedVersion: 5
+=======
+guid: 61bd7f53178aad8409f2771aba3b353a
+TextureImporter:
+  fileIDToRecycleName: {}
+  externalObjects: {}
+  serializedVersion: 7
+>>>>>>> b3868a9aa427ececcbb6923aba4788b92367048b
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -21,6 +29,11 @@ TextureImporter:
     heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
+<<<<<<< HEAD
+=======
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+>>>>>>> b3868a9aa427ececcbb6923aba4788b92367048b
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -31,14 +44,22 @@ TextureImporter:
     serializedVersion: 2
     filterMode: -1
     aniso: -1
+<<<<<<< HEAD
     mipBias: -1
+=======
+    mipBias: -100
+>>>>>>> b3868a9aa427ececcbb6923aba4788b92367048b
     wrapU: 1
     wrapV: 1
     wrapW: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
+<<<<<<< HEAD
   spriteMode: 0
+=======
+  spriteMode: 1
+>>>>>>> b3868a9aa427ececcbb6923aba4788b92367048b
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -47,7 +68,11 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
+<<<<<<< HEAD
   alphaIsTransparency: 0
+=======
+  alphaIsTransparency: 1
+>>>>>>> b3868a9aa427ececcbb6923aba4788b92367048b
   spriteTessellationDetail: -1
   textureType: 8
   textureShape: 1
@@ -61,7 +86,11 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
+<<<<<<< HEAD
     textureCompression: 0
+=======
+    textureCompression: 1
+>>>>>>> b3868a9aa427ececcbb6923aba4788b92367048b
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -73,12 +102,21 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
+<<<<<<< HEAD
     spriteID: 945e3e52ea972cd45ba20e377fa7879b
+=======
+    spriteID: 6ae8cdebe2db9a84b9ece643e9565c4c
+>>>>>>> b3868a9aa427ececcbb6923aba4788b92367048b
     vertices: []
     indices: 
     edges: []
     weights: []
   spritePackingTag: 
+<<<<<<< HEAD
+=======
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+>>>>>>> b3868a9aa427ececcbb6923aba4788b92367048b
   userData: 
   assetBundleName: 
   assetBundleVariant: 
