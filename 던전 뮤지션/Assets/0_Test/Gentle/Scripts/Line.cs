@@ -43,12 +43,13 @@ public class Line : MonoBehaviour
                     if (NoteType.LONG <= note.Type && note.Type <= NoteType.LONG_END)
                         rank *= 0.3f;
 
-                    float damage = rank * Player.Instance.Strength * (Random.Range(0f, 100f) < Player.Instance.Criticalrate ? Player.Instance.Criticaldamage : 1f);
+                    float damage = rank * Player.Instance.GetStatus("Strength") * (Random.Range(0f, 100f) < Player.Instance.GetStatus("Criticalrate") ? Player.Instance.GetStatus("Criticaldamage") / 100f : 1f);
                     EnemyManager.Instance.Enemy.AttackEnemy(damage);
-                    Player.Instance.Health += damage * Player.Instance.Healthdrainrate;
+                    Player.Instance.Health += damage * Player.Instance.GetStatus("Healthdrainrate");
+
+                    Debug.Log(damage);
                 }
 
-                Debug.Log(rank);
             }
 
             touchline.SetActive(true);

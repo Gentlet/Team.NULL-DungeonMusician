@@ -42,8 +42,6 @@ public class GameManager : SingletonGameObject<GameManager>
     [SerializeField]
     private ReadData readdatas;
 
-
-
     [Space]
     [Header("TEST VALUES")]
     public NoteType notetype;
