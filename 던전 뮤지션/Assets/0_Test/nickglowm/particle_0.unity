@@ -14110,6 +14110,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
 --- !u!1001 &307041216
 Prefab:
   m_ObjectHideFlags: 0
@@ -14152,6 +14153,8 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 07879d98251d8ea4080bec362682739d, type: 2}
   m_IsPrefabParent: 0
+=======
+>>>>>>> parent of 154a28e... 보스 이펫트 추가
 --- !u!1 &448354198
 GameObject:
   m_ObjectHideFlags: 0
@@ -61324,6 +61327,7 @@ Prefab:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4557509372294318, guid: 6cc84feb8dccb2e45931588c5bd90ab2, type: 2}
+<<<<<<< HEAD
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
@@ -61349,6 +61353,75 @@ Prefab:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6cc84feb8dccb2e45931588c5bd90ab2, type: 2}
+=======
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4557509372294318, guid: 6cc84feb8dccb2e45931588c5bd90ab2, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4557509372294318, guid: 6cc84feb8dccb2e45931588c5bd90ab2, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4557509372294318, guid: 6cc84feb8dccb2e45931588c5bd90ab2, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4557509372294318, guid: 6cc84feb8dccb2e45931588c5bd90ab2, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4557509372294318, guid: 6cc84feb8dccb2e45931588c5bd90ab2, type: 2}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 6cc84feb8dccb2e45931588c5bd90ab2, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1001 &2076338012
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4661738271579698, guid: 07879d98251d8ea4080bec362682739d, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4661738271579698, guid: 07879d98251d8ea4080bec362682739d, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4661738271579698, guid: 07879d98251d8ea4080bec362682739d, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4661738271579698, guid: 07879d98251d8ea4080bec362682739d, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4661738271579698, guid: 07879d98251d8ea4080bec362682739d, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4661738271579698, guid: 07879d98251d8ea4080bec362682739d, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4661738271579698, guid: 07879d98251d8ea4080bec362682739d, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4661738271579698, guid: 07879d98251d8ea4080bec362682739d, type: 2}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 07879d98251d8ea4080bec362682739d, type: 2}
+>>>>>>> parent of 154a28e... 보스 이펫트 추가
   m_IsPrefabParent: 0
 --- !u!1 &2085912137
 GameObject:
