@@ -4,9 +4,13 @@ using UnityEngine;
 
 public class ParticleManager : MonoBehaviour {
     public ParticleSystem[] PSs;
-    private void Awake()
+    public bool visibleplay;
+
+    
+    public void OnBecameVisible()
     {
-        PSs = GetComponentsInChildren<ParticleSystem>();
+        if (visibleplay)
+            PlayAll();
     }
     public void PlayAll()
     {
