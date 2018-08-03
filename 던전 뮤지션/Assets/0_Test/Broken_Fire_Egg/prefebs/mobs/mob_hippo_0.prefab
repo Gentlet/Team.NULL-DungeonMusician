@@ -88,7 +88,7 @@ GameObject:
   - component: {fileID: 224520599405966866}
   - component: {fileID: 222027832928102412}
   - component: {fileID: 114002930428746284}
-  - component: {fileID: 114753191101648644}
+  - component: {fileID: 114700123591299208}
   m_Layer: 5
   m_Name: EnemyInfo
   m_TagString: Untagged
@@ -286,7 +286,7 @@ MonoBehaviour:
   attack: atk_0
   effect: 
   IsCanvas: 1
---- !u!114 &114753191101648644
+--- !u!114 &114700123591299208
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -298,7 +298,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
-  m_EffectDistance: {x: 1, y: -1}
+  m_EffectDistance: {x: 3, y: -3}
   m_UseGraphicAlpha: 1
 --- !u!114 &114816684683408776
 MonoBehaviour:
