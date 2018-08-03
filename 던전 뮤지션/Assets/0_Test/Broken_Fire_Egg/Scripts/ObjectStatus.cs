@@ -46,6 +46,7 @@ public class ObjectStatus : MonoBehaviour
         PlayerPrefs.SetInt(GetType().Name + "level", level);
         if (!fomula)
         {
+            
             PlayerPrefs.SetFloat(GetType().Name + "basepoint", basepoint);
             PlayerPrefs.SetFloat(GetType().Name + "paramrate", paramrate);
             PlayerPrefs.SetFloat(GetType().Name + "parambase", parambase);
