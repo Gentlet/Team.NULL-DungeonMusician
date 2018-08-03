@@ -9,8 +9,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a6b194f808b1af6499c93410e504af42, type: 3}
-  m_Name: mob_drumdda_0_Atlas
+  m_Name: mob_conductor_0_Atlas
   m_EditorClassIdentifier: 
-  atlasFile: {fileID: 4900000, guid: 613f68be46a0edf44ba65c814f15db97, type: 3}
+  atlasFile: {fileID: 4900000, guid: 059f3af3513e28d47a8b3293450d5b9f, type: 3}
   materials:
-  - {fileID: 2100000, guid: 7f184ec74252829438d086a373cc0833, type: 2}
+  - {fileID: 2100000, guid: fa6d2a49285ae8d4baec23ad3a84751a, type: 2}
