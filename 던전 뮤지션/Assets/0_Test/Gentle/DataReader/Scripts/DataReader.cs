@@ -86,7 +86,9 @@ public struct Relics
     public string explain;
     public Sprite sprite;
 
-    public Relics(string relicsnum, string name, string explain, Sprite sprite)
+    public RelicsEffect relicseffect;
+
+    public Relics(string relicsnum, string name, string explain, Sprite sprite, RelicsEffect relicseffect)
     {
         int temp;
         int.TryParse(relicsnum, out temp);
@@ -95,6 +97,46 @@ public struct Relics
         this.name = name;
         this.explain = explain;
         this.sprite = sprite;
+
+        this.relicseffect = relicseffect;
+    }
+}
+
+[System.Serializable]
+public class RelicsEffect
+{
+    public string relicsname;
+    public string name;
+    public float value;
+    public float percent;
+
+    public RelicsEffect(string relicsname, string name, string value, string ispercent)
+    {
+        float temp;
+        float.TryParse(value, out temp);
+
+        bool temp2;
+        bool.TryParse(ispercent, out temp2);
+
+        this.relicsname = relicsname;
+        this.value = 0;
+        percent = 0;
+
+        this.name = name;
+
+        if (temp2)
+            percent = temp;
+        else
+            this.value = temp;
+
+    }
+
+    public RelicsEffect(string relicsname, string name, float value, float percent)
+    {
+        this.relicsname = relicsname;
+        this.name = name;
+        this.value = value;
+        this.percent = percent;
     }
 }
 
@@ -268,10 +310,10 @@ public class DataReader : MonoBehaviour {
     {
         List<Relics> relics = new List<Relics>();
 
-        for (int i = 4; i < datas.Count; i += 5)
+        for (int i = 7; i < datas.Count; i += 8)
         {
             if (datas[i] == "end")
-                relics.Add(new Relics(datas[i - 4], datas[i - 3], datas[i - 2], Resources.Load<Sprite>(datas[i - 1])));
+                relics.Add(new Relics(datas[i - 7], datas[i - 6], datas[i - 5], Resources.Load<Sprite>(datas[i - 4]), new RelicsEffect(datas[i - 6], datas[i - 3], datas[i - 2], datas[i - 1])));
         }
 
         GameManager.Instance.ReadDatas.relicses.AddRange(relics);

@@ -80,6 +80,8 @@ public class Enemy : MonoBehaviour {
 
     public IEnumerator Skill3()
     {
+        //사용하지 마시오
+
         spine.AttackAnimation();
 
         yield return new WaitForSeconds(time);

@@ -21,7 +21,7 @@ public class HelperKeyboard : ObjectStatus
     {
         if(Random.Range(0,100) < param)
         {
-            EnemyManager.Instance.Enemy.AttackEnemy(Total * Player.Instance.Strength * HelperBase.instance.Total);
+            EnemyManager.Instance.Enemy.AttackEnemy(Total * Player.Instance.GetStatus("Strength") * HelperBase.instance.Total);
             Debug.Log("키보드");
         }
     }
