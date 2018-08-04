@@ -2413,6 +2413,7 @@ GameObject:
   - component: {fileID: 157516679}
   - component: {fileID: 157516680}
   - component: {fileID: 157516681}
+  - component: {fileID: 157516678}
   m_Layer: 0
   m_Name: ManagerObject
   m_TagString: Untagged
@@ -2451,8 +2452,8 @@ MonoBehaviour:
   readdatas:
     bundles: []
     relicses: []
-  notetype: 1
-  size: 4
+  notetype: 0
+  size: 0
   audio: {fileID: 913208479}
 --- !u!4 &157516677
 Transform:
@@ -2467,6 +2468,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &157516678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 157516675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02249083f8fe35c42bc158aa01ee8891, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  effects: []
 --- !u!114 &157516679
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2479,7 +2492,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvas: {fileID: 1691983593}
-  gameui: {fileID: 0}
+  gameui: {fileID: 996988231}
   enemyprefabs:
   - {fileID: 114895133466056136, guid: a2314d19d79c079449590b18e93466ce, type: 2}
   - {fileID: 114059551163402890, guid: fbf312ff70693154d97d0161b7a7034a, type: 2}
@@ -2506,6 +2519,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b5b78307593c3745befe717e8cbbd13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  relics: []
 --- !u!114 &157516681
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4386,7 +4400,7 @@ MonoBehaviour:
   idle: idle_0
   attack: atk_0
   effect: 
-  IsCanvas: 0
+  IsCanvas: 1
 --- !u!114 &283208900
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22324,7 +22338,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spine: {fileID: 283208898}
   info: "Lv.01 \uAC15\uC5EC\uBA85"
-  maxhp: 100000
+  maxhp: 10000
   gold: 0
   test: {x: 0, y: 0.1}
   time: 0

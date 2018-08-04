@@ -19,6 +19,6 @@ public class HelperGuitar : ObjectStatus
     public void AbilityActive()
     {
 
-        EnemyManager.Instance.Enemy.AttackEnemy(Total * Player.Instance.Strength * HelperBase.instance.Total);
+        EnemyManager.Instance.Enemy.AttackEnemy(Total * Player.Instance.GetStatus("Strength") * HelperBase.instance.Total);
     }
 }

@@ -28,7 +28,7 @@ public class EnemyManager : SingletonGameObject<EnemyManager> {
             Destroy(enemy.gameObject);
 
             killcount += 1;
-            Player.Instance.Gold += gold;
+            Player.Instance.Gold += (int)(gold * Player.Instance.GetStatus("Extragoldrate"));
 
             if(0 < enemyprefabs.Length)
             {
