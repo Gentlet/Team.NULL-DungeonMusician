@@ -6,24 +6,36 @@ using UnityEngine.Events;
 using UnityEditor;
 
 [RequireComponent(typeof(EventTrigger))]
+[ExecuteInEditMode]
 public class ButtonReplace : MonoBehaviour
 {
-    EventTrigger ET;
+    public EventTrigger ET;
     float value;
     public float tintFramePer;
     public SpriteRenderer SR;
     bool isout;
     bool mousedown;
 
-    private void Awake()
+
+    public void Setting(PointerEventData data)
+    {
+
+
+
+    }
+
+    void Awake()
     {
         ET = GetComponent<EventTrigger>();
+        ET.triggers.Clear();
 
-        EventTrigger.Entry EnterEntry =  new EventTrigger.Entry();
-        EnterEntry.eventID = EventTriggerType.PointerEnter;
-        EnterEntry.callback.AddListener((eventData) => { Enter(); });
-        ET.triggers.Add(EnterEntry);
 
+
+
+        ExtensionMethods.AddEventTriggerListener(ET, EventTriggerType.PointerEnter, Enter);
+        ExtensionMethods.AddEventTriggerListener(ET, EventTriggerType.PointerExit, Exit);
+        ExtensionMethods.AddEventTriggerListener(ET, EventTriggerType.PointerUp, Up);
+        ExtensionMethods.AddEventTriggerListener(ET, EventTriggerType.PointerDown, Down);
 
     }
     private void Start()
@@ -69,19 +81,19 @@ public class ButtonReplace : MonoBehaviour
         Debug.Log(Input.mousePosition);
     }
 
-    public void Down()
+    public void Down(PointerEventData data)
     {
         mousedown = true;   
     }
-    public void Up()
+    public void Up(PointerEventData data)
     {
         mousedown = false;
     }
-    public void Exit()
+    public void Exit(PointerEventData data)
     {
         isout = true;
     }
-    public void Enter()
+    public void Enter(PointerEventData data)
     {
         isout = false;
     }
