@@ -27,6 +27,9 @@ public class RecodeManager : MonoBehaviour {
 
     public Text resulttext;
 
+    public int divide;
+    public float intervalinterval;
+
     private float interval;
     private int amount;
 
@@ -37,7 +40,13 @@ public class RecodeManager : MonoBehaviour {
 
         for (int i = 0; i < amount; i++)
         {
-            wlines.Add(Instantiate(wlineoriginal, new Vector3(0, interval * 3f * i), Quaternion.identity, wlinestransform));
+            wlines.Add(Instantiate(wlineoriginal, new Vector3(0, interval * intervalinterval * i), Quaternion.identity, wlinestransform));
+
+            for (int j = 1; j < divide; j++)
+            {
+                wlines.Add(Instantiate(wlineoriginal, new Vector3(0, (interval * intervalinterval * i) + (((interval * intervalinterval) / divide) * j)), Quaternion.identity, wlinestransform));
+                wlines[wlines.Count - 1].GetComponent<SpriteRenderer>().color = Color.green;
+            }
         }
 
         music.Stop();
@@ -207,7 +216,7 @@ public class RecodeManager : MonoBehaviour {
         {
             yield return wait;
 
-            wlinestransform.position += Vector3.down * 0.03f * 3;
+            wlinestransform.position += Vector3.down * 0.03f * intervalinterval;
         }
     }
 

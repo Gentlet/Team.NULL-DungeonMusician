@@ -32,10 +32,10 @@ public class ButtonReplace : MonoBehaviour
 
 
 
-        ExtensionMethods.AddEventTriggerListener(ET, EventTriggerType.PointerEnter, Enter);
-        ExtensionMethods.AddEventTriggerListener(ET, EventTriggerType.PointerExit, Exit);
-        ExtensionMethods.AddEventTriggerListener(ET, EventTriggerType.PointerUp, Up);
-        ExtensionMethods.AddEventTriggerListener(ET, EventTriggerType.PointerDown, Down);
+        //ExtensionMethods.AddEventTriggerListener(ET, EventTriggerType.PointerEnter, Enter);
+        //ExtensionMethods.AddEventTriggerListener(ET, EventTriggerType.PointerExit, Exit);
+        //ExtensionMethods.AddEventTriggerListener(ET, EventTriggerType.PointerUp, Up);
+        //ExtensionMethods.AddEventTriggerListener(ET, EventTriggerType.PointerDown, Down);
 
     }
     private void Start()
