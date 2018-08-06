@@ -92,6 +92,10 @@ public class RecodeManager : MonoBehaviour
             text.text = type.ToString();
         }
 
+        if ((type == NoteType.NORMAL || type == NoteType.SLIDER) && Input.GetKeyDown(KeyCode.Alpha7)) CreateRNoteWithKeyboard(1);
+        if ((type == NoteType.NORMAL || type == NoteType.SLIDER) && Input.GetKeyDown(KeyCode.Alpha8)) CreateRNoteWithKeyboard(2);
+        if ((type == NoteType.NORMAL || type == NoteType.SLIDER) && Input.GetKeyDown(KeyCode.Alpha9)) CreateRNoteWithKeyboard(3);
+        if ((type == NoteType.NORMAL || type == NoteType.SLIDER) && Input.GetKeyDown(KeyCode.Alpha0)) CreateRNoteWithKeyboard(4);
 
         if (Input.GetMouseButtonDown(1))
         {
@@ -218,6 +222,32 @@ public class RecodeManager : MonoBehaviour
                 }
             }
         }
+    }
+
+    private void CreateRNoteWithKeyboard(int line)
+    {
+        int closestnum = 0;
+
+        for (int i = 0; i < wlines.Count; i++)
+        {
+            if(Vector2.Distance(wlines[closestnum].transform.position,Vector2.zero) > Vector2.Distance(wlines[i].transform.position, Vector2.zero))
+            {
+                closestnum = i;
+            }
+        }
+
+        Vector2 point = (Vector2)wlines[closestnum].transform.position + new Vector2(0.695f * ((line * 2) - 5), 0);
+
+
+        for (int i = 0; i < rnotes.Count; i++)
+        {
+            if (Vector2.Distance(rnotes[i].transform.position, point) < 0.2f)
+                return;
+        }
+
+        rnotes.Add(Instantiate(rnoteoriginal, (Vector2)wlines[closestnum].transform.position + new Vector2(0.695f * ((line * 2) - 5), 0), rnoteoriginal.transform.rotation));
+        rnotes[rnotes.Count - 1].transform.parent = wlines[closestnum].transform;
+        rnotes[rnotes.Count - 1].Init(type, null, closestnum + 1, line);
     }
 
     IEnumerator PlayMusic()
