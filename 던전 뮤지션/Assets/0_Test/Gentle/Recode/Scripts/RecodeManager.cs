@@ -8,7 +8,7 @@ using UnityEngine.UI;
 public class RecodeManager : MonoBehaviour {
     public AudioSource music;
 
-    public int bpm;
+    public float bpm;
 
     public GameObject wlineoriginal;
     public RNote rnoteoriginal;
@@ -37,7 +37,7 @@ public class RecodeManager : MonoBehaviour {
 
         for (int i = 0; i < amount; i++)
         {
-            wlines.Add(Instantiate(wlineoriginal, new Vector3(0, (interval < 0.5f ? interval * 3f : interval) * i), Quaternion.identity, wlinestransform));
+            wlines.Add(Instantiate(wlineoriginal, new Vector3(0, interval * 3f * i), Quaternion.identity, wlinestransform));
         }
 
         music.Stop();
@@ -207,7 +207,7 @@ public class RecodeManager : MonoBehaviour {
         {
             yield return wait;
 
-            wlinestransform.position += Vector3.down * 0.03f * (interval < 0.5f ? 3 : 1);
+            wlinestransform.position += Vector3.down * 0.03f * 3;
         }
     }
 
