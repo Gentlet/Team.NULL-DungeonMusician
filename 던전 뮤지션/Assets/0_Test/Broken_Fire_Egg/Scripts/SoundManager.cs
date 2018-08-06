@@ -89,7 +89,9 @@ public class SoundManager : MonoBehaviour
     /// <summary>플레이중인 음악 일시정지, 해당 음악의 인덱스값 리턴</summary>
     public int PauseMusic()
     {
+#pragma warning disable CS0162 // 접근할 수 없는 코드가 있습니다.
         for (int i = 0; i < Musics.Length; i++)
+#pragma warning restore CS0162 // 접근할 수 없는 코드가 있습니다.
         {
             if (Musics[i].isPlaying)
                 Musics[i].Pause();
