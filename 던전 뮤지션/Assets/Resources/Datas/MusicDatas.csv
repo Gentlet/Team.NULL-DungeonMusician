@@ -1,4 +1,4 @@
-*bundle number,music number,song name,mood number,image
-*0~~,0~~,song,1~4,example.png
-*int,int,string,int,string
-0,0,Infinite,1,UI/0_common/ui_gold
+*bundle number,music number,music name,mood number,image,music,bpm,artist
+*0~~,0~~,song,1~4,example,example,0~,artist
+*int,int,string,int,string,string,int,string
+0,0,Infinite,1,UI/0_common/ui_gold,Musics/Infinite,120,artist
