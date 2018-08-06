@@ -1,0 +1,90 @@
+
+eft_boss_4.png
+size: 4096,4096
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+effect/eft_boss_1_0
+  rotate: false
+  xy: 2, 3068
+  size: 1080, 1020
+  orig: 1080, 1020
+  offset: 0, 0
+  index: -1
+effect/eft_boss_1_2
+  rotate: false
+  xy: 2, 2046
+  size: 1080, 1020
+  orig: 1080, 1020
+  offset: 0, 0
+  index: -1
+effect/eft_boss_1_3
+  rotate: false
+  xy: 1084, 3068
+  size: 1080, 1020
+  orig: 1080, 1020
+  offset: 0, 0
+  index: -1
+effect/eft_boss_bg_0
+  rotate: false
+  xy: 2, 1024
+  size: 1080, 1020
+  orig: 1080, 1020
+  offset: 0, 0
+  index: -1
+effect/eft_boss_bg_1
+  rotate: false
+  xy: 1084, 2046
+  size: 1080, 1020
+  orig: 1080, 1020
+  offset: 0, 0
+  index: -1
+effect/eft_boss_bg_2
+  rotate: false
+  xy: 2166, 3068
+  size: 1080, 1020
+  orig: 1080, 1020
+  offset: 0, 0
+  index: -1
+effect/eft_boss_bg_3
+  rotate: false
+  xy: 2, 2
+  size: 1080, 1020
+  orig: 1080, 1020
+  offset: 0, 0
+  index: -1
+effect/eft_boss_bg_4
+  rotate: false
+  xy: 1084, 1024
+  size: 1080, 1020
+  orig: 1080, 1020
+  offset: 0, 0
+  index: -1
+effect/eft_boss_bg_5
+  rotate: false
+  xy: 2166, 2046
+  size: 1080, 1020
+  orig: 1080, 1020
+  offset: 0, 0
+  index: -1
+effect/eft_boss_bg_6
+  rotate: false
+  xy: 1084, 2
+  size: 1080, 1020
+  orig: 1080, 1020
+  offset: 0, 0
+  index: -1
+effect/eft_boss_bg_7
+  rotate: false
+  xy: 2166, 1024
+  size: 1080, 1020
+  orig: 1080, 1020
+  offset: 0, 0
+  index: -1
+effect/eft_boss_bg_8
+  rotate: false
+  xy: 2166, 2
+  size: 1080, 1020
+  orig: 1080, 1020
+  offset: 0, 0
+  index: -1
