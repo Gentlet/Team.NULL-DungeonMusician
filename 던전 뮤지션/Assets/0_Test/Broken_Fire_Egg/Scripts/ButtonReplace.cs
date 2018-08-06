@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.Events;
 using UnityEditor;
-[InitializeOnLoad]
+
 [RequireComponent(typeof(EventTrigger))]
 public class ButtonReplace : MonoBehaviour
 {
@@ -15,11 +15,6 @@ public class ButtonReplace : MonoBehaviour
     bool isout;
     bool mousedown;
 
-
-    static StartUp()
-    {
-
-    }
     private void Awake()
     {
         ET = GetComponent<EventTrigger>();
