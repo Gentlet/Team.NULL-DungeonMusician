@@ -5,7 +5,8 @@ using UnityEngine.UI;
 
 //0.695
 
-public class RecodeManager : MonoBehaviour {
+public class RecodeManager : MonoBehaviour
+{
     public AudioSource music;
 
     public float bpm;
@@ -29,6 +30,9 @@ public class RecodeManager : MonoBehaviour {
 
     public int divide;
     public float intervalinterval;
+
+    [Range(0f, 1f)]
+    public float speed;
 
     private float interval;
     private int amount;
@@ -111,7 +115,7 @@ public class RecodeManager : MonoBehaviour {
 
         if (Input.GetKeyDown(KeyCode.P))
         {
-            if(play != null) StopCoroutine(play);
+            if (play != null) StopCoroutine(play);
             play = StartCoroutine(PlayMusic());
         }
 
@@ -119,6 +123,17 @@ public class RecodeManager : MonoBehaviour {
         {
             SaveMusic();
         }
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            if (play != null)
+            {
+                StopCoroutine(play);
+                music.Stop();
+            }
+        }
+
+        music.pitch = speed;
     }
 
     private void NormalRnote()
@@ -167,7 +182,7 @@ public class RecodeManager : MonoBehaviour {
                             type = NoteType.LONG_END;
                             text.text = type.ToString();
                         }
-                        else if (type == NoteType.LONG_END && rnotes[rnotes.Count - 1].node < i + 1 && rnotes[rnotes.Count - 1].line == (j + 5) / 2) 
+                        else if (type == NoteType.LONG_END && rnotes[rnotes.Count - 1].node < i + 1 && rnotes[rnotes.Count - 1].line == (j + 5) / 2)
                         {
                             rnotes.Add(Instantiate(rnoteoriginal, (Vector2)wlines[i].transform.position + new Vector2(0.695f * j, 0), rnoteoriginal.transform.rotation));
                             rnotes[rnotes.Count - 1].transform.parent = wlines[i].transform;
@@ -216,7 +231,7 @@ public class RecodeManager : MonoBehaviour {
         {
             yield return wait;
 
-            wlinestransform.position += Vector3.down * 0.03f * intervalinterval;
+            wlinestransform.position += Vector3.down * 0.03f * intervalinterval * speed;
         }
     }
 

@@ -807,6 +807,7 @@ MonoBehaviour:
   resulttext: {fileID: 146385116}
   divide: 8
   intervalinterval: 15
+  speed: 1
 --- !u!4 &1471445901
 Transform:
   m_ObjectHideFlags: 0
