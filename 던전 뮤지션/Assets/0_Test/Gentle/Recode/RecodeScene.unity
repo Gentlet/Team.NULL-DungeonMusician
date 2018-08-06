@@ -804,6 +804,7 @@ MonoBehaviour:
   scrollsensitive: 0.4
   text: {fileID: 1960469562}
   type: 0
+  resulttext: {fileID: 146385116}
 --- !u!4 &1471445901
 Transform:
   m_ObjectHideFlags: 0
