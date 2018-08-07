@@ -18,7 +18,7 @@ public class RNote : MonoBehaviour {
 
         if (type == NoteType.LONG)
             GetComponent<SpriteRenderer>().color = Color.blue;
-        else if(type == NoteType.LONG_END)
+        else if (type == NoteType.LONG_END)
         {
             GetComponent<SpriteRenderer>().color = Color.cyan;
             rnote.rnote = this;
