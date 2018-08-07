@@ -19,7 +19,7 @@ public class RecodeManager : MonoBehaviour
     public List<GameObject> wlines;
     public List<RNote> rnotes;
 
-    public float scrollsensitive;
+    public int scrollsensitive;
 
     public Text text;
     public NoteType type;
@@ -27,6 +27,8 @@ public class RecodeManager : MonoBehaviour
     public Coroutine play;
 
     public Text resulttext;
+
+    public Text timetext;
 
     public int divide;
     public float intervalinterval;
@@ -68,6 +70,10 @@ public class RecodeManager : MonoBehaviour
                 music.Stop();
             }
         }
+
+        timetext.text = ((wlinestransform.position.y * -1f) / intervalinterval).ToString();
+
+        music.pitch = speed;
     }
 
     private void Update()
@@ -137,7 +143,7 @@ public class RecodeManager : MonoBehaviour
             }
         }
 
-        music.pitch = speed;
+        //music.pitch = speed;
     }
 
     private void NormalRnote()
@@ -252,16 +258,16 @@ public class RecodeManager : MonoBehaviour
 
     IEnumerator PlayMusic()
     {
-        WaitForSeconds wait = new WaitForSeconds(0.03f);
+        WaitForSeconds wait = new WaitForSeconds(0.01f);
 
         music.Play();
-        music.time = wlinestransform.position.y * -1f / intervalinterval * speed;
+        music.time = (wlinestransform.position.y * -1f) / intervalinterval;
 
         while (true)
         {
             yield return wait;
-
-            wlinestransform.position += Vector3.down * 0.03f * intervalinterval * speed;
+            
+            wlinestransform.position = Vector3.down * music.time * intervalinterval;
         }
     }
 
