@@ -795,7 +795,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   music: {fileID: 1471445902}
-  bpm: 130
+  bpm: 108.94
   wlineoriginal: {fileID: 382868203}
   rnoteoriginal: {fileID: 1591258405}
   wlinestransform: {fileID: 2122669674}
@@ -830,7 +830,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: e69ac49c9f9b987409ee94e6ea4c2dc9, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 795f7af0f399b234b8880d401c7dd9cd, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1

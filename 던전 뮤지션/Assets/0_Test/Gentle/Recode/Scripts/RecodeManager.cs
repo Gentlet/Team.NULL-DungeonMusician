@@ -255,7 +255,7 @@ public class RecodeManager : MonoBehaviour
         WaitForSeconds wait = new WaitForSeconds(0.03f);
 
         music.Play();
-        music.time = wlinestransform.position.y * -1f;
+        music.time = wlinestransform.position.y * -1f / intervalinterval * speed;
 
         while (true)
         {
