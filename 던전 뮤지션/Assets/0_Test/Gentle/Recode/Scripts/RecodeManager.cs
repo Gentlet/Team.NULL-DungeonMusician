@@ -56,6 +56,8 @@ public class RecodeManager : MonoBehaviour
         }
 
         music.Stop();
+
+        ReadMusic();
     }
 
     private void FixedUpdate()
@@ -268,6 +270,63 @@ public class RecodeManager : MonoBehaviour
             yield return wait;
             
             wlinestransform.position = Vector3.down * music.time * intervalinterval;
+        }
+    }
+
+    private void ReadMusic()
+    {
+        List<string> datas = new List<string>();
+        string obj = resulttext.text;
+
+        string temp = string.Empty;
+        for (int i = 0; i < obj.Length; i++)
+        {
+            if (obj[i] == ',')
+            {
+                datas.Add(temp);
+                temp = string.Empty;
+                continue;
+            }
+            else if (obj[i] == '\r' || obj.Length - 1 == i)
+            {
+                datas.Add(temp);
+                temp = string.Empty;
+
+                datas.Add("end");
+
+                continue;
+            }
+            else if (obj[i] == '\n')
+            {
+                temp = string.Empty;
+
+                continue;
+            }
+
+            temp += obj[i];
+        }
+
+        for (int i = 4; i < datas.Count; i += 5) 
+        {
+            NoteType rtype;
+            int rnode;
+            int node;
+            int line;
+            rtype = datas[i - 2].ToNoteType();
+            int.TryParse(datas[i - 1], out rnode);
+            int.TryParse(datas[i - 4], out node);
+            int.TryParse(datas[i - 3], out line);
+            
+            rnotes.Add(Instantiate(rnoteoriginal, (Vector2)wlines[node - 1].transform.position + new Vector2(0.695f * ((line * 2) - 5), 0), rnoteoriginal.transform.rotation));
+            rnotes[rnotes.Count - 1].transform.parent = wlines[node - 1].transform;
+            rnotes[rnotes.Count - 1].Init(rtype, null, node, line);
+
+            if (rnode != 0)
+            {
+                rnotes.Add(Instantiate(rnoteoriginal, (Vector2)wlines[rnode - 1].transform.position + new Vector2(0.695f * ((line * 2) - 5), 0), rnoteoriginal.transform.rotation));
+                rnotes[rnotes.Count - 1].transform.parent = wlines[rnode - 1].transform;
+                rnotes[rnotes.Count - 1].Init(NoteType.LONG_END, rnotes[rnotes.Count - 2], rnode, line);
+            }
         }
     }
 
