@@ -1,75 +1,75 @@
 
 mob_drumdda_0.png
-size: 1024,512
+size: 2048,256
 format: RGBA8888
 filter: Linear,Linear
 repeat: none
 4_mob/mob_12_0
   rotate: false
-  xy: 245, 133
+  xy: 1148, 76
   size: 208, 157
   orig: 208, 157
   offset: 0, 0
   index: -1
 4_mob/mob_12_1
   rotate: false
-  xy: 2, 256
+  xy: 2, 2
   size: 241, 231
   orig: 241, 231
   offset: 0, 0
   index: -1
 4_mob/mob_12_2
   rotate: true
-  xy: 481, 317
+  xy: 703, 63
   size: 170, 225
   orig: 170, 225
   offset: 0, 0
   index: -1
 4_mob/mob_12_3
   rotate: true
-  xy: 245, 292
+  xy: 467, 38
   size: 195, 234
   orig: 195, 234
   offset: 0, 0
   index: -1
 4_mob/mob_12_4
   rotate: false
-  xy: 708, 309
+  xy: 930, 55
   size: 216, 178
   orig: 216, 178
   offset: 0, 0
   index: -1
 4_mob/mob_12_5
   rotate: false
-  xy: 2, 23
+  xy: 245, 2
   size: 220, 231
   orig: 220, 231
   offset: 0, 0
   index: -1
 4_mob/mob_12_6
   rotate: false
-  xy: 224, 2
+  xy: 1358, 104
   size: 190, 129
   orig: 190, 129
   offset: 0, 0
   index: -1
 4_mob/mob_12_7
-  rotate: true
-  xy: 926, 299
+  rotate: false
+  xy: 1708, 167
   size: 188, 66
   orig: 188, 66
   offset: 0, 0
   index: -1
 4_mob/mob_12_8
   rotate: false
-  xy: 455, 134
+  xy: 1550, 77
   size: 156, 156
   orig: 156, 156
   offset: 0, 0
   index: -1
 4_mob/mob_12_9
   rotate: false
-  xy: 994, 461
+  xy: 467, 10
   size: 26, 26
   orig: 26, 26
   offset: 0, 0
