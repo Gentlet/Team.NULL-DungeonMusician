@@ -1,16 +1,41 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.EventSystems;
+using UnityEditor.Presets;
+using UnityEditor;
 public static class ExtensionMethods {
-    public static void AddEventTriggerListener(this EventTrigger trigger, EventTriggerType eventType,
-        UnityEngine.Events.UnityAction<BaseEventData> listener)
+    [MenuItem("GameObject/2D Object/SpriteButton")]
+    public static void objectasd ()
     {
-        EventTrigger.Entry entry = new EventTrigger.Entry();
-        entry.eventID = eventType;
-        entry.callback = new EventTrigger.TriggerEvent();
-        entry.callback.AddListener(listener);
-        trigger.triggers.Add(entry);
-        Debug.Log(eventType.ToString());
+        Debug.Log("asdwf");
+     }
+
+
+    public static bool LoadPreset(Object source, Object target)
+    {
+        Preset preset = new Preset(source);
+        return preset.ApplyTo(target);
+    }
+    public static Component CopyComponent(Component original, GameObject destination)
+    {
+        System.Type type = original.GetType();
+        Component copy = destination.AddComponent(type);
+        System.Reflection.FieldInfo[] fields = type.GetFields();
+        foreach (System.Reflection.FieldInfo field in fields)
+        {
+            field.SetValue(copy, field.GetValue(original));
+        }
+        return copy;
+    }
+    public static T CopyComponentTemplet<T>(T original, GameObject destination) where T : Component
+    {
+        System.Type type = original.GetType();
+        Component copy = destination.AddComponent(type);
+        System.Reflection.FieldInfo[] fields = type.GetFields();
+        foreach (System.Reflection.FieldInfo field in fields)
+        {
+            field.SetValue(copy, field.GetValue(original));
+        }
+        return copy as T;
     }
 }
