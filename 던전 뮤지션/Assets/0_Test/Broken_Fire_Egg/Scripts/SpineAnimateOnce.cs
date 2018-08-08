@@ -15,7 +15,7 @@ public class SpineAnimateOnce : MonoBehaviour {
             StartCoroutine(WaitDieSG());
         else
             StartCoroutine(WaitDieSA());
-        
+       
     }
     IEnumerator WaitDieSG()
     {

@@ -9,8 +9,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a6b194f808b1af6499c93410e504af42, type: 3}
-  m_Name: mob_totemic_0_Atlas
+  m_Name: eft_boss_0_Atlas
   m_EditorClassIdentifier: 
-  atlasFile: {fileID: 4900000, guid: f53db083abb5fa1408d45c2e0c43cebc, type: 3}
+  atlasFile: {fileID: 4900000, guid: a0f2d095039522942b37677867d9b3be, type: 3}
   materials:
-  - {fileID: 2100000, guid: 4da498e2341d19c40b3c53bf778000bb, type: 2}
+  - {fileID: 2100000, guid: e257bbfa7bc604e45816837d97a182a9, type: 2}
+  - {fileID: 2100000, guid: a254b3d896fe4b14786c68c437da15eb, type: 2}
+  - {fileID: 2100000, guid: 31f6fbef85e9d6d4b9978889d0b9004a, type: 2}
