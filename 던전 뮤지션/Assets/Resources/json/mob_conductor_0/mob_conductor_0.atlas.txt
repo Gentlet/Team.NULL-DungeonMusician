@@ -1,96 +1,96 @@
 
 mob_conductor_0.png
-size: 1024,1024
+size: 2048,512
 format: RGBA8888
 filter: Linear,Linear
 repeat: none
 4_mob/mob_13_0
   rotate: false
-  xy: 2, 390
+  xy: 716, 265
   size: 488, 210
   orig: 488, 210
   offset: 0, 0
   index: -1
 4_mob/mob_13_1
   rotate: false
-  xy: 492, 511
+  xy: 716, 174
   size: 210, 89
   orig: 210, 89
   offset: 0, 0
   index: -1
 4_mob/mob_13_10
   rotate: false
-  xy: 2, 240
+  xy: 2, 16
   size: 248, 148
   orig: 248, 148
   offset: 0, 0
   index: -1
 4_mob/mob_13_11
   rotate: false
-  xy: 252, 256
+  xy: 252, 32
   size: 96, 132
   orig: 96, 132
   offset: 0, 0
   index: -1
 4_mob/mob_13_12
-  rotate: true
-  xy: 492, 413
+  rotate: false
+  xy: 1479, 228
   size: 96, 132
   orig: 96, 132
   offset: 0, 0
   index: -1
 4_mob/mob_13_2
   rotate: false
-  xy: 716, 642
+  xy: 1206, 206
   size: 271, 269
   orig: 271, 269
   offset: 0, 0
   index: -1
 4_mob/mob_13_3
   rotate: false
-  xy: 2, 602
+  xy: 2, 166
   size: 712, 309
   orig: 712, 309
   offset: 0, 0
   index: -1
 4_mob/mob_13_4
   rotate: false
-  xy: 350, 315
+  xy: 350, 91
   size: 54, 73
   orig: 54, 73
   offset: 0, 0
   index: -1
 4_mob/mob_13_5
-  rotate: false
-  xy: 2, 2
+  rotate: true
+  xy: 1611, 384
   size: 91, 121
   orig: 91, 121
   offset: 0, 0
   index: -1
 4_mob/mob_13_6
   rotate: false
-  xy: 134, 152
+  xy: 928, 177
   size: 75, 86
   orig: 75, 86
   offset: 0, 0
   index: -1
 4_mob/mob_13_7
   rotate: false
-  xy: 716, 628
+  xy: 2, 2
   size: 215, 12
   orig: 215, 12
   offset: 0, 0
   index: -1
 4_mob/mob_13_8
   rotate: false
-  xy: 2, 125
+  xy: 1479, 362
   size: 130, 113
   orig: 130, 113
   offset: 0, 0
   index: -1
 4_mob/mob_13_9
   rotate: true
-  xy: 989, 872
+  xy: 1577, 321
   size: 39, 31
   orig: 39, 31
   offset: 0, 0

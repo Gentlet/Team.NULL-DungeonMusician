@@ -8,9 +8,9 @@ public class SpineAnimateOnce : MonoBehaviour {
     public SkeletonGraphic SG;
     public SkeletonAnimation SA;
     public bool IsCancas;
+    public string eftName;
     private void OnEnable()
     {
-        
         if (IsCancas)
             StartCoroutine(WaitDieSG());
         else
@@ -19,12 +19,19 @@ public class SpineAnimateOnce : MonoBehaviour {
     }
     IEnumerator WaitDieSG()
     {
-        yield return new WaitForSpineAnimationComplete(SG.AnimationState.SetAnimation(0, "eft_0", false));
+
+        if(eftName == "")
+            yield return new WaitForSpineAnimationComplete(SG.AnimationState.SetAnimation(0, "eft_0", false));
+        else
+            yield return new WaitForSpineAnimationComplete(SG.AnimationState.SetAnimation(0, eftName, false));
         gameObject.SetActive(false);
     }
     IEnumerator WaitDieSA()
     {
-        yield return new WaitForSpineAnimationComplete(SA.AnimationState.SetAnimation(0, "eft_0", false));
+        if (eftName == "")
+            yield return new WaitForSpineAnimationComplete(SG.AnimationState.SetAnimation(0, "eft_0", false));
+        else
+            yield return new WaitForSpineAnimationComplete(SG.AnimationState.SetAnimation(0, eftName, false));
         gameObject.SetActive(false);
     }
 }

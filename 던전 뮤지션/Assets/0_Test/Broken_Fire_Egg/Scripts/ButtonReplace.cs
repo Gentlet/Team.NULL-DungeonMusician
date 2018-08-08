@@ -2,41 +2,24 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
-using UnityEngine.Events;
+
 using UnityEditor;
 
 [RequireComponent(typeof(EventTrigger))]
 [ExecuteInEditMode]
 public class ButtonReplace : MonoBehaviour
 {
+    public GameObject Origin;
+    public int test;
     public EventTrigger ET;
     float value;
     public float tintFramePer;
     public SpriteRenderer SR;
     bool isout;
     bool mousedown;
-
-
-    public void Setting(PointerEventData data)
+    Object presetEvent;
+    private void Awake()
     {
-
-
-
-    }
-
-    void Awake()
-    {
-        ET = GetComponent<EventTrigger>();
-        ET.triggers.Clear();
-
-
-
-
-        //ExtensionMethods.AddEventTriggerListener(ET, EventTriggerType.PointerEnter, Enter);
-        //ExtensionMethods.AddEventTriggerListener(ET, EventTriggerType.PointerExit, Exit);
-        //ExtensionMethods.AddEventTriggerListener(ET, EventTriggerType.PointerUp, Up);
-        //ExtensionMethods.AddEventTriggerListener(ET, EventTriggerType.PointerDown, Down);
-
     }
     private void Start()
     {
@@ -53,6 +36,7 @@ public class ButtonReplace : MonoBehaviour
                 if(value < 1f)
                 {
                     value += tintFramePer;
+                    Debug.Log("Up");
                     SR.color = new Color(value, value, value);
                 }
             }
@@ -62,9 +46,9 @@ public class ButtonReplace : MonoBehaviour
                if(value > 0.78431f)
                 {
                     value -= tintFramePer;
+                    Debug.Log("Down");
                     SR.color = new Color(value, value, value);
                 }
-
             }
         }
         else
@@ -72,6 +56,7 @@ public class ButtonReplace : MonoBehaviour
             if (value < 1f)
             {
                 value += tintFramePer;
+                Debug.Log("Up");
                 SR.color = new Color(value, value, value);
             }
         }
@@ -81,19 +66,19 @@ public class ButtonReplace : MonoBehaviour
         Debug.Log(Input.mousePosition);
     }
 
-    public void Down(PointerEventData data)
+    public void Down()
     {
-        mousedown = true;   
+        mousedown = true;
     }
-    public void Up(PointerEventData data)
+    public void Up()
     {
         mousedown = false;
     }
-    public void Exit(PointerEventData data)
+    public void Exit()
     {
         isout = true;
     }
-    public void Enter(PointerEventData data)
+    public void Enter()
     {
         isout = false;
     }
