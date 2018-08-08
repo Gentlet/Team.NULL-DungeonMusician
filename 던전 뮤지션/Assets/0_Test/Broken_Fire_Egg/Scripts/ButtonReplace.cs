@@ -9,18 +9,11 @@ using UnityEditor;
 [ExecuteInEditMode]
 public class ButtonReplace : MonoBehaviour
 {
-    public GameObject Origin;
-    public int test;
-    public EventTrigger ET;
     float value;
     public float tintFramePer;
     public SpriteRenderer SR;
     bool isout;
     bool mousedown;
-    Object presetEvent;
-    private void Awake()
-    {
-    }
     private void Start()
     {
         value = 1f;
@@ -36,7 +29,6 @@ public class ButtonReplace : MonoBehaviour
                 if(value < 1f)
                 {
                     value += tintFramePer;
-                    Debug.Log("Up");
                     SR.color = new Color(value, value, value);
                 }
             }
@@ -46,7 +38,6 @@ public class ButtonReplace : MonoBehaviour
                if(value > 0.78431f)
                 {
                     value -= tintFramePer;
-                    Debug.Log("Down");
                     SR.color = new Color(value, value, value);
                 }
             }
@@ -56,7 +47,6 @@ public class ButtonReplace : MonoBehaviour
             if (value < 1f)
             {
                 value += tintFramePer;
-                Debug.Log("Up");
                 SR.color = new Color(value, value, value);
             }
         }
