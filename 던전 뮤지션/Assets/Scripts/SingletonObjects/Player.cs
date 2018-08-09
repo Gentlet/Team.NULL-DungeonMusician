@@ -54,8 +54,8 @@ public class Player : SingletonGameObject<Player> {
 
     public float GetStatus(string name)
     {
-        if (name == "Criticaldamage")
-            Debug.Log("크리크리왕크리");
+        //if (name == "Criticaldamage")
+        //    Debug.Log("크리크리왕크리");
 
         return EffectStorage.Instance.GetStatus(name);
     }

@@ -38,10 +38,11 @@ public struct Music
 
     public List<NoteData> notes;
     public AudioClip music;
-    public int bpm;
+    public float bpm;
     public string artist;
+    public int divide;
 
-    public Music(string bundlenum, string musicnum, string name, string mood, Sprite sprite, AudioClip music, string bpm, string artist)
+    public Music(string bundlenum, string musicnum, string name, string mood, Sprite sprite, AudioClip music, string bpm, string artist, string divide)
     {
         int intmood;
         int.TryParse(mood, out intmood);
@@ -52,8 +53,9 @@ public struct Music
         this.mood = (Mood)intmood;
         this.sprite = sprite;
         this.music = music;
-        int.TryParse(bpm, out this.bpm);
+        float.TryParse(bpm, out this.bpm);
         this.artist = artist;
+        int.TryParse(divide, out this.divide);
 
         notes = new List<NoteData>();
     }
@@ -65,7 +67,7 @@ public class NoteData
     public int bundlenum;
     public int musicnum;
 
-    public float time;
+    public int time;
     public Line line;
     public NoteType type;
     public float value;
@@ -77,7 +79,7 @@ public class NoteData
 
         int.TryParse(bundlenum, out this.bundlenum);
         int.TryParse(musicnum, out this.musicnum);
-        float.TryParse(time, out this.time);
+        int.TryParse(time, out this.time);
         this.line = GameManager.Instance.Lines[linenum - 1];
         this.type = type.ToNoteType();
         float.TryParse(value, out this.value);
@@ -146,7 +148,8 @@ public class RelicsEffect
     }
 }
 
-public class DataReader : MonoBehaviour {
+public class DataReader : MonoBehaviour
+{
 
     private void Awake()
     {
@@ -238,7 +241,7 @@ public class DataReader : MonoBehaviour {
     {
         List<Bundle> bundles = new List<Bundle>();
 
-        for (int i = 3; i < datas.Count; i+=4)
+        for (int i = 3; i < datas.Count; i += 4)
         {
             if (datas[i] == "end")
                 bundles.Add(new Bundle(datas[i - 3], datas[i - 2], Resources.Load<Sprite>(datas[i - 1])));
@@ -251,10 +254,10 @@ public class DataReader : MonoBehaviour {
     {
         List<Music> musics = new List<Music>();
 
-        for (int i = 8; i < datas.Count; i+=9)
+        for (int i = 9; i < datas.Count; i += 10)
         {
             if (datas[i] == "end")
-                musics.Add(new Music(datas[i - 8], datas[i - 7], datas[i - 6], datas[i - 5], Resources.Load<Sprite>(datas[i - 4]), Resources.Load<AudioClip>(datas[i - 3]), datas[i - 2], datas[i - 1]));
+                musics.Add(new Music(datas[i - 9], datas[i - 8], datas[i - 7], datas[i - 6], Resources.Load<Sprite>(datas[i - 5]), Resources.Load<AudioClip>(datas[i - 4]), datas[i - 3], datas[i - 2], datas[i - 1]));
         }
 
         for (int i = 0; i < musics.Count; i++)
@@ -274,7 +277,7 @@ public class DataReader : MonoBehaviour {
     {
         List<NoteData> notes = new List<NoteData>();
 
-        for (int i = 6; i < datas.Count; i+=7)
+        for (int i = 6; i < datas.Count; i += 7)
         {
             if (datas[i] == "end")
                 notes.Add(new NoteData(datas[i - 6], datas[i - 5], datas[i - 4], datas[i - 3], datas[i - 2], datas[i - 1]));

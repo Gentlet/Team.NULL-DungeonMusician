@@ -33,6 +33,9 @@ public class RecodeManager : MonoBehaviour
     public int divide;
     public float intervalinterval;
 
+    public int bundlenum;
+    public int musicnum;
+
     [Range(0f, 1f)]
     public float speed;
 
@@ -58,6 +61,7 @@ public class RecodeManager : MonoBehaviour
         music.Stop();
 
         ReadMusic();
+        StartCoroutine(AutoSave());
     }
 
     private void FixedUpdate()
@@ -337,9 +341,20 @@ public class RecodeManager : MonoBehaviour
         for (int i = 0; i < rnotes.Count; i++)
         {
             if (rnotes[i].type != NoteType.LONG_END)
-                result += rnotes[i].node + "," + rnotes[i].line + "," + rnotes[i].type.ToString() + "," + (rnotes[i].rnote != null ? rnotes[i].rnote.node : 0) + "\r\n";
+                result += bundlenum + "," + musicnum + "," + rnotes[i].node + "," + rnotes[i].line + "," + rnotes[i].type.ToString() + "," + (rnotes[i].rnote != null ? rnotes[i].rnote.node : 0) + "\r\n";
         }
 
         resulttext.text = result;
+    }
+
+    IEnumerator AutoSave()
+    {
+        WaitForSeconds wait = new WaitForSeconds(15f);
+
+        while(true)
+        {
+            yield return wait;
+            SaveMusic();
+        }
     }
 }

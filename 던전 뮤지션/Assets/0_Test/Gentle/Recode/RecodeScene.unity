@@ -884,7 +884,7 @@ MonoBehaviour:
   timetext: {fileID: 1254682140}
   divide: 8
   intervalinterval: 15
-  speed: 0.5
+  speed: 1
 --- !u!4 &1471445901
 Transform:
   m_ObjectHideFlags: 0
