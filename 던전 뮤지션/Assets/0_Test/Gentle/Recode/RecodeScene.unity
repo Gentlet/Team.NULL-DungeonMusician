@@ -884,7 +884,10 @@ MonoBehaviour:
   timetext: {fileID: 1254682140}
   divide: 10
   intervalinterval: 15
+  bundlenum: 0
+  musicnum: 0
   speed: 1
+  savefilename: New Frontiers
 --- !u!4 &1471445901
 Transform:
   m_ObjectHideFlags: 0
