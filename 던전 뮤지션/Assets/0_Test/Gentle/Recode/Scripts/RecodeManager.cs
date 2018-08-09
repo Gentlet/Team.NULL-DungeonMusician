@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -38,6 +39,8 @@ public class RecodeManager : MonoBehaviour
 
     [Range(0f, 1f)]
     public float speed;
+
+    public string savefilename;
 
     private float interval;
     private int amount;
@@ -280,14 +283,17 @@ public class RecodeManager : MonoBehaviour
     private void ReadMusic()
     {
         List<string> datas = new List<string>();
-        string obj = resulttext.text;
-        bool mute = (obj[0] == '*');
+        string obj = File.ReadAllText(@"Assets\0_Test\Gentle\Recode\MusicSaves\Save.txt");
+        bool mute = false;
 
         string temp = string.Empty;
         for (int i = 0; i < obj.Length; i++)
         {
             if (obj[i] == '*')
+            {
+                mute = true;
                 continue;
+            }
             else if (obj[i] == ',')
             {
                 datas.Add(temp);
@@ -339,16 +345,23 @@ public class RecodeManager : MonoBehaviour
 
     private void SaveMusic()
     {
-        string result = string.Empty;
+        List<string> result = new List<string>();
 
         for (int i = 0; i < rnotes.Count; i++)
         {
             if (rnotes[i].type != NoteType.LONG_END)
-                result += bundlenum + "," + musicnum + "," + rnotes[i].node + "," + rnotes[i].line + "," + rnotes[i].type.ToString() + "," + (rnotes[i].rnote != null ? rnotes[i].rnote.node : 0) + "\r\n";
+            {
+                result.Add(bundlenum + "," + musicnum + "," + rnotes[i].node + "," + rnotes[i].line + "," + rnotes[i].type.ToString() + "," + (rnotes[i].rnote != null ? rnotes[i].rnote.node : 0));
+            }
         }
 
-        resulttext.text = result;
-        Debug.Log(result);
+        using (StreamWriter outputFile = new StreamWriter(@"Assets\0_Test\Gentle\Recode\MusicSaves\" + savefilename + ".txt"))
+        {
+            foreach (string line in result)
+            {
+                outputFile.WriteLine(line);
+            }
+        }
     }
 
     IEnumerator AutoSave()
