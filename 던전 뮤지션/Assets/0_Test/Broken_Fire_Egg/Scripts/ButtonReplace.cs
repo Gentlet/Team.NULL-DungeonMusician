@@ -1,19 +1,19 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.EventSystems;
 
-using UnityEditor;
 
-[RequireComponent(typeof(EventTrigger))]
-[ExecuteInEditMode]
+[RequireComponent(typeof(UnityEngine.EventSystems.EventTrigger),typeof(PolygonCollider2D))]
 public class ButtonReplace : MonoBehaviour
 {
-    float value;
     public float tintFramePer;
     public SpriteRenderer SR;
+
+    float value;
+
     bool isout;
     bool mousedown;
+
     private void Start()
     {
         value = 1f;
@@ -26,7 +26,7 @@ public class ButtonReplace : MonoBehaviour
         {
             if (isout)
             {
-                if(value < 1f)
+                if (value < 1f)
                 {
                     value += tintFramePer;
                     SR.color = new Color(value, value, value);
@@ -34,8 +34,7 @@ public class ButtonReplace : MonoBehaviour
             }
             else
             {
-                
-               if(value > 0.78431f)
+                if (value > 0.78431f)
                 {
                     value -= tintFramePer;
                     SR.color = new Color(value, value, value);
