@@ -281,11 +281,14 @@ public class RecodeManager : MonoBehaviour
     {
         List<string> datas = new List<string>();
         string obj = resulttext.text;
+        bool mute = (obj[0] == '*');
 
         string temp = string.Empty;
         for (int i = 0; i < obj.Length; i++)
         {
-            if (obj[i] == ',')
+            if (obj[i] == '*')
+                continue;
+            else if (obj[i] == ',')
             {
                 datas.Add(temp);
                 temp = string.Empty;
@@ -310,16 +313,16 @@ public class RecodeManager : MonoBehaviour
             temp += obj[i];
         }
 
-        for (int i = 4; i < datas.Count; i += 5) 
+        for (int i = (mute == true ? 6 :4); i < datas.Count; i += (mute == true ? 7 : 5)) 
         {
             NoteType rtype;
             int rnode;
             int node;
             int line;
-            rtype = datas[i - 2].ToNoteType();
             int.TryParse(datas[i - 1], out rnode);
-            int.TryParse(datas[i - 4], out node);
+            rtype =      datas[i - 2].ToNoteType();
             int.TryParse(datas[i - 3], out line);
+            int.TryParse(datas[i - 4], out node);
             
             rnotes.Add(Instantiate(rnoteoriginal, (Vector2)wlines[node - 1].transform.position + new Vector2(0.695f * ((line * 2) - 5), 0), rnoteoriginal.transform.rotation));
             rnotes[rnotes.Count - 1].transform.parent = wlines[node - 1].transform;
@@ -345,6 +348,7 @@ public class RecodeManager : MonoBehaviour
         }
 
         resulttext.text = result;
+        Debug.Log(result);
     }
 
     IEnumerator AutoSave()
