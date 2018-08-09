@@ -280,6 +280,26 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114889915289651860, guid: fbff28fe5b2b6f74f81acda982706945,
+        type: 2}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114889915289651860, guid: fbff28fe5b2b6f74f81acda982706945,
+        type: 2}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114889915289651860, guid: fbff28fe5b2b6f74f81acda982706945,
+        type: 2}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114889915289651860, guid: fbff28fe5b2b6f74f81acda982706945,
+        type: 2}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbff28fe5b2b6f74f81acda982706945, type: 2}
   m_IsPrefabAsset: 0
@@ -12868,8 +12888,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1563901641}
-        m_MethodName: HittAnimation
+      - m_Target: {fileID: 1471526833}
+        m_MethodName: SetDefaultAll
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -16932,6 +16952,7 @@ GameObject:
   m_Component:
   - component: {fileID: 549932662}
   - component: {fileID: 549932663}
+  - component: {fileID: 549932664}
   m_Layer: 0
   m_Name: UpDown (3)
   m_TagString: Untagged
@@ -16998,6 +17019,24 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &549932664
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 549932661}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 75e588e2d6794214f84a7ea109b917d7, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &553507848
 GameObject:
   m_ObjectHideFlags: 0
@@ -17847,6 +17886,7 @@ GameObject:
   m_Component:
   - component: {fileID: 564046832}
   - component: {fileID: 564046833}
+  - component: {fileID: 564046834}
   m_Layer: 0
   m_Name: ui_slot_hunt_noteline_bg_0_1
   m_TagString: Untagged
@@ -17913,6 +17953,24 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &564046834
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 564046831}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 75e588e2d6794214f84a7ea109b917d7, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &567366209
 GameObject:
   m_ObjectHideFlags: 0
@@ -18526,6 +18584,7 @@ GameObject:
   m_Component:
   - component: {fileID: 580885109}
   - component: {fileID: 580885110}
+  - component: {fileID: 580885111}
   m_Layer: 0
   m_Name: UpDown (4)
   m_TagString: Untagged
@@ -18592,6 +18651,24 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &580885111
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 580885108}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 75e588e2d6794214f84a7ea109b917d7, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &583411958
 GameObject:
   m_ObjectHideFlags: 0
@@ -18711,6 +18788,7 @@ GameObject:
   m_Component:
   - component: {fileID: 588534044}
   - component: {fileID: 588534045}
+  - component: {fileID: 588534046}
   m_Layer: 0
   m_Name: UpDown
   m_TagString: Untagged
@@ -18777,6 +18855,24 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &588534046
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 588534043}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 75e588e2d6794214f84a7ea109b917d7, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &591876837
 GameObject:
   m_ObjectHideFlags: 0
@@ -25915,6 +26011,7 @@ MonoBehaviour:
   SG: {fileID: 0}
   SA: {fileID: 782177785}
   IsCancas: 0
+  eftName: 
 --- !u!114 &782177785
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37081,6 +37178,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1054363798}
   - component: {fileID: 1054363799}
+  - component: {fileID: 1054363800}
   m_Layer: 0
   m_Name: UpDown (6)
   m_TagString: Untagged
@@ -37147,6 +37245,24 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1054363800
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1054363797}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 75e588e2d6794214f84a7ea109b917d7, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1054715134
 GameObject:
   m_ObjectHideFlags: 0
@@ -39926,6 +40042,7 @@ MonoBehaviour:
   SG: {fileID: 0}
   SA: {fileID: 1148564353}
   IsCancas: 0
+  eftName: 
 --- !u!114 &1148564353
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40095,6 +40212,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1149815385}
   - component: {fileID: 1149815386}
+  - component: {fileID: 1149815387}
   m_Layer: 0
   m_Name: UpDown (7)
   m_TagString: Untagged
@@ -40161,6 +40279,24 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1149815387
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1149815384}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 75e588e2d6794214f84a7ea109b917d7, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1151744797
 GameObject:
   m_ObjectHideFlags: 0
@@ -50801,6 +50937,7 @@ GameObject:
   - component: {fileID: 1471526832}
   - component: {fileID: 1471526831}
   - component: {fileID: 1471526830}
+  - component: {fileID: 1471526833}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -50853,6 +50990,29 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1471526833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1471526829}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24ad16b08c418bb4bbb12ed352244021, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animators:
+  - {fileID: 588534046}
+  - {fileID: 2105948392}
+  - {fileID: 1550319107}
+  - {fileID: 549932664}
+  - {fileID: 580885111}
+  - {fileID: 1546628583}
+  - {fileID: 1054363800}
+  - {fileID: 1149815387}
+  - {fileID: 564046834}
+  - {fileID: 1551501450}
+  triggerName: RedBlink
 --- !u!1 &1471975918
 GameObject:
   m_ObjectHideFlags: 0
@@ -53201,6 +53361,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1546628581}
   - component: {fileID: 1546628582}
+  - component: {fileID: 1546628583}
   m_Layer: 0
   m_Name: UpDown (5)
   m_TagString: Untagged
@@ -53267,6 +53428,24 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1546628583
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1546628580}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 75e588e2d6794214f84a7ea109b917d7, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1550319104
 GameObject:
   m_ObjectHideFlags: 0
@@ -53276,6 +53455,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1550319105}
   - component: {fileID: 1550319106}
+  - component: {fileID: 1550319107}
   m_Layer: 0
   m_Name: UpDown (2)
   m_TagString: Untagged
@@ -53342,6 +53522,24 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1550319107
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1550319104}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 75e588e2d6794214f84a7ea109b917d7, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1550748651
 GameObject:
   m_ObjectHideFlags: 0
@@ -53408,6 +53606,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1551501448}
   - component: {fileID: 1551501449}
+  - component: {fileID: 1551501450}
   m_Layer: 0
   m_Name: ui_slot_hunt_noteline_bg_1_1
   m_TagString: Untagged
@@ -53474,6 +53673,24 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1551501450
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1551501447}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 75e588e2d6794214f84a7ea109b917d7, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1552223720
 GameObject:
   m_ObjectHideFlags: 0
@@ -54131,12 +54348,6 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1562127863}
   m_CullTransparentMesh: 0
---- !u!114 &1563901641 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 114987207737386924, guid: fbff28fe5b2b6f74f81acda982706945,
-    type: 2}
-  m_PrefabInternal: {fileID: 3947954}
-  m_Script: {fileID: 11500000, guid: 4aa044d035e043d4393f65d3ddd7727c, type: 3}
 --- !u!1 &1564746365
 GameObject:
   m_ObjectHideFlags: 0
@@ -56689,6 +56900,7 @@ MonoBehaviour:
   SG: {fileID: 0}
   SA: {fileID: 1633851577}
   IsCancas: 0
+  eftName: 
 --- !u!114 &1633851577
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -73604,6 +73816,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2105948390}
   - component: {fileID: 2105948391}
+  - component: {fileID: 2105948392}
   m_Layer: 0
   m_Name: UpDown (1)
   m_TagString: Untagged
@@ -73670,6 +73883,24 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &2105948392
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2105948389}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 75e588e2d6794214f84a7ea109b917d7, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2107077084
 GameObject:
   m_ObjectHideFlags: 0
@@ -75390,6 +75621,7 @@ MonoBehaviour:
   SG: {fileID: 0}
   SA: {fileID: 2140329953}
   IsCancas: 0
+  eftName: 
 --- !u!114 &2140329953
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -8,10 +8,11 @@ public static class ExtensionMethods {
     [MenuItem("GameObject/2D Object/SpriteButton")]
     public static void CreateSpriteButton ()
     {
+
         GameObject newGO = Object.Instantiate(Resources.Load("UI/Objects/Button Replace", typeof(GameObject)) as GameObject);
-       if(GameObject.Find("SpriteButton") == null)
+        if(GameObject.Find("SpriteButton") == null)
             newGO.name = "SpriteButton";
-       else
+        else
         {
             int n = 1;
             string str;
@@ -24,6 +25,7 @@ public static class ExtensionMethods {
                     newGO.name = str;
                     break;
                 }
+            
             }
         }
         Selection.activeGameObject = newGO;
