@@ -313,7 +313,7 @@ public class RecodeManager : MonoBehaviour
             temp += obj[i];
         }
 
-        for (int i = (mute == true ? 6 :4); i < datas.Count; i += (mute == true ? 7 : 5)) 
+        for (int i = (mute == true ? 4 :6); i < datas.Count; i += (mute == true ? 5 : 7)) 
         {
             NoteType rtype;
             int rnode;
