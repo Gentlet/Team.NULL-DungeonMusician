@@ -283,7 +283,7 @@ public class RecodeManager : MonoBehaviour
     private void ReadMusic()
     {
         List<string> datas = new List<string>();
-        string obj = File.ReadAllText(@"Assets\0_Test\Gentle\Recode\MusicSaves\Save.txt");
+        string obj = File.ReadAllText(@"Assets\0_Test\Gentle\Recode\MusicSaves\ReadOnly.txt");
         bool mute = false;
 
         string temp = string.Empty;
