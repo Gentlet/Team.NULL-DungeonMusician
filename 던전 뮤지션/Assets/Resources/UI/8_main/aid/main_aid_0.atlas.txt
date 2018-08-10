@@ -1,0 +1,41 @@
+
+main_aid_0.png
+size: 512,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1_예시이미지/메인화면/aid_0_0
+  rotate: false
+  xy: 2, 52
+  size: 257, 64
+  orig: 257, 64
+  offset: 0, 0
+  index: -1
+1_예시이미지/메인화면/aid_0_1
+  rotate: false
+  xy: 406, 48
+  size: 82, 68
+  orig: 82, 68
+  offset: 0, 0
+  index: -1
+1_예시이미지/메인화면/aid_0_2
+  rotate: true
+  xy: 138, 20
+  size: 30, 105
+  orig: 30, 105
+  offset: 0, 0
+  index: -1
+1_예시이미지/메인화면/aid_0_3
+  rotate: true
+  xy: 261, 41
+  size: 75, 143
+  orig: 75, 143
+  offset: 0, 0
+  index: -1
+1_예시이미지/메인화면/aid_0_4
+  rotate: true
+  xy: 2, 2
+  size: 48, 134
+  orig: 48, 134
+  offset: 0, 0
+  index: -1

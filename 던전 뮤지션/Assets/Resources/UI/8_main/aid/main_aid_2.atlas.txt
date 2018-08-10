@@ -1,0 +1,62 @@
+
+main_aid_2.png
+size: 256,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1_예시이미지/메인화면/aid_2_0
+  rotate: false
+  xy: 97, 131
+  size: 112, 123
+  orig: 112, 123
+  offset: 0, 0
+  index: -1
+1_예시이미지/메인화면/aid_2_1
+  rotate: false
+  xy: 2, 2
+  size: 84, 65
+  orig: 84, 65
+  offset: 0, 0
+  index: -1
+1_예시이미지/메인화면/aid_2_2
+  rotate: true
+  xy: 203, 43
+  size: 86, 51
+  orig: 86, 51
+  offset: 0, 0
+  index: -1
+1_예시이미지/메인화면/aid_2_4
+  rotate: false
+  xy: 97, 5
+  size: 88, 73
+  orig: 88, 73
+  offset: 0, 0
+  index: -1
+1_예시이미지/메인화면/aid_2_5
+  rotate: false
+  xy: 187, 10
+  size: 18, 31
+  orig: 18, 31
+  offset: 0, 0
+  index: -1
+1_예시이미지/메인화면/aid_2_6
+  rotate: false
+  xy: 211, 140
+  size: 39, 114
+  orig: 39, 114
+  offset: 0, 0
+  index: -1
+1_예시이미지/메인화면/aid_2_7
+  rotate: false
+  xy: 2, 69
+  size: 93, 185
+  orig: 93, 185
+  offset: 0, 0
+  index: -1
+1_예시이미지/메인화면/aid_2_8
+  rotate: false
+  xy: 97, 80
+  size: 104, 49
+  orig: 104, 49
+  offset: 0, 0
+  index: -1
