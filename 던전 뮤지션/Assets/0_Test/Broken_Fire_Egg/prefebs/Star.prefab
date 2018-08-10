@@ -70,8 +70,8 @@ MonoBehaviour:
   RT: {fileID: 224244517298554056}
   speedMin: 1
   speedMax: 5
-  sizeMin: 80
-  sizeMax: 120
+  sizeMin: 50
+  sizeMax: 100
 --- !u!222 &222800226438407990
 CanvasRenderer:
   m_ObjectHideFlags: 1
