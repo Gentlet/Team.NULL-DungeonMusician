@@ -19,8 +19,6 @@ public class InfiniteScroll : MonoBehaviour
     {
         for (int i = 0; i < childs.Length; i++)
         {
-            //RectTransformUtility.PixelAdjustRect(childs[i], canvas);
-            //Debug.Log(i + " : " + childs[i].localPosition.x);
             childs[i].position += (moveForce * Time.deltaTime);
 
             if (childs[i].transform.localPosition.x > 1080f)
