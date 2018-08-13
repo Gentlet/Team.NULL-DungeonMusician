@@ -1,0 +1,468 @@
+
+intro_0.png
+size: 8192,4096
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1_예시이미지/인트로 이미지/intro_0_bg_0_0
+  rotate: false
+  xy: 1084, 746
+  size: 1080, 1426
+  orig: 1080, 1426
+  offset: 0, 0
+  index: -1
+1_예시이미지/인트로 이미지/intro_0_bg_0_1
+  rotate: false
+  xy: 2166, 2668
+  size: 1080, 1426
+  orig: 1080, 1426
+  offset: 0, 0
+  index: -1
+1_예시이미지/인트로 이미지/intro_0_bg_1_0
+  rotate: false
+  xy: 6343, 3382
+  size: 1080, 712
+  orig: 1080, 712
+  offset: 0, 0
+  index: -1
+1_예시이미지/인트로 이미지/intro_0_bg_1_1
+  rotate: false
+  xy: 2166, 623
+  size: 1080, 712
+  orig: 1080, 712
+  offset: 0, 0
+  index: -1
+1_예시이미지/인트로 이미지/intro_0_frame
+  rotate: false
+  xy: 2, 2174
+  size: 1080, 1920
+  orig: 1080, 1920
+  offset: 0, 0
+  index: -1
+1_예시이미지/인트로 이미지/intro_0_obj_0
+  rotate: true
+  xy: 3248, 601
+  size: 1080, 687
+  orig: 1080, 687
+  offset: 0, 0
+  index: -1
+1_예시이미지/인트로 이미지/intro_0_obj_1_0
+  rotate: true
+  xy: 5218, 1995
+  size: 474, 568
+  orig: 474, 568
+  offset: 0, 0
+  index: -1
+1_예시이미지/인트로 이미지/intro_0_obj_1_1
+  rotate: false
+  xy: 8001, 3851
+  size: 189, 243
+  orig: 189, 243
+  offset: 0, 0
+  index: -1
+1_예시이미지/인트로 이미지/intro_0_obj_2_0
+  rotate: false
+  xy: 4310, 1012
+  size: 432, 712
+  orig: 432, 712
+  offset: 0, 0
+  index: -1
+1_예시이미지/인트로 이미지/intro_0_obj_2_1
+  rotate: false
+  xy: 6145, 2038
+  size: 205, 460
+  orig: 205, 460
+  offset: 0, 0
+  index: -1
+1_예시이미지/인트로 이미지/intro_0_obj_3_0
+  rotate: false
+  xy: 5788, 1939
+  size: 355, 530
+  orig: 355, 530
+  offset: 0, 0
+  index: -1
+1_예시이미지/인트로 이미지/intro_0_obj_3_1
+  rotate: true
+  xy: 6830, 2568
+  size: 291, 447
+  orig: 291, 447
+  offset: 0, 0
+  index: -1
+1_예시이미지/인트로 이미지/intro_0_obj_3_2
+  rotate: false
+  xy: 7770, 2620
+  size: 252, 285
+  orig: 252, 285
+  offset: 0, 0
+  index: -1
+1_예시이미지/인트로 이미지/intro_0_obj_4_0
+  rotate: false
+  xy: 4041, 75
+  size: 522, 536
+  orig: 522, 536
+  offset: 0, 0
+  index: -1
+1_예시이미지/인트로 이미지/intro_0_obj_4_1
+  rotate: true
+  xy: 7647, 1981
+  size: 129, 192
+  orig: 129, 192
+  offset: 0, 0
+  index: -1
+1_예시이미지/인트로 이미지/intro_0_obj_4_2
+  rotate: false
+  xy: 6064, 2500
+  size: 319, 319
+  orig: 319, 319
+  offset: 0, 0
+  index: -1
+1_예시이미지/인트로 이미지/intro_0_obj_4_3
+  rotate: true
+  xy: 1803, 6
+  size: 198, 292
+  orig: 198, 292
+  offset: 0, 0
+  index: -1
+1_예시이미지/인트로 이미지/intro_0_obj_4_4
+  rotate: false
+  xy: 4949, 1818
+  size: 255, 334
+  orig: 255, 334
+  offset: 0, 0
+  index: -1
+1_예시이미지/인트로 이미지/intro_0_obj_5_0
+  rotate: false
+  xy: 4915, 2154
+  size: 301, 489
+  orig: 301, 489
+  offset: 0, 0
+  index: -1
+1_예시이미지/인트로 이미지/intro_0_obj_5_1
+  rotate: false
+  xy: 2, 6
+  size: 526, 244
+  orig: 526, 244
+  offset: 0, 0
+  index: -1
+1_예시이미지/인트로 이미지/intro_0_obj_6_0
+  rotate: true
+  xy: 4480, 623
+  size: 387, 271
+  orig: 387, 271
+  offset: 0, 0
+  index: -1
+1_예시이미지/인트로 이미지/intro_0_obj_6_1
+  rotate: false
+  xy: 3937, 613
+  size: 541, 331
+  orig: 541, 331
+  offset: 0, 0
+  index: -1
+1_예시이미지/인트로 이미지/intro_0_obj_6_2
+  rotate: true
+  xy: 1002, 2
+  size: 202, 346
+  orig: 202, 346
+  offset: 0, 0
+  index: -1
+1_예시이미지/인트로 이미지/intro_0_obj_6_3
+  rotate: true
+  xy: 7279, 2565
+  size: 250, 489
+  orig: 250, 489
+  offset: 0, 0
+  index: -1
+1_예시이미지/인트로 이미지/intro_0_obj_6_4
+  rotate: false
+  xy: 7297, 2817
+  size: 437, 563
+  orig: 437, 563
+  offset: 0, 0
+  index: -1
+1_예시이미지/인트로 이미지/intro_1_bg_0_0
+  rotate: false
+  xy: 5261, 3336
+  size: 1080, 758
+  orig: 1080, 758
+  offset: 0, 0
+  index: -1
+1_예시이미지/인트로 이미지/intro_1_bg_0_1
+  rotate: true
+  xy: 3248, 1683
+  size: 1080, 765
+  orig: 1080, 765
+  offset: 0, 0
+  index: -1
+1_예시이미지/인트로 이미지/intro_1_bg_1_0
+  rotate: false
+  xy: 2166, 1337
+  size: 1080, 1329
+  orig: 1080, 1329
+  offset: 0, 0
+  index: -1
+1_예시이미지/인트로 이미지/intro_1_bg_1_1
+  rotate: false
+  xy: 3248, 2765
+  size: 929, 1329
+  orig: 929, 1329
+  offset: 0, 0
+  index: -1
+1_예시이미지/인트로 이미지/intro_1_frame
+  rotate: false
+  xy: 2, 252
+  size: 1080, 1920
+  orig: 1080, 1920
+  offset: 0, 0
+  index: -1
+1_예시이미지/인트로 이미지/intro_1_obj_0
+  rotate: false
+  xy: 6343, 2861
+  size: 952, 519
+  orig: 952, 519
+  offset: 0, 0
+  index: -1
+1_예시이미지/인트로 이미지/intro_1_obj_1
+  rotate: true
+  xy: 7843, 2376
+  size: 242, 212
+  orig: 242, 212
+  offset: 0, 0
+  index: -1
+1_예시이미지/인트로 이미지/intro_1_obj_2
+  rotate: false
+  xy: 7425, 3439
+  size: 574, 655
+  orig: 574, 655
+  offset: 0, 0
+  index: -1
+1_예시이미지/인트로 이미지/intro_1_obj_3
+  rotate: true
+  xy: 5261, 2471
+  size: 348, 801
+  orig: 348, 801
+  offset: 0, 0
+  index: -1
+1_예시이미지/인트로 이미지/intro_1_obj_4
+  rotate: true
+  xy: 4015, 1726
+  size: 394, 932
+  orig: 394, 932
+  offset: 0, 0
+  index: -1
+1_예시이미지/인트로 이미지/intro_1_obj_5
+  rotate: false
+  xy: 4744, 1024
+  size: 306, 700
+  orig: 306, 700
+  offset: 0, 0
+  index: -1
+1_예시이미지/인트로 이미지/intro_1_obj_6
+  rotate: false
+  xy: 3937, 946
+  size: 371, 735
+  orig: 371, 735
+  offset: 0, 0
+  index: -1
+1_예시이미지/인트로 이미지/intro_1_obj_7
+  rotate: true
+  xy: 3248, 88
+  size: 511, 791
+  orig: 511, 791
+  offset: 0, 0
+  index: -1
+1_예시이미지/인트로 이미지/intro_2_bg_0_0
+  rotate: false
+  xy: 1084, 206
+  size: 1080, 538
+  orig: 1080, 538
+  offset: 0, 0
+  index: -1
+1_예시이미지/인트로 이미지/intro_2_bg_0_1
+  rotate: false
+  xy: 5261, 2821
+  size: 1080, 513
+  orig: 1080, 513
+  offset: 0, 0
+  index: -1
+1_예시이미지/인트로 이미지/intro_2_bg_1
+  rotate: false
+  xy: 2166, 156
+  size: 1080, 465
+  orig: 1080, 465
+  offset: 0, 0
+  index: -1
+1_예시이미지/인트로 이미지/intro_2_bg_2
+  rotate: false
+  xy: 4179, 2955
+  size: 1080, 1139
+  orig: 1080, 1139
+  offset: 0, 0
+  index: -1
+1_예시이미지/인트로 이미지/intro_2_frame
+  rotate: false
+  xy: 1084, 2174
+  size: 1080, 1920
+  orig: 1080, 1920
+  offset: 0, 0
+  index: -1
+1_예시이미지/인트로 이미지/intro_2_obj_0_0
+  rotate: true
+  xy: 7736, 2907
+  size: 530, 257
+  orig: 530, 257
+  offset: 0, 0
+  index: -1
+1_예시이미지/인트로 이미지/intro_2_obj_0_1
+  rotate: true
+  xy: 6385, 2473
+  size: 386, 443
+  orig: 386, 443
+  offset: 0, 0
+  index: -1
+1_예시이미지/인트로 이미지/intro_2_obj_1_0
+  rotate: false
+  xy: 6352, 2102
+  size: 359, 369
+  orig: 359, 369
+  offset: 0, 0
+  index: -1
+1_예시이미지/인트로 이미지/intro_2_obj_1_1
+  rotate: false
+  xy: 4015, 2661
+  size: 51, 102
+  orig: 51, 102
+  offset: 0, 0
+  index: -1
+1_예시이미지/인트로 이미지/intro_2_obj_1_2
+  rotate: false
+  xy: 4565, 218
+  size: 359, 357
+  orig: 359, 357
+  offset: 0, 0
+  index: -1
+1_예시이미지/인트로 이미지/intro_2_obj_2_0
+  rotate: false
+  xy: 4015, 2122
+  size: 898, 521
+  orig: 898, 521
+  offset: 0, 0
+  index: -1
+1_예시이미지/인트로 이미지/intro_2_obj_2_1
+  rotate: true
+  xy: 6713, 2096
+  size: 375, 283
+  orig: 375, 283
+  offset: 0, 0
+  index: -1
+1_예시이미지/인트로 이미지/intro_2_obj_2_2
+  rotate: false
+  xy: 4915, 2122
+  size: 9, 30
+  orig: 9, 30
+  offset: 0, 0
+  index: -1
+1_예시이미지/인트로 이미지/intro_2_obj_2_3
+  rotate: false
+  xy: 7843, 2135
+  size: 136, 239
+  orig: 136, 239
+  offset: 0, 0
+  index: -1
+1_예시이미지/인트로 이미지/intro_2_obj_2_4
+  rotate: false
+  xy: 4753, 577
+  size: 281, 445
+  orig: 281, 445
+  offset: 0, 0
+  index: -1
+1_예시이미지/인트로 이미지/intro_2_obj_2_5
+  rotate: false
+  xy: 4926, 291
+  size: 102, 284
+  orig: 102, 284
+  offset: 0, 0
+  index: -1
+1_예시이미지/인트로 이미지/intro_2_obj_2_6
+  rotate: false
+  xy: 8001, 3638
+  size: 175, 211
+  orig: 175, 211
+  offset: 0, 0
+  index: -1
+1_예시이미지/인트로 이미지/intro_2_obj_2_7
+  rotate: true
+  xy: 530, 36
+  size: 214, 470
+  orig: 214, 470
+  offset: 0, 0
+  index: -1
+1_예시이미지/인트로 이미지/intro_2_obj_2_8
+  rotate: false
+  xy: 4179, 2645
+  size: 1080, 308
+  orig: 1080, 308
+  offset: 0, 0
+  index: -1
+1_예시이미지/인트로 이미지/intro_box
+  rotate: false
+  xy: 1350, 10
+  size: 451, 194
+  orig: 451, 194
+  offset: 0, 0
+  index: -1
+1_예시이미지/인트로 이미지/intro_text_0
+  rotate: false
+  xy: 5206, 1799
+  size: 451, 194
+  orig: 451, 194
+  offset: 0, 0
+  index: -1
+1_예시이미지/인트로 이미지/intro_text_1
+  rotate: false
+  xy: 4565, 22
+  size: 451, 194
+  orig: 451, 194
+  offset: 0, 0
+  index: -1
+1_예시이미지/인트로 이미지/intro_text_2
+  rotate: true
+  xy: 6998, 2115
+  size: 451, 194
+  orig: 451, 194
+  offset: 0, 0
+  index: -1
+1_예시이미지/인트로 이미지/intro_text_3
+  rotate: false
+  xy: 7194, 2369
+  size: 451, 194
+  orig: 451, 194
+  offset: 0, 0
+  index: -1
+1_예시이미지/인트로 이미지/intro_text_4
+  rotate: false
+  xy: 7194, 2173
+  size: 451, 194
+  orig: 451, 194
+  offset: 0, 0
+  index: -1
+1_예시이미지/인트로 이미지/intro_text_5
+  rotate: true
+  xy: 7647, 2112
+  size: 451, 194
+  orig: 451, 194
+  offset: 0, 0
+  index: -1
+1_예시이미지/인트로 이미지/intro_text_6
+  rotate: false
+  xy: 7194, 1977
+  size: 451, 194
+  orig: 451, 194
+  offset: 0, 0
+  index: -1
+1_예시이미지/인트로 이미지/intro_text_7
+  rotate: false
+  xy: 5659, 1743
+  size: 451, 194
+  orig: 451, 194
+  offset: 0, 0
+  index: -1
