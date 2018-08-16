@@ -21,7 +21,7 @@ public class TestingFuncs : MonoBehaviour {
    public  void LoadSkeletonAsset(int num)
     {
         Debug.Log("a");
-        var spineAnimation = skeletonDataAssets[num].GetSkeletonData(false).FindAnimation("idle_0");
+       // var spineAnimation = skeletonDataAssets[num].GetSkeletonData(false).FindAnimation("idle_0");
         //SA.SkeletonDataAsset.InitializeWithData();
         SA.Initialize(false);
     }

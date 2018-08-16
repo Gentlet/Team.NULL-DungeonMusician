@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/TempScene.unity
+    path: Assets/0_Test/Gentle/Game/TempScene.unity
     guid: bcc9b061d8995464cb2da89222a3892b
   - enabled: 1
     path: Assets/Scenes/GameScene.unity
@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/0_Test/Broken/Scene/TestMainScene.unity
     guid: 3ff06b31ec4945241926d31fdb35b5b5
+  - enabled: 1
+    path: Assets/0_Test/Broken_Fire_Egg/Scene/TestScene2.unity
+    guid: 4c5a8ef58f6773942986687d5898f58b
   m_configObjects: {}

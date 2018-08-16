@@ -26011,7 +26011,9 @@ MonoBehaviour:
   SG: {fileID: 0}
   SA: {fileID: 782177785}
   IsCancas: 0
+  loof: 0
   eftName: 
+  delay: 0
 --- !u!114 &782177785
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40042,7 +40044,9 @@ MonoBehaviour:
   SG: {fileID: 0}
   SA: {fileID: 1148564353}
   IsCancas: 0
+  loof: 0
   eftName: 
+  delay: 0
 --- !u!114 &1148564353
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -56900,7 +56904,9 @@ MonoBehaviour:
   SG: {fileID: 0}
   SA: {fileID: 1633851577}
   IsCancas: 0
+  loof: 0
   eftName: 
+  delay: 0
 --- !u!114 &1633851577
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -75621,7 +75627,9 @@ MonoBehaviour:
   SG: {fileID: 0}
   SA: {fileID: 2140329953}
   IsCancas: 0
+  loof: 0
   eftName: 
+  delay: 0
 --- !u!114 &2140329953
 MonoBehaviour:
   m_ObjectHideFlags: 0
