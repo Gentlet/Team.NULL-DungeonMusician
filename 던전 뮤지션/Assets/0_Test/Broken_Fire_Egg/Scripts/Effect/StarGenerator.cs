@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class StarGenerator : MonoBehaviour {
@@ -10,13 +11,20 @@ public class StarGenerator : MonoBehaviour {
 	public int Max;
     public float delay;
     float flowT;
-
+    AsyncOperation async;
 
     private void Awake()
     {
         flowT = 0f;
         pool = new GameObject[Max];
     }
+    private void Start()
+    {
+        StartCoroutine(PreloadScene());
+   //     async = SceneManager.LoadSceneAsync(4);
+    //    async.allowSceneActivation = false;
+    }
+    
     // Update is called once per frame
     void Update () {
         flowT += Time.deltaTime;
@@ -39,6 +47,22 @@ public class StarGenerator : MonoBehaviour {
 
             flowT -= delay;
         }
-       
+        if(Input.GetMouseButtonDown(0))
+        {
+            async.allowSceneActivation = true;
+        }
 	}
+    public IEnumerator PreloadScene()
+    {
+        yield return null;
+        async = SceneManager.LoadSceneAsync(4, LoadSceneMode.Single);
+        async.allowSceneActivation = false;
+        while(async.progress != 0.9f)
+        {
+
+        }
+        Debug.Log("Load Ready");
+        yield return async;
+    }
+
 }

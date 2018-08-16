@@ -8,8 +8,7 @@ public class DestroyWhenEnd : StateMachineBehaviour {
     {
         if (insteadOff)
             animator.gameObject.SetActive(false);
-        else
+        else 
             Destroy(animator.gameObject);
     }
-
 }
