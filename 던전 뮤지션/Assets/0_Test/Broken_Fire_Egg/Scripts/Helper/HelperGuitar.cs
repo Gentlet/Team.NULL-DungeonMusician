@@ -11,10 +11,10 @@ public class HelperGuitar : ObjectStatus
     {
         base.Awake();
         fomula = true;
-        basepoint = 1;
-        upgraderate = 1;
-        parambase = 1;
-        paramrate = 1;
+        //basepoint = 1;
+        //upgraderate = 1;
+        //parambase = 1;
+        //paramrate = 1;
 
         updateText();
     }

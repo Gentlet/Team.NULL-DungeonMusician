@@ -7,22 +7,41 @@ public class ObjectStatus : MonoBehaviour
 {
     protected bool fomula;
     public int level;
-    public float basepoint; //데미지를 표현할때 씀
-    public float paramrate;
-    public float parambase;
-    public float relicRate;
-    public float upgraderate;
-    public int upgrademoney;
-    public float moneyrate;
-    public float param; //데미지 말고 다른 수치를 표현 할떄 씀
+    public float basepoint;             //기본 데미지
+    public float relicRate;             //유물 추가효과
+    public float upgraderate;           //업그레이드 증가치
+
+    public int firstmoney;              //맨처음 가격
+    protected int upgrademoney;         //가격
+    public float moneyrate;             //가격 증가치
+
+    public float param;                 //데미지 외의 수치
+    public float paramrate;             //수치 증가치
+    public float parambase;             //수치 기본치
+
+    [Multiline]
+    public string explain;              //설명란
 
     public Text[] textValues;
     //0 레벨      1 비용       2 증가치       3 설명칸
 
-    public void Upgrade()
+    public void Awake()
     {
+        if (moneyrate == 0)
+            upgrademoney = firstmoney + (int)(firstmoney * ((level - 1) * 0.1));
+        else
+            upgrademoney = firstmoney + (int)(moneyrate * (level - 1));
+
+        updateText();
+    }
+
+    public virtual void Upgrade()
+    {
+        if (moneyrate == 0)
+            upgrademoney = upgrademoney + (int)(firstmoney * ((level) * 0.1));
+        else
+            upgrademoney = upgrademoney + (int)moneyrate;
         level++;
-        upgrademoney = (int)(level * upgraderate);
         //upgrademoney = (int)(upgrademoney * moneyrate);
         updateText();
         SaveInformations();
@@ -84,14 +103,14 @@ public class ObjectStatus : MonoBehaviour
         PlayerPrefs.Save();
     }
     // 아래의 멤버변수, 메소드들은 상세 정보 팝업 관련 UI에 필요한 것임
-    [Multiline]
-    public string explain;
-    public GameObject basepopup;
-    protected void Awake()
-    {
-        level = PlayerPrefs.GetInt(GetType().Name + "level", 0);
-        basepopup = null;
+    //[Multiline]
+    //public string explain;
+    //public GameObject basepopup;
+    //protected void Awake()
+    //{
+    //    level = PlayerPrefs.GetInt(GetType().Name + "level", 0);
+    //    basepopup = null;
 
-    }
+    //}
 
 }

@@ -7,10 +7,14 @@ public class Vibration : ObjectStatus
 
     //param : 시간
     //basepoint 데미지%
+    public int cooltime;
     float dottime;
 
     new void Awake()
     {
+        base.Awake();
+        fomula = true;
+
         updateText();
     }
 

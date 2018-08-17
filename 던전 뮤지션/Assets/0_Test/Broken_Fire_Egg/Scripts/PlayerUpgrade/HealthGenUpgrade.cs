@@ -8,10 +8,10 @@ public class HealthGenUpgrade : ObjectStatus
     {
         base.Awake();
         fomula = true;
-        basepoint = 1;
-        upgraderate = 1;
-        param = 1;
-        paramrate = 1;
+        //basepoint = 1;
+        //upgraderate = 1;
+        //param = 1;
+        //paramrate = 1;
 
         updateText();
     }

@@ -4,10 +4,14 @@ using UnityEngine;
 
 public class SpotLightSkill : ObjectStatus {
 
+    public int cooltime;
     public bool isactive;
 
     new void Awake()
     {
+        base.Awake();
+        fomula = true;
+
         updateText();
     }
 

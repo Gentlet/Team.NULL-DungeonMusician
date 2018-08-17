@@ -4,8 +4,13 @@ using UnityEngine;
 
 public class Scream : ObjectStatus
 {
+    public int cooltime;
+
     new void Awake()
     {
+        base.Awake();
+        fomula = true;
+
         updateText();
     }
 

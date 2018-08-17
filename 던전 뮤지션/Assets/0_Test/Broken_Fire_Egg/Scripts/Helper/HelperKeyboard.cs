@@ -11,11 +11,11 @@ public class HelperKeyboard : ObjectStatus
         base.Awake();
         fomula = true;
         relicRate = 1;
-        basepoint = 1;
-        upgraderate = 1;
-        param = 1;
-        parambase = 1;
-        paramrate = 1;
+        //basepoint = 1;
+        //upgraderate = 1;
+        //param = 1;
+        //parambase = 1;
+        //paramrate = 1;
 
         updateText();
     }
@@ -33,13 +33,13 @@ public class HelperKeyboard : ObjectStatus
         {
             if (explain[i] == '~')
             {
-                textnum++;
+                textnum = 1;
                 continue;
             }
             text[textnum] += explain[i];
         }
 
-        //textValues[3].text = text[0] + Total + text[1];
+        textValues[3].text = text[0] + Total + text[1];
     }
 
     public void AbilityActive()

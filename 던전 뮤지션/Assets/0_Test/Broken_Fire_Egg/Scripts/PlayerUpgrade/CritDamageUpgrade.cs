@@ -8,10 +8,10 @@ public class CritDamageUpgrade : ObjectStatus
     {
         base.Awake();
         fomula = false;
-        basepoint = 1;
-        upgraderate = 1;
-        param = 1;
-        paramrate = 1;
+        //basepoint = 1;
+        //upgraderate = 1;
+        //param = 1;
+        //paramrate = 1;
         
     }
 

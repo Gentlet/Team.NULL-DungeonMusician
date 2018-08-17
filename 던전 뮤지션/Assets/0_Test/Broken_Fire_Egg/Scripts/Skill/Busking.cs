@@ -4,10 +4,14 @@ using UnityEngine;
 
 public class Busking : ObjectStatus {
     //base 추가%
+    public int cooltime;
     public bool isActive;
 
     new void Awake()
     {
+        base.Awake();
+        fomula = true;
+
         updateText();
     }
 
