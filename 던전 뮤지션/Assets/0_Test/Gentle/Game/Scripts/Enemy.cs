@@ -36,7 +36,7 @@ public class Enemy : MonoBehaviour {
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.U))
-            StartCoroutine(Skill3());
+            StartCoroutine(Skill2());
     }
 
     public void AttackEnemy(float damage)
