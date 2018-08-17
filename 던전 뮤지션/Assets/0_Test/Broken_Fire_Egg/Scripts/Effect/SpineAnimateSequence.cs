@@ -2,20 +2,24 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class SpineAnimateSequence : MonoBehaviour {
     public SkeletonGraphic SG;
     public SkeletonAnimation SA;
     public bool IsCancas;
+    public int SceneNumber;
+    public Animator anitor;
     [SpineAnimation(dataField: "skeletonAnimation")]
     public string[] sequence;
     public bool[] loof;
     [SerializeField]
     int curr;
     bool animating;
+    AsyncOperation async;
     private void Start()
     {
         Play();
+        StartCoroutine(PreloadScene());
         animating = false;
     }
     private void Update()
@@ -34,22 +38,33 @@ public class SpineAnimateSequence : MonoBehaviour {
     }
     public void PauseEntry()
     {
-        if (loof[curr])
+        if (curr < sequence.Length)
         {
-            if (IsCancas)
-                SG.AnimationState.ClearTrack(0);
+            if (curr == sequence.Length -1)
+            {
+                anitor.SetTrigger("Start");
+                Invoke("SceneMove", 3f);
+            }
+            else if (loof[curr])
+            {
+                if (IsCancas)
+                    SG.AnimationState.ClearTrack(0);
+                else
+                    SA.AnimationState.ClearTrack(0);
+            }
             else
-                SA.AnimationState.ClearTrack(0);
+            {
+
+                //if (IsCancas)
+                //    SG.AnimationState.SetEmptyAnimation(0,0f);
+                //else
+                //    SA.AnimationState.ClearTrack(0);
+            }
         }
-        else
-        {
-            if (IsCancas)
-                SG.AnimationState.SetEmptyAnimation(0,0f);
-            else
-                SA.AnimationState.ClearTrack(0);
-        }
+        
     }
-    public void clear()
+
+    public void Clear()
     {
         SG.AnimationState.ClearTracks();
     }
@@ -79,5 +94,20 @@ public class SpineAnimateSequence : MonoBehaviour {
             curr++;
         }
         yield return null;
+    }
+    public void SceneMove()
+    {
+        async.allowSceneActivation = true;
+    }
+    public IEnumerator PreloadScene()
+    {
+        yield return null;
+        async = SceneManager.LoadSceneAsync(SceneNumber, LoadSceneMode.Single);
+        async.allowSceneActivation = false;
+        while (async.progress != 0.9f)
+        {
+
+        }
+        yield return async;
     }
 }
