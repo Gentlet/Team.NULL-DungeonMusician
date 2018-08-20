@@ -27,7 +27,7 @@ public class Line : MonoBehaviour
     {
         touchline.SetActive(false);
 
-        if (touchsim.state != 0 && Vector2.Distance(touchsim.transform.position, EndPos) < EndObjectScale.x)
+        if (GameManager.Instance.isbattle && touchsim.state != 0 && Vector2.Distance(touchsim.transform.position, EndPos) < EndObjectScale.x)
         {
             Note note = GameManager.Instance.NearestNote(this);
 
@@ -41,14 +41,20 @@ public class Line : MonoBehaviour
                 if (rank >= 0.3f)
                 {
                     if (NoteType.LONG <= note.Type && note.Type <= NoteType.LONG_END)
+                    {
+                        if(rank == 1f)
+                            GameManager.Instance.Combo += 1;
                         rank *= 0.3f;
+                    }
+                    else
+                        GameManager.Instance.Combo += 1;
+
 
                     float damage = rank * Player.Instance.GetStatus("Strength") * (Random.Range(0f, 100f) < Player.Instance.GetStatus("Criticalrate") ? Player.Instance.GetStatus("Criticaldamage") / 100f : 1f);
                     EnemyManager.Instance.Enemy.AttackEnemy(damage);
                     Player.Instance.Health += damage * Player.Instance.GetStatus("Healthdrainrate");
-                    GameManager.Instance.Combo += 1;
 
-                    Debug.Log(damage);
+                    //Debug.Log(damage);
                 }
             }
 

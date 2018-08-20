@@ -54,6 +54,8 @@ public class GameManager : SingletonGameObject<GameManager>
     public float size;
     public AudioSource audio;
 
+    public bool isbattle;
+
     private void Awake()
     {
         notevalues.notes = new List<Note>();
@@ -82,6 +84,7 @@ public class GameManager : SingletonGameObject<GameManager>
         notevalues.notes.Clear();
 
         StartMusic(0, 0);
+        isbattle = true;
     }
 
     public Note CreateNote(Line line, NoteType type, float size = 0f)
@@ -307,7 +310,9 @@ public class GameManager : SingletonGameObject<GameManager>
             notevalues.combo = value;
 
             if (notevalues.combo != 0)
+            {
                 StartCoroutine(CreateComboText(notevalues.combo));
+            }
         }
     }
     #endregion

@@ -37,14 +37,17 @@ public class ObjectStatus : MonoBehaviour
 
     public virtual void Upgrade()
     {
-        if (moneyrate == 0)
-            upgrademoney = upgrademoney + (int)(firstmoney * ((level) * 0.1));
-        else
-            upgrademoney = upgrademoney + (int)moneyrate;
-        level++;
-        //upgrademoney = (int)(upgrademoney * moneyrate);
-        updateText();
-        SaveInformations();
+        if (Player.Instance.Gold >= upgrademoney)
+        {
+            if (moneyrate == 0)
+                upgrademoney = upgrademoney + (int)(firstmoney * ((level) * 0.1));
+            else
+                upgrademoney = upgrademoney + (int)moneyrate;
+            level++;
+            //upgrademoney = (int)(upgrademoney * moneyrate);
+            updateText();
+            SaveInformations();
+        }
     }
 
     public virtual void updateText()
