@@ -51,9 +51,9 @@ public class SpineAnimateOnce : MonoBehaviour {
     IEnumerator WaitDieSA()
     {
         if (eftName == "")
-            yield return new WaitForSpineAnimationComplete(SG.AnimationState.SetAnimation(0, "eft_0", false));
+            yield return new WaitForSpineAnimationComplete(SA.AnimationState.SetAnimation(0, "eft_0", false));
         else
-            yield return new WaitForSpineAnimationComplete(SG.AnimationState.SetAnimation(0, eftName, false));
+            yield return new WaitForSpineAnimationComplete(SA.AnimationState.SetAnimation(0, eftName, false));
         gameObject.SetActive(false);
     }
 }
