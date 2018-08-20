@@ -70,6 +70,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4661738271579698}
+  - component: {fileID: 114172966784111490}
   m_Layer: 0
   m_Name: eft_rebirth
   m_TagString: Untagged
@@ -194,6 +195,19 @@ Transform:
   m_Father: {fileID: 4661738271579698}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -22.154001, y: 90.00001, z: 0}
+--- !u!114 &114172966784111490
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1745853869563616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6eae74890f72d8f48806d16b140b2e37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Plus: []
+  insteadOff: 0
 --- !u!198 &198045186457244386
 ParticleSystem:
   m_ObjectHideFlags: 1

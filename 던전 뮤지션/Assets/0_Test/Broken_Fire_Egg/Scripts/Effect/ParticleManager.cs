@@ -3,30 +3,53 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class ParticleManager : MonoBehaviour {
-    public ParticleSystem[] PSs;
-    public bool visibleplay;
+    public GameObject[] BossParticles;
+    public GameObject[] bundles;
+    public GameObject[] longnote;
+    public GameObject[] loopingParticle;
 
-    
-    public void OnBecameVisible()
+
+
+    private void Start()
     {
-        if (visibleplay)
-            PlayAll();
     }
-    public void PlayAll()
+
+    public void PlayParticle(int n, Vector2 position_)
     {
-        foreach(ParticleSystem tmp in PSs)
+        Instantiate(bundles[0], position_, Quaternion.identity);
+    }
+
+    public void BossEffectParticle(int n, Vector2 position_)
+    {
+        Instantiate(BossParticles[0], position_, Quaternion.identity);
+    }
+
+    public void longNoteDown(int n)
+    {
+        longnote[n].SetActive(true);
+    
+    }
+
+    public void longNoteUp(int n)
+    {
+        longnote[n].SetActive(false);
+    }
+
+    public void OnloopingParticle(int n,float timer = 0f)
+    {
+        if (timer == 0f)
+            loopingParticle[n].SetActive(true);
+        else
         {
-            tmp.Play();
+            StartCoroutine(OffloopingParticleC(n,timer));
         }
     }
-    public void DisableAll()
+
+   public IEnumerator OffloopingParticleC(int n,float timer = 0f)
     {
-        gameObject.SetActive(false);
-    }
-    private void Update()
-    {
-        if (PSs.Length == 0)
-            Destroy(gameObject);
+        yield return new WaitForSecondsRealtime(timer);
+        loopingParticle[n].SetActive(false);
+
     }
 
 }
