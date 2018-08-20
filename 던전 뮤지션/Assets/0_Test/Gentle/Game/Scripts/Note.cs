@@ -33,6 +33,8 @@ public class Note : MonoBehaviour
 
     private bool ischanged;
 
+    private int ischecked = 0;
+
     public NoteData notedata;
 
     private void FixedUpdate()
@@ -51,8 +53,13 @@ public class Note : MonoBehaviour
         }
 
 
-        if (EndPos.y < -7f)
+        if (EndPos.y < -4f)
+        {
+            //if (!(NoteType.LONG <= type && type <= NoteType.LONG_END))
+                GameManager.Instance.Combo = 0;
+
             DestroyNote();
+        }
     }
 
     public Note Init(Line line, NoteType type, float speed, float size)
@@ -135,30 +142,46 @@ public class Note : MonoBehaviour
                 isdestroy = true;
             }
         }
-        else if (type == NoteType.LONG_START && phase == TouchPhase.Began)
+        else if (type == NoteType.LONG_START && phase == TouchPhase.Began && ischecked != 3)
         {
             temp = Vector2.Distance(StartPos, line.EndPos);
 
             if (temp < 2f)
+            {
                 distance = temp * 0.5f;
+                ischecked = 1;
+            }
             else
                 isactive = false;
         }
-        else if (type == NoteType.LONG_LINE && phase == TouchPhase.Stationary)
+        else if (type == NoteType.LONG_LINE && phase == TouchPhase.Stationary && ischecked != 3)
         {
             temp = Vector2.Distance((Position + ((Position.y > line.EndPos.y ? 1f : -1f) * (line.Direction * Vector2.Distance(line.EndPos, Position)))), line.EndPos);
 
             if (temp < 2f)
+            {
                 distance = 0f;
+                ischecked = 2;
+            }
             else
                 isactive = false;
         }
-        else if (type == NoteType.LONG_END && phase == TouchPhase.Ended)
+        else if (type == NoteType.LONG_END && phase == TouchPhase.Ended && ischecked != 3)
         {
             temp = Vector2.Distance(EndPos, line.EndPos);
 
             if (temp < 2f)
+            {
                 distance = temp * 0.5f;
+                ischecked = 3;
+
+                if (Vector2.Distance(line.EndPos, (Vector2)longnotes[2].transform.position) < 0.5f)
+                {
+                    longnotes[0].DestroyNote();
+                    longnotes[1].DestroyNote();
+                    longnotes[2].DestroyNote();
+                }
+            }
             else
                 isactive = false;
         }

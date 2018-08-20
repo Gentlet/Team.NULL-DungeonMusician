@@ -2452,8 +2452,20 @@ MonoBehaviour:
   readdatas:
     bundles: []
     relicses: []
-  notetype: 0
-  size: 0
+  combo_text:
+  - {fileID: 212439911790662900, guid: 1cfae5cb23216f340af55ec2119c2087, type: 2}
+  - {fileID: 212892402616916586, guid: 19be0c900ae69404f88d455a777699b6, type: 2}
+  - {fileID: 212717940079055268, guid: a874e6c40b597ce41baad2bb51efeab6, type: 2}
+  - {fileID: 212379943587925968, guid: ba90ab5075c878c4ebeef08bc979375b, type: 2}
+  - {fileID: 212668924017855034, guid: 56609059323e23e45903d961dbd4a006, type: 2}
+  - {fileID: 212166735955376784, guid: 00d0fc16e1d107241a12a1defb00302d, type: 2}
+  - {fileID: 212540218186605642, guid: aae094ab592aaac4e9ca3fa3d4b1e61e, type: 2}
+  - {fileID: 212420826962793968, guid: 829fce00edd7659408a5d42c51b44d2a, type: 2}
+  - {fileID: 212868489692673400, guid: dc8de101585f2144c9abf2b8b7a0c1f1, type: 2}
+  - {fileID: 212520187255690168, guid: cb8e6a6b9090e3f419b4ecde30b4b550, type: 2}
+  - {fileID: 212133494206063838, guid: 7cb00bfa3234adc4da827e308c91bf81, type: 2}
+  notetype: 1
+  size: 5
   audio: {fileID: 913208479}
 --- !u!4 &157516677
 Transform:
@@ -22337,7 +22349,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spine: {fileID: 283208898}
   info: "Lv.01 \uAC15\uC5EC\uBA85"
-  maxhp: 10000
+  maxhp: 1e+19
   gold: 0
   test: {x: 0, y: 0.1}
   time: 0
