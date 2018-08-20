@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class TempSkill
 {
@@ -34,6 +35,9 @@ public class Player : SingletonGameObject<Player> {
     private List<TempHelper> helpers;
     private List<Bundle> bundles;
 
+    public Text goldtext;
+    public Text revivepointtext;
+
     private void Awake()
     {
         skills = new TempSkill[2];
@@ -42,6 +46,9 @@ public class Player : SingletonGameObject<Player> {
         helpers = new List<TempHelper>();
         bundles = new List<Bundle>();
 
+        Gold = 0;
+        Revivepoint = 0;
+
         //Invoke("AAAA", 1f);
     }
 
@@ -49,7 +56,7 @@ public class Player : SingletonGameObject<Player> {
     //{
     //    Debug.Log("aaa");
     //    relics.Add(GameManager.Instance.ReadDatas.relicses[0]);
-    //    EffectStorage.Instance.EffectValuesReset();
+    //EffectStorage.Instance.EffectValuesReset();
     //}
 
     public float GetStatus(string name)
@@ -93,14 +100,20 @@ public class Player : SingletonGameObject<Player> {
         set
         {
             gold = value;
+            goldtext.text = gold.ToString();
         }
     }
 
-    public float Revivepoint
+    public int Revivepoint
     {
         get
         {
             return revivepoint;
+        }
+        set
+        {
+            revivepoint = value;
+            revivepointtext.text = revivepoint.ToString();
         }
     }
 

@@ -56,7 +56,7 @@ public class Note : MonoBehaviour
         if (EndPos.y < -4f)
         {
             //if (!(NoteType.LONG <= type && type <= NoteType.LONG_END))
-                GameManager.Instance.Combo = 0;
+            GameManager.Instance.Combo = 0;
 
             DestroyNote();
         }
@@ -128,11 +128,18 @@ public class Note : MonoBehaviour
     {
         float distance = -1f;
         float temp;
+        NoteType temptype = type;
 
-        if (type == NoteType.SLIDER || (type == NoteType.NORMAL && phase != TouchPhase.Began))
+        if (NoteType.LONG <= temptype && temptype <= NoteType.LONG_END)
+        {
+            if (longnotes[0].Position.y + 0.5f < line.EndPos.y && longnotes[2].Position.y - 0.5f > line.EndPos.y)
+                temptype = NoteType.LONG_LINE;
+        }
+
+        if (temptype == NoteType.SLIDER || (temptype == NoteType.NORMAL && phase != TouchPhase.Began))
             distance = 1f;
 
-        if (type == NoteType.NORMAL && phase == TouchPhase.Began)
+        if (temptype == NoteType.NORMAL && phase == TouchPhase.Began)
         {
             temp = Vector2.Distance(Position, line.EndPos);
 
@@ -142,38 +149,46 @@ public class Note : MonoBehaviour
                 isdestroy = true;
             }
         }
-        else if (type == NoteType.LONG_START && phase == TouchPhase.Began && ischecked != 3)
+        else if (temptype == NoteType.LONG_START && phase == TouchPhase.Began && Ischecked != 3)
         {
             temp = Vector2.Distance(StartPos, line.EndPos);
 
             if (temp < 2f)
             {
                 distance = temp * 0.5f;
-                ischecked = 1;
+                Ischecked = 1;
             }
             else
                 isactive = false;
         }
-        else if (type == NoteType.LONG_LINE && phase == TouchPhase.Stationary && ischecked != 3)
+        else if (temptype == NoteType.LONG_LINE && phase == TouchPhase.Stationary && Ischecked != 0 && Ischecked != 3)
         {
             temp = Vector2.Distance((Position + ((Position.y > line.EndPos.y ? 1f : -1f) * (line.Direction * Vector2.Distance(line.EndPos, Position)))), line.EndPos);
 
             if (temp < 2f)
             {
                 distance = 0f;
-                ischecked = 2;
+                Ischecked = 2;
             }
             else
                 isactive = false;
         }
-        else if (type == NoteType.LONG_END && phase == TouchPhase.Ended && ischecked != 3)
+        else if (temptype == NoteType.LONG_LINE && phase == TouchPhase.Ended && Ischecked != 0 && Ischecked != 3)
+        {
+            Ischecked = 3;
+
+            longnotes[0].sprite.color = longnotes[0].sprite.color + new Color(0, 0, 0, -0.5f);
+            longnotes[1].sprite.color = longnotes[1].sprite.color + new Color(0, 0, 0, -0.5f);
+            longnotes[2].sprite.color = longnotes[2].sprite.color + new Color(0, 0, 0, -0.5f);
+        }
+        else if (temptype == NoteType.LONG_END && phase == TouchPhase.Ended && Ischecked != 3)
         {
             temp = Vector2.Distance(EndPos, line.EndPos);
 
             if (temp < 2f)
             {
                 distance = temp * 0.5f;
-                ischecked = 3;
+                Ischecked = 3;
 
                 if (Vector2.Distance(line.EndPos, (Vector2)longnotes[2].transform.position) < 0.5f)
                 {
@@ -185,7 +200,7 @@ public class Note : MonoBehaviour
             else
                 isactive = false;
         }
-        else if (type == NoteType.SLIDER && (phase == TouchPhase.Moved || phase == TouchPhase.Stationary))
+        else if (temptype == NoteType.SLIDER && (phase == TouchPhase.Moved || phase == TouchPhase.Stationary))
         {
             temp = Mathf.Abs(Position.y - line.EndPos.y);
 
@@ -197,7 +212,7 @@ public class Note : MonoBehaviour
             else
                 return 0f;
         }
-        else if (isactive == true && (type == NoteType.LONG_START || type == NoteType.LONG_LINE || type == NoteType.LONG_END) && (phase == TouchPhase.Began || phase == TouchPhase.Stationary || phase == TouchPhase.Ended))
+        else if (isactive == true && (temptype == NoteType.LONG_START || temptype == NoteType.LONG_LINE || temptype == NoteType.LONG_END) && (phase == TouchPhase.Began || phase == TouchPhase.Stationary || phase == TouchPhase.Ended))
         {
             return 0f;
         }
@@ -385,6 +400,21 @@ public class Note : MonoBehaviour
         get
         {
             return line.Direction * speed;
+        }
+    }
+
+    private int Ischecked
+    {
+        get
+        {
+            return ischecked;
+        }
+
+        set
+        {
+            longnotes[0].ischecked = value;
+            longnotes[1].ischecked = value;
+            longnotes[2].ischecked = value;
         }
     }
     #endregion
