@@ -43,6 +43,11 @@ public class GameManager : SingletonGameObject<GameManager>
     private ReadData readdatas;
 
     [Space]
+    [Header("Combo Text Image")]
+    [SerializeField]
+    private SpriteRenderer[] combo_text;
+
+    [Space]
     [Header("TEST VALUES")]
     public NoteType notetype;
 
@@ -66,7 +71,6 @@ public class GameManager : SingletonGameObject<GameManager>
 
         if (Input.GetKeyDown(KeyCode.M))
             PlayGame();
-
     }
 
     public void PlayGame()
@@ -172,6 +176,53 @@ public class GameManager : SingletonGameObject<GameManager>
         return nearestnote;
     }
 
+    private IEnumerator CreateComboText(int combo)
+    {
+        WaitForSeconds wait = new WaitForSeconds(0.01f);
+        GameObject parent = new GameObject("ComboText");
+        List<SpriteRenderer> combotexts = new List<SpriteRenderer>();
+
+        int temp = combo;
+        string temps = temp.ToString();
+
+        combotexts.Add(Instantiate(combo_text[10], parent.transform));
+
+        while (0 < combo)
+        {
+            combotexts.Insert(1, Instantiate(combo_text[combo % 10], parent.transform));
+            combo /= 10;
+        }
+
+        foreach (SpriteRenderer sprite in combotexts)
+        {
+            sprite.sortingOrder = temp + 100;
+        }
+
+        combotexts[0].transform.position = new Vector3((temps[temps.Length - 1] == '1' ? -0.06f : (temps[0] == '1' ? 0.06f : 0f)) * (temps.Length > 2 ? 1 : 0.5f), -0.5f, 0);
+
+        for (int i = 1; i < combotexts.Count; i++)
+            combotexts[i].transform.position = new Vector3((i - 1) * 0.5f, 0);
+
+        for (int i = 1; i < combotexts.Count; i++)
+            combotexts[i].transform.position -= combotexts[combotexts.Count - 1].transform.position * 0.5f;
+
+        parent.transform.position = Vector3.up * 1.8f;
+
+        while (parent.transform.position.y < 2f)
+        {
+            parent.transform.position += Vector3.up * 0.01f;
+
+            foreach (SpriteRenderer sprite in combotexts)
+            {
+                sprite.color = sprite.color - new Color(0, 0, 0, 0.05f);
+            }
+
+            yield return wait;
+        }
+
+        Destroy(parent);
+    }
+
     #region Properties
     public Note[] Originalnote
     {
@@ -241,6 +292,22 @@ public class GameManager : SingletonGameObject<GameManager>
         set
         {
             readdatas = value;
+        }
+    }
+
+    public int Combo
+    {
+        get
+        {
+            return notevalues.combo;
+        }
+
+        set
+        {
+            notevalues.combo = value;
+
+            if (notevalues.combo != 0)
+                StartCoroutine(CreateComboText(notevalues.combo));
         }
     }
     #endregion
