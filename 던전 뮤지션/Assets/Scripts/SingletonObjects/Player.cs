@@ -42,15 +42,15 @@ public class Player : SingletonGameObject<Player> {
         helpers = new List<TempHelper>();
         bundles = new List<Bundle>();
 
-        Invoke("AAAA", 1f);
+        //Invoke("AAAA", 1f);
     }
 
-    public void AAAA()
-    {
-        Debug.Log("aaa");
-        relics.Add(GameManager.Instance.ReadDatas.relicses[0]);
-        EffectStorage.Instance.EffectValuesReset();
-    }
+    //public void AAAA()
+    //{
+    //    Debug.Log("aaa");
+    //    relics.Add(GameManager.Instance.ReadDatas.relicses[0]);
+    //    EffectStorage.Instance.EffectValuesReset();
+    //}
 
     public float GetStatus(string name)
     {

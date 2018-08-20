@@ -10,6 +10,7 @@ public class StarGenerator : MonoBehaviour {
     public GameObject original;
 	public int Max;
     public float delay;
+    public Animator anitor;
     float flowT;
     AsyncOperation async;
 
@@ -49,9 +50,14 @@ public class StarGenerator : MonoBehaviour {
         }
         if(Input.GetMouseButtonDown(0))
         {
-            async.allowSceneActivation = true;
+            anitor.SetTrigger("Start");
+            Invoke("SceneMove", 3f);
         }
 	}
+    public void SceneMove()
+    {
+        async.allowSceneActivation = true;
+    }
     public IEnumerator PreloadScene()
     {
         yield return null;
@@ -61,7 +67,6 @@ public class StarGenerator : MonoBehaviour {
         {
 
         }
-        Debug.Log("Load Ready");
         yield return async;
     }
 
