@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class AnimationManager : MonoBehaviour {
 
-    public GameObject[] instantiates; //단일 애니메이션 (자동으로 꺼짐), (좌표 설정)
-    public GameObject[] OnOffs;       //껏다 켯다 해야 하는 에니메이션 ()
+    public GameObject[] instantiates;
+    public GameObject[] OnOffs;
 
     public void AnimationInstantiate(int n,Vector2 position_)
     {
