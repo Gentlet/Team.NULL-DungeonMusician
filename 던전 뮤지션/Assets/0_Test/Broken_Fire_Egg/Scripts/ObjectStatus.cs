@@ -27,6 +27,8 @@ public class ObjectStatus : MonoBehaviour
 
     public void Awake()
     {
+        LoadInformations();
+
         if (moneyrate == 0)
             upgrademoney = firstmoney + (int)(firstmoney * ((level - 1) * 0.1));
         else
@@ -37,17 +39,13 @@ public class ObjectStatus : MonoBehaviour
 
     public virtual void Upgrade()
     {
-        if (Player.Instance.Gold >= upgrademoney)
-        {
-            if (moneyrate == 0)
-                upgrademoney = upgrademoney + (int)(firstmoney * ((level) * 0.1));
-            else
-                upgrademoney = upgrademoney + (int)moneyrate;
-            level++;
-            //upgrademoney = (int)(upgrademoney * moneyrate);
-            updateText();
-            SaveInformations();
-        }
+        if (moneyrate == 0)
+            upgrademoney = upgrademoney + (int)(firstmoney * ((level) * 0.1));
+        else
+            upgrademoney = upgrademoney + (int)moneyrate;
+        level++;
+        updateText();
+        SaveInformations();
     }
 
     public virtual void updateText()
@@ -95,7 +93,6 @@ public class ObjectStatus : MonoBehaviour
         PlayerPrefs.SetInt(GetType().Name + "level", level);
         if (!fomula)
         {
-
             PlayerPrefs.SetFloat(GetType().Name + "basepoint", basepoint);
             PlayerPrefs.SetFloat(GetType().Name + "paramrate", paramrate);
             PlayerPrefs.SetFloat(GetType().Name + "parambase", parambase);
@@ -104,6 +101,15 @@ public class ObjectStatus : MonoBehaviour
             PlayerPrefs.SetInt(GetType().Name + "upgrademoney", upgrademoney);
         }
         PlayerPrefs.Save();
+    }
+    public void LoadInformations()
+    {
+        level = PlayerPrefs.GetInt(GetType().Name + "level", 1);
+        basepoint = PlayerPrefs.GetFloat(GetType().Name + "basepoint", basepoint);
+        upgraderate = PlayerPrefs.GetFloat(GetType().Name + "basepoint", upgraderate);
+        firstmoney = PlayerPrefs.GetInt(GetType().Name + "basepoint", firstmoney);
+        upgrademoney = PlayerPrefs.GetInt(GetType().Name + "basepoint", upgrademoney);
+        moneyrate = PlayerPrefs.GetFloat(GetType().Name + "basepoint", moneyrate);
     }
     // 아래의 멤버변수, 메소드들은 상세 정보 팝업 관련 UI에 필요한 것임
     //[Multiline]
