@@ -23,7 +23,7 @@ public class SoundVisual : MonoBehaviour
 
     private Transform[] visualList;
     private float[] visualScale;
-    private float maxVisualScale = 3.1f;
+    private float maxVisualScale = 8.26f;
 
     private void Start()
     {
