@@ -5,28 +5,59 @@ using UnityEngine.UI;
 
 public class DictionaryManager : MonoBehaviour
 {
-    public Button[] relicbtns;
-    public Button[] monsterbtns;
+    private List<GameObject> relicList;
 
-    private Relics relic;
+
+
+    public GameObject relicparent;
+    public GameObject monsterparent;
+    public GameObject objOrigin;
+
+    public GameObject cover;
+    public Image explainImage;
+    public Text name;
+    public Text effect;
+    public Text explain;
+
+
 
     private void Start()
     {
-        Player.Instance.Relics.Add(new Relics("0", "실로폰", "띠리링띵띵", null, null));
-        Player.Instance.Relics.Add(new Relics("3", "탬탬버린", "홋치", null, null));
+        relicList = new List<GameObject>();
+
+
+        CreateRelics();
         UpdateRelicBlind();
+    }
+
+    private void CreateRelics()
+    {
+        for (int i = 0; i < GameManager.Instance.ReadDatas.relicses.Count; i++)
+        {
+            GameObject obj = Instantiate(objOrigin, relicparent.transform);
+            DictionaryButtons button = obj.GetComponent<DictionaryButtons>();
+
+            Relics relics = GameManager.Instance.ReadDatas.relicses[i];
+
+            button.Init(relics, relics.sprite, cover, explainImage, name, effect, explain);
+            obj.gameObject.name = i.ToString();
+
+            relicList.Add(obj);
+        }
     }
 
     private void UpdateRelicBlind()
     {
         for (int i = 0; i < Player.Instance.Relics.Count; i++)
         {
-            for (int j = 0; j < relicbtns.Length; j++)
+            for (int j = 0; j < GameManager.Instance.ReadDatas.relicses.Count; j++)
             {
-                if (Player.Instance.Relics[i].relicsnum.ToString() == relicbtns[j].name)
+                Relics relic = GameManager.Instance.ReadDatas.relicses[j];
+
+                if (Player.Instance.Relics[i].name == relic.name)
                 {
-                    relicbtns[j].GetComponent<DictionaryButtons>().relic = Player.Instance.Relics[i];
-                    relicbtns[j].GetComponent<DictionaryButtons>().BlindOff();
+                    //relic.GetComponent<DictionaryButtons>().relic = Player.Instance.Relics[i];
+                    relicList[j].GetComponent<DictionaryButtons>().BlindOff();
                     break;
                 }
             }

@@ -1,0 +1,6 @@
+﻿*relics num,relics name,explain,image,effect code,effect value,effect is percent
+*0,aaa,aaa relics,example.png,hp,100,TRUE
+*int,string,string,string,string,float,bool
+*0,aaa,bbb,example.png,Strength,1000,FALSE
+0,실로폰,실로폰처럼 생긴 실로폰,UI/6_dictionary/6_dic_artifact_0,Strength,100,TRUE
+1,악보,악ㅡ보,UI/6_dictionary/6_dic_artifact_1,MaxHealth,50,TRUE
