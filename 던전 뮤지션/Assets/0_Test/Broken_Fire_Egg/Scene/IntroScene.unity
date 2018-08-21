@@ -409,7 +409,6 @@ MonoBehaviour:
   SG: {fileID: 658255086}
   SA: {fileID: 0}
   IsCancas: 1
-  SceneNumber: 0
   anitor: {fileID: 350931737}
   sequence:
   - 0
