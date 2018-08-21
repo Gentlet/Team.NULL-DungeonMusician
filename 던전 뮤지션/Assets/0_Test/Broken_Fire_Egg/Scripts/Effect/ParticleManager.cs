@@ -37,9 +37,8 @@ public class ParticleManager : MonoBehaviour {
 
     public void OnloopingParticle(int n,float timer = 0f)
     {
-        if (timer == 0f)
             loopingParticle[n].SetActive(true);
-        else
+        if(timer != 0f)
         {
             StartCoroutine(OffloopingParticleC(n,timer));
         }
