@@ -169,8 +169,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1143242866558164}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
+  m_LocalPosition: {x: 0, y: 5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4188146204703402}
@@ -180,7 +180,7 @@ Transform:
   - {fileID: 4946285468815606}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
 --- !u!4 &4946285468815606
 Transform:
   m_ObjectHideFlags: 1
@@ -206,7 +206,7 @@ ParticleSystem:
   stopAction: 0
   looping: 1
   prewarm: 0
-  playOnAwake: 0
+  playOnAwake: 1
   useUnscaledTime: 0
   autoRandomSeed: 0
   useRigidbodyForVelocity: 1
@@ -4739,7 +4739,7 @@ ParticleSystem:
   stopAction: 0
   looping: 1
   prewarm: 0
-  playOnAwake: 0
+  playOnAwake: 1
   useUnscaledTime: 0
   autoRandomSeed: 0
   useRigidbodyForVelocity: 1
@@ -9272,7 +9272,7 @@ ParticleSystem:
   stopAction: 0
   looping: 1
   prewarm: 0
-  playOnAwake: 0
+  playOnAwake: 1
   useUnscaledTime: 0
   autoRandomSeed: 0
   useRigidbodyForVelocity: 1
@@ -13805,7 +13805,7 @@ ParticleSystem:
   stopAction: 0
   looping: 1
   prewarm: 0
-  playOnAwake: 0
+  playOnAwake: 1
   useUnscaledTime: 0
   autoRandomSeed: 0
   useRigidbodyForVelocity: 1
@@ -18338,7 +18338,7 @@ ParticleSystem:
   stopAction: 0
   looping: 1
   prewarm: 0
-  playOnAwake: 0
+  playOnAwake: 1
   useUnscaledTime: 0
   autoRandomSeed: 0
   useRigidbodyForVelocity: 1
