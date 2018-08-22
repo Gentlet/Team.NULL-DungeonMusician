@@ -7,11 +7,16 @@ public class ParticleManager : MonoBehaviour {
     public GameObject[] bundles;       //단일 파티클(알아서 꺼짐), (좌표설정 해주셈)
     public GameObject[] longnote;      //롱 노트용 파티클 (4개다 위치 맞춰주셈)(끄는 함수 호출 해주셈)
     public GameObject[] loopingParticle;//루핑하는 파티클 (타이머를 지정 or 끄는 함수 호출 해주셈),(위치 맞춰주셈)
-    
 
+    public static ParticleManager instance;
+    private void Start()
+    {
+        if (instance == null)
+            instance = this;
+    }
     public void PlayParticle(int n, Vector2 position_)
     {
-        Instantiate(bundles[0], position_, Quaternion.identity);
+        Instantiate(bundles[n], position_, Quaternion.identity);
     }
 
     public void BossEffectParticle(int n, Vector2 position_)
