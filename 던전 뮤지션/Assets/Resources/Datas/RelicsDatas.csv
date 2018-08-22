@@ -1,4 +1,0 @@
-*relics num,relics name,explain,image,effect code,effect value,eeffect is percent
-*0,aaa,aaa relics,example.png,hp,100,TRUE
-*int,string,string,string,string,float,bool
-0,aaa,bbb,example.png,Strength,1000,FALSE

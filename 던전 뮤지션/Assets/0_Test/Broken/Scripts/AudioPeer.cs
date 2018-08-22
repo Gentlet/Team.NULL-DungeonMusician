@@ -5,7 +5,18 @@ using UnityEngine;
 
 public class AudioPeer : MonoBehaviour
 {
-    AudioSource _audioSource;
+    AudioSource audioSource;
+    AudioSource _audioSource
+    {
+        get
+        {
+            if (audioSource == null)
+            {
+                audioSource = FindObjectOfType(typeof(AudioSource)) as AudioSource;
+            }
+            return audioSource;
+        }
+    }
 
     public static float[] _samples = new float[4096];
     public static float[] _freqBand = new float[12];
@@ -14,7 +25,6 @@ public class AudioPeer : MonoBehaviour
 
     private void Start()
     {
-        _audioSource = FindObjectOfType<AudioSource>();
     }
 
     private void Update()
