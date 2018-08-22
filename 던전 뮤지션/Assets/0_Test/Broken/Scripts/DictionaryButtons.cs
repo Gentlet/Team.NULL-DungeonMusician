@@ -7,11 +7,11 @@ public class DictionaryButtons : MonoBehaviour
 {
     private Button button;
 
-    private Image relicimage;
     private GameObject blinder;
 
     [System.NonSerialized]
     public Relics relic;
+    public Image relicimage;
 
     public GameObject cover;
     public Image explainImage;
@@ -19,11 +19,19 @@ public class DictionaryButtons : MonoBehaviour
     public Text effect;
     public Text explain;
 
-    private void Awake()
+    public void Init(Relics _relic, Sprite _image, GameObject _cover, Image _explainImage, Text _name, Text _effect, Text _explain)
     {
         button = GetComponent<Button>();
         relicimage = transform.GetChild(0).GetComponent<Image>();
         blinder = transform.GetChild(1).gameObject;
+
+        relic = _relic;
+        relicimage.sprite = _image;
+        cover = _cover;
+        explainImage = _explainImage;
+        name = _name;
+        effect = _effect;
+        explain = _explain;
     }
 
     public void BlindOn()
