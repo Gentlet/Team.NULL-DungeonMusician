@@ -1,0 +1,118 @@
+
+eft_relics.png
+size: 8192,4096
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1_예시이미지/유물 이펙트/eft_0
+  rotate: false
+  xy: 6494, 3048
+  size: 979, 978
+  orig: 979, 978
+  offset: 0, 0
+  index: -1
+1_예시이미지/유물 이펙트/eft_1_0
+  rotate: false
+  xy: 7475, 3748
+  size: 512, 278
+  orig: 512, 278
+  offset: 0, 0
+  index: -1
+1_예시이미지/유물 이펙트/eft_1_1
+  rotate: false
+  xy: 2, 2
+  size: 45, 180
+  orig: 45, 180
+  offset: 0, 0
+  index: -1
+1_예시이미지/유물 이펙트/eft_1_2
+  rotate: false
+  xy: 6494, 2726
+  size: 512, 320
+  orig: 512, 320
+  offset: 0, 0
+  index: -1
+1_예시이미지/유물 이펙트/eft_2_0
+  rotate: false
+  xy: 2, 2106
+  size: 1080, 1920
+  orig: 1080, 1920
+  offset: 0, 0
+  index: -1
+1_예시이미지/유물 이펙트/eft_2_1
+  rotate: false
+  xy: 2, 184
+  size: 1080, 1920
+  orig: 1080, 1920
+  offset: 0, 0
+  index: -1
+1_예시이미지/유물 이펙트/eft_2_10
+  rotate: false
+  xy: 4330, 184
+  size: 1080, 1920
+  orig: 1080, 1920
+  offset: 0, 0
+  index: -1
+1_예시이미지/유물 이펙트/eft_2_2
+  rotate: false
+  xy: 1084, 2106
+  size: 1080, 1920
+  orig: 1080, 1920
+  offset: 0, 0
+  index: -1
+1_예시이미지/유물 이펙트/eft_2_3
+  rotate: false
+  xy: 1084, 184
+  size: 1080, 1920
+  orig: 1080, 1920
+  offset: 0, 0
+  index: -1
+1_예시이미지/유물 이펙트/eft_2_4
+  rotate: false
+  xy: 2166, 2106
+  size: 1080, 1920
+  orig: 1080, 1920
+  offset: 0, 0
+  index: -1
+1_예시이미지/유물 이펙트/eft_2_6
+  rotate: false
+  xy: 2166, 184
+  size: 1080, 1920
+  orig: 1080, 1920
+  offset: 0, 0
+  index: -1
+1_예시이미지/유물 이펙트/eft_2_7
+  rotate: false
+  xy: 3248, 2106
+  size: 1080, 1920
+  orig: 1080, 1920
+  offset: 0, 0
+  index: -1
+1_예시이미지/유물 이펙트/eft_2_8
+  rotate: false
+  xy: 3248, 184
+  size: 1080, 1920
+  orig: 1080, 1920
+  offset: 0, 0
+  index: -1
+1_예시이미지/유물 이펙트/eft_2_9
+  rotate: false
+  xy: 4330, 2106
+  size: 1080, 1920
+  orig: 1080, 1920
+  offset: 0, 0
+  index: -1
+1_예시이미지/유물 이펙트/eft_bg_0
+  rotate: false
+  xy: 5412, 2106
+  size: 1080, 1920
+  orig: 1080, 1920
+  offset: 0, 0
+  index: -1
+1_예시이미지/유물 이펙트/eft_bg_1
+  rotate: false
+  xy: 5412, 184
+  size: 1080, 1920
+  orig: 1080, 1920
+  offset: 0, 0
+  index: -1
