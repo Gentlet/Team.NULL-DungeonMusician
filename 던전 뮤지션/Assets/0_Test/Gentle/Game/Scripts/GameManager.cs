@@ -54,7 +54,7 @@ public class GameManager : SingletonGameObject<GameManager>
     public float size;
     public AudioSource audio;
 
-    public bool isbattle;
+    //public bool isbattle;
 
     private void Awake()
     {
@@ -84,7 +84,7 @@ public class GameManager : SingletonGameObject<GameManager>
         notevalues.notes.Clear();
 
         StartMusic(0, 0);
-        isbattle = true;
+        //isbattle = true;
     }
 
     public Note CreateNote(Line line, NoteType type, float size = 0f)

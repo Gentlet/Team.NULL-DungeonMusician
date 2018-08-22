@@ -364,6 +364,18 @@ public class Note : MonoBehaviour
 
             return isactive;
         }
+        set
+        {
+            isactive = value;
+
+
+            if (type == NoteType.LONG_END || type == NoteType.LONG_LINE || type == NoteType.LONG_START)
+            {
+                longnotes[0].isactive = value;
+                longnotes[1].isactive = value;
+                longnotes[2].isactive = value;
+            }
+        }
     }
 
     public bool IsReverse
