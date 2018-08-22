@@ -1211,6 +1211,8 @@ MonoBehaviour:
   - {fileID: 1219560599}
   - {fileID: 1096538239}
   - {fileID: 1871799809}
+  GameUI: []
+  BuyUI: []
 --- !u!114 &76542793
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1284,7 +1286,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   relicparent: {fileID: 1934012727}
-  monsterparent: {fileID: 0}
+  monsterparent: {fileID: 122836443}
   objOrigin: {fileID: 1468553770896080, guid: 8f0c31403a98ea747a39dda43c2acfd3, type: 2}
   cover: {fileID: 1612217056}
   explainImage: {fileID: 1681199655}
@@ -5921,7 +5923,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &372509520
 RectTransform:
   m_ObjectHideFlags: 0
@@ -24026,7 +24028,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1587999663
 RectTransform:
   m_ObjectHideFlags: 0
@@ -31742,7 +31744,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2031453337
 Transform:
   m_ObjectHideFlags: 0
