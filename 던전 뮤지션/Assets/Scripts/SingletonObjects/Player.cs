@@ -67,6 +67,19 @@ public class Player : SingletonGameObject<Player> {
         return EffectStorage.Instance.GetStatus(name);
     }
 
+    public void Revive()
+    {
+
+        //AnimationManager.instance.AnimationInstantiate(6, Vector2.zero);
+        AnimationManager.instance.AnimationOn(4,2f);
+        ParticleManager.instance.PlayParticle(4, Vector2.zero);
+        Invoke("ActuallyRevive",1.5f);
+    }
+    public void ActuallyRevive()
+    {
+        
+    }
+
     #region Properties
     public float MaxHealth
     {

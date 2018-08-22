@@ -11,11 +11,13 @@ public class Line : MonoBehaviour
     [SerializeField]
     private GameObject touchline;
 
-    private TouchSim touchsim;
+    //private TouchSim touchsim;
+
+    private int linephase;
 
     private void Awake()
     {
-        touchsim = TouchSim.Instance;
+        //touchsim = TouchSim.Instance;
 
         if (start == null)
             start = transform.GetChild(0).gameObject;
@@ -23,6 +25,7 @@ public class Line : MonoBehaviour
             end = transform.GetChild(1).gameObject;
     }
 
+    /*
     private void Update()
     {
         touchline.SetActive(false);
@@ -42,7 +45,7 @@ public class Line : MonoBehaviour
                 {
                     if (NoteType.LONG <= note.Type && note.Type <= NoteType.LONG_END)
                     {
-                        if(rank == 1f)
+                        if (rank == 1f)
                             GameManager.Instance.Combo += 1;
                         rank *= 0.3f;
                     }
@@ -61,6 +64,57 @@ public class Line : MonoBehaviour
             touchline.SetActive(true);
             //Debug.Log(gameObject.name + touchsim.phase);
         }
+    }
+    */
+
+    //0 == Began
+    //1 == Moved
+    //2 == Stationary
+    //3 == Ended
+    //4 == Canceled
+    public void TouchLineBtn(int phase)
+    {
+        touchline.SetActive(true);
+
+        Note note = GameManager.Instance.NearestNote(this);
+
+        if (note != null && note.Isactive == true)
+        {
+            float rank = note.TouchedNote((TouchPhase)phase);
+
+            if (note.IsDestroy)
+                note.DestroyNote();
+
+            if (rank >= 0.3f)
+            {
+                if (NoteType.LONG <= note.Type && note.Type <= NoteType.LONG_END)
+                {
+                    if (rank == 1f)
+                        GameManager.Instance.Combo += 1;
+                    rank *= 0.3f;
+                }
+                else
+                    GameManager.Instance.Combo += 1;
+
+
+                float damage = rank * Player.Instance.GetStatus("Strength") * (Random.Range(0f, 100f) < Player.Instance.GetStatus("Criticalrate") ? Player.Instance.GetStatus("Criticaldamage") / 100f : 1f);
+                EnemyManager.Instance.Enemy.AttackEnemy(damage);
+                Player.Instance.Health += damage * Player.Instance.GetStatus("Healthdrainrate");
+
+                //Debug.Log(damage);
+            }
+            else
+                note.Isactive = false;
+
+        }
+        
+        if ((TouchPhase)phase == TouchPhase.Ended || (TouchPhase)phase == TouchPhase.Canceled)
+            touchline.SetActive(false);
+    }
+
+    public void TESTFUNCTION(string text)
+    {
+        Debug.Log(text);
     }
 
     #region Operators
