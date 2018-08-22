@@ -22,11 +22,8 @@ public class NoChildNoLife : MonoBehaviour {
     void Update()
     {
         bool delete = true;
-        for (int i = 0; i < child.Length; i++)
-        {
-            if (child[i].activeInHierarchy == true)
-                delete = false;
-        }
+        if (transform.childCount != 0)
+            delete = false;
         if (delete)
         {
             if (insteadOff)
