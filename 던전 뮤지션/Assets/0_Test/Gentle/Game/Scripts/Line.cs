@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 [System.Serializable]
 public class Line : MonoBehaviour
@@ -14,6 +15,11 @@ public class Line : MonoBehaviour
     //private TouchSim touchsim;
 
     private int linephase;
+
+    [SerializeField]
+    private Image linebutton;
+    [SerializeField]
+    private Sprite[] buttonsrpite;
 
     private void Awake()
     {
@@ -67,6 +73,14 @@ public class Line : MonoBehaviour
     }
     */
 
+    private void FixedUpdate()
+    {
+        if ((TouchPhase)Linephase == TouchPhase.Moved)
+            TouchLineBtn(1);
+        else if ((TouchPhase)Linephase == TouchPhase.Stationary)
+            TouchLineBtn(2);
+    }
+
     //0 == Began
     //1 == Moved
     //2 == Stationary
@@ -74,13 +88,35 @@ public class Line : MonoBehaviour
     //4 == Canceled
     public void TouchLineBtn(int phase)
     {
+
+        switch ((TouchPhase)phase)
+        {
+            case TouchPhase.Began:
+                Linephase = phase;
+                linebutton.sprite = buttonsrpite[1];
+                break;
+            case TouchPhase.Moved:
+                Linephase = phase;
+                break;
+            case TouchPhase.Stationary:
+                break;
+            case TouchPhase.Ended:
+                Linephase = phase;
+                break;
+            case TouchPhase.Canceled:
+                break;
+            default:
+                break;
+        }
+        
+
         touchline.SetActive(true);
 
         Note note = GameManager.Instance.NearestNote(this);
 
         if (note != null && note.Isactive == true)
         {
-            float rank = note.TouchedNote((TouchPhase)phase);
+            float rank = note.TouchedNote((TouchPhase)Linephase);
 
             if (note.IsDestroy)
                 note.DestroyNote();
@@ -103,13 +139,35 @@ public class Line : MonoBehaviour
 
                 //Debug.Log(damage);
             }
-            else
-                note.Isactive = false;
+            //else
+            //    note.Isactive = false;
 
         }
-        
-        if ((TouchPhase)phase == TouchPhase.Ended || (TouchPhase)phase == TouchPhase.Canceled)
+
+        if ((TouchPhase)Linephase == TouchPhase.Began)
+            Linephase = (int)TouchPhase.Stationary;
+
+        if ((TouchPhase)phase == TouchPhase.Ended)
+        {
             touchline.SetActive(false);
+            linebutton.sprite = buttonsrpite[0];
+            linephase = -1;
+        }
+    }
+
+    public void PointerEnterLineBtn()
+    {
+        for (int i = 0; i < 4; i++)
+        {
+            if ((TouchPhase)GameManager.Instance.Lines[i].Linephase == TouchPhase.Moved)
+            {
+                GameManager.Instance.Lines[i].Linephase = -1;
+
+                linephase = (int)TouchPhase.Moved;
+                linebutton.sprite = buttonsrpite[1];
+                break;
+            }
+        }
     }
 
     public void TESTFUNCTION(string text)
@@ -185,6 +243,25 @@ public class Line : MonoBehaviour
         get
         {
             return Vector3.Distance(start.transform.position, end.transform.position);
+        }
+    }
+
+    public int Linephase
+    {
+        get
+        {
+            return linephase;
+        }
+
+        set
+        {
+            linephase = value;
+
+            if (linephase == -1)
+            {
+                linebutton.sprite = buttonsrpite[0];
+                touchline.SetActive(false);
+            }
         }
     }
     #endregion
