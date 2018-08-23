@@ -46,7 +46,7 @@ public class Player : SingletonGameObject<Player> {
         helpers = new List<TempHelper>();
         bundles = new List<Bundle>();
 
-        Gold = 0;
+        Gold = 500000;
         Revivepoint = 0;
 
         //Invoke("AAAA", 1f);
@@ -150,7 +150,7 @@ public class Player : SingletonGameObject<Player> {
         }
         set
         {
-            Criticalrate = value;
+            criticalrate = value;
         }
     }
 
@@ -162,7 +162,7 @@ public class Player : SingletonGameObject<Player> {
         }
         set
         {
-            Criticaldamage = value;
+            criticaldamage = value;
         }
     }
 
@@ -183,6 +183,10 @@ public class Player : SingletonGameObject<Player> {
         get
         {
             return extragoldrate;
+        }
+        set
+        {
+            extragoldrate = value;
         }
     }
 

@@ -7,10 +7,6 @@ public class DamageUpgrade : ObjectStatus
     {
         base.Awake();
         fomula = true;
-        //basepoint = 1;
-        //upgraderate = 1;
-        //param = 1;
-        //paramrate = 1;
 
         updateText();
     }
@@ -39,17 +35,9 @@ public class DamageUpgrade : ObjectStatus
 
     new void Upgrade()
     {
-        if (fomula == true)
+        if (base.Upgrade())
         {
-            base.Upgrade();
-            Player.Instance.Criticalrate = Total;
-        }
-        else
-        {
-            level++;
-            basepoint *= upgraderate;
-            upgrademoney = (int)(upgrademoney * moneyrate);
-            SaveInformations();
+            Player.Instance.Strength = Total;
         }
     }
 }

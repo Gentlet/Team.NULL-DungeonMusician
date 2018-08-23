@@ -40,17 +40,10 @@ public class HealthGenUpgrade : ObjectStatus
 
     new void Upgrade()
     {
-        if (fomula == true)
+        if (base.Upgrade())
         {
             base.Upgrade();
-            Player.Instance.Criticalrate = Total;
-        }
-        else
-        {
-            level++;
-            basepoint *= upgraderate;
-            upgrademoney = (int)(upgrademoney * moneyrate);
-            SaveInformations();
+            Player.Instance.Healthdrainrate = Total;
         }
     }
 }

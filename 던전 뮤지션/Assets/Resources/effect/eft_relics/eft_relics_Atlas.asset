@@ -11,6 +11,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6b194f808b1af6499c93410e504af42, type: 3}
   m_Name: eft_relics_Atlas
   m_EditorClassIdentifier: 
-  atlasFile: {fileID: 4900000, guid: cf17302585ded1b4da121d6deabb02a4, type: 3}
+  atlasFile: {fileID: 4900000, guid: f0b17d78d1229114d83e62c408423a09, type: 3}
   materials:
-  - {fileID: 2100000, guid: e7f7cb69238abe54b8509f02296f4bd0, type: 2}
+  - {fileID: 2100000, guid: 98faf6b95c639f24d940132eaa4c8d4b, type: 2}

@@ -7,7 +7,7 @@ public class CritDamageUpgrade : ObjectStatus
     new void Awake()
     {
         base.Awake();
-        fomula = false;
+        fomula = true;
         //basepoint = 1;
         //upgraderate = 1;
         //param = 1;
@@ -39,17 +39,9 @@ public class CritDamageUpgrade : ObjectStatus
 
     new void Upgrade()
     {
-        if (fomula == true)
+        if (base.Upgrade())
         {
-            base.Upgrade();
-            Player.Instance.Criticalrate = Total;
-        }
-        else
-        {
-            level++;
-            basepoint *= upgraderate;
-            upgrademoney = (int)(upgrademoney * moneyrate);
-            SaveInformations();
+            Player.Instance.Criticaldamage = Total;
         }
     }
 }
