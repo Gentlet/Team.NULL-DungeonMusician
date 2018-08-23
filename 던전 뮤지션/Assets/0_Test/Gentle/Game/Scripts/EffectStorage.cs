@@ -75,6 +75,8 @@ public class EffectStorage : SingletonGameObject<EffectStorage> {
 
     public void EffectValuesReset()
     {
+        effects.Clear();
+
         for (int i = 0; i < player.Relics.Count; i++)
         {
             for (int j = 0; j < effects.Count; j++)

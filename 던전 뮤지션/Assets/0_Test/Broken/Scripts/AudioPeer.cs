@@ -18,8 +18,10 @@ public class AudioPeer : MonoBehaviour
         }
     }
 
-    public static float[] _samples = new float[1024];
-    public static float[] _freqBand = new float[20];
+    public static float[] _samples = new float[4096];
+    public static float[] _freqBand = new float[12];
+
+    public float maxScale;
 
     private void Start()
     {
@@ -37,31 +39,27 @@ public class AudioPeer : MonoBehaviour
     }
     void MakeFrequenctBands()
     {
-        int num = 1;
         int count = 0;
 
-        for (int i = 0; i < 20; i++)
+        for (int i = 0; i < 12; i++)
         {
-            if (i < 10)
+            float average = 0f;
+            int sampleCount = (int)Mathf.Pow(2, i)/* * 2*/;
+
+            //if (i == 13)
+            //    sampleCount += 2;
+            for (int j = 0; j < sampleCount; j++)
             {
-                float average = 0f;
-                int sampleCount = (int)(Mathf.Pow(2, i));
-
-                for (int j = 0; j < sampleCount; j++)
-                {
-                    average += _samples[count] * (count + 1);
-                    count++;
-                }
-
-                average /= count;
-
-                _freqBand[i] = average * 10;
+                average += _samples[count] * (count + 1);
+                count++;
             }
-            else
-            {
-                _freqBand[i] = _freqBand[i - num];
-                num += 2;
-            }
+
+            average /= count;
+
+            _freqBand[i] = average * 10;
+
+            if (_freqBand[i] > maxScale)
+                _freqBand[i] = maxScale;
         }
     }
 }
