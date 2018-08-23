@@ -7,7 +7,8 @@ public class VolumeUp : ObjectStatus
     protected int duration;
 
     public int cooltime;
-
+    public bool isactive;
+    Relics relics;
     new void Awake()
     {
         base.Awake();
@@ -16,6 +17,26 @@ public class VolumeUp : ObjectStatus
         duration = 5 + (level - 1);
 
         updateText();
+    }
+    public void Active()
+    {
+        if (isactive)
+            return;
+        isactive = true;
+
+        relics = new Relics("-1", "VolumeUp", "", null, new RelicsEffect("VolumeUp", "Strength", 0f, Total));
+        Player.Instance.Relics.Add(relics);
+        EffectStorage.Instance.EffectValuesReset();
+
+        StartCoroutine(Acting());
+    }
+    public IEnumerator Acting()
+    {
+
+        yield return new WaitForSeconds(duration);
+        Player.Instance.Relics.Remove(relics);
+        EffectStorage.Instance.EffectValuesReset();
+        isactive = false;
     }
 
     public override void updateText()

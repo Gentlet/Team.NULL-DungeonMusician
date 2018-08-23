@@ -6,7 +6,7 @@ public class Busking : ObjectStatus {
     //base 추가%
     public int cooltime;
     public bool isActive;
-
+    Relics relics;
     new void Awake()
     {
         base.Awake();
@@ -19,7 +19,7 @@ public class Busking : ObjectStatus {
     {
         textValues[0].text = level.ToString();
         textValues[1].text = upgrademoney.ToString() + " GOLD";
-        textValues[2].text = "데미지 + " + upgraderate.ToString() + "%";
+        textValues[2].text = "보상 + " + upgraderate.ToString() + "%";
 
         string[] text = new string[2];
         int textnum = 0;
@@ -45,5 +45,14 @@ public class Busking : ObjectStatus {
     public void Active()
     {
         isActive = true;
+
+        relics = new Relics("-1", "Busking", "", null, new RelicsEffect("Busking", "Extragoldrate", 0f, 100f));
+        Player.Instance.Relics.Add(relics);
+        EffectStorage.Instance.EffectValuesReset();
+
+    }
+    public void Off()
+    {
+
     }
 }
