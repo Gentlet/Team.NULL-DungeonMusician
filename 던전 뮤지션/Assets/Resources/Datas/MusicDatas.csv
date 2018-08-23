@@ -1,5 +1,4 @@
 *bundle number,music number,music name,mood number,image,music,bpm,artist,divide
 *0~~,0~~,song,1~4,example,example,0~,artist,0~
 *int,int,string,int,string,string,float,string,int
-0,1,Intro,1,UI/0_common/ui_gold,Musics/Intro,108.94,Orbital Music,8
-0,0,New Frontier,s1,UI/0_common/ui_gold,Musics/New Frontiers,100.59,Ross Bugden,10
+0,0,Infinite,1,UI/0_common/ui_gold,Musics/Infinite,108.94,artist,8

@@ -18933,7 +18933,6 @@ MonoBehaviour:
   notetype: 1
   size: 4
   audio: {fileID: 146100356}
-  isbattle: 0
 --- !u!114 &1229611998
 MonoBehaviour:
   m_ObjectHideFlags: 0
