@@ -350,7 +350,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &17350469
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6102,7 +6102,6 @@ MonoBehaviour:
   notetype: 1
   size: 4
   audio: {fileID: 2058198753}
-  isbattle: 0
 --- !u!114 &341570920
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6367,6 +6366,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 359434360}
+  - component: {fileID: 359434361}
   m_Layer: 5
   m_Name: Skill
   m_TagString: Untagged
@@ -6394,6 +6394,33 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 2.65625}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &359434361
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 359434359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7467d48f80958048bb17ef36781dd58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprites:
+  - {fileID: 21300000, guid: 804aac646ecfc754d8a76ebda7b7814d, type: 3}
+  - {fileID: 21300000, guid: 2a26a228e1e3cb248b7acbb974c4ff4b, type: 3}
+  - {fileID: 21300000, guid: 565613395e53a2a409bf04b188bce9fd, type: 3}
+  - {fileID: 21300000, guid: 99256a3416afed14b9ebe6f2f5da468f, type: 3}
+  - {fileID: 21300000, guid: 921d39a6149d5a541866c4e8acd09762, type: 3}
+  LeftImage: {fileID: 1957995840}
+  RightImage: {fileID: 1884307775}
+  scream: {fileID: 1061772425}
+  vibration: {fileID: 1883603026}
+  volumeUp: {fileID: 1515016603}
+  busking: {fileID: 985395266}
+  spotLight: {fileID: 545835692}
+  CTG: {fileID: 340126579}
+  LeftSkill: -1
+  RightSkill: -1
 --- !u!1 &361765805
 GameObject:
   m_ObjectHideFlags: 0
@@ -12536,7 +12563,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &789298790
 Transform:
   m_ObjectHideFlags: 0
@@ -23826,6 +23853,7 @@ MonoBehaviour:
   - {fileID: 244025201}
   - {fileID: 116035119}
   cooltime: 150
+  isactive: 0
 --- !u!1 &1518829231
 GameObject:
   m_ObjectHideFlags: 0
@@ -33508,7 +33536,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2144764808
 RectTransform:
   m_ObjectHideFlags: 0

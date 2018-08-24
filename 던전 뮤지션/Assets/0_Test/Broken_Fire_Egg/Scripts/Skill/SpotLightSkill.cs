@@ -7,6 +7,8 @@ public class SpotLightSkill : ObjectStatus {
     public int cooltime;
     public bool isactive;
 
+
+    Relics relics;
     new void Awake()
     {
         base.Awake();
@@ -43,12 +45,23 @@ public class SpotLightSkill : ObjectStatus {
     }
     public void Active()
     {
+
+        if (isactive)
+            return;
         isactive = true;
+
+        relics = new Relics("-1", "tmpSpotLight", "", null, new RelicsEffect("tmpSpotlight", "Criticalrate", 0f, 100f));
+        Player.Instance.Relics.Add(relics);
+        EffectStorage.Instance.EffectValuesReset();
+
         StartCoroutine(Acting());
     }
     public IEnumerator Acting()
     {
+
         yield return new WaitForSeconds(param);
+        Player.Instance.Relics.Remove(relics);
+        EffectStorage.Instance.EffectValuesReset();
         isactive = false;
     }
 
