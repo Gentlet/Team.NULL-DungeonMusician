@@ -2,20 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SoundManager : MonoBehaviour
+public class SoundManager : SingletonGameObject<SoundManager>
 {
-    public static SoundManager instance;
     public AudioSource[] EffectSounds;
     public AudioSource[] Musics;
     public int IsEffectOn;
     public int isBGMOn;
-    private void Awake()
-    {
-        if (instance == null)
-            instance = this;
-        else
-            Destroy(gameObject);
-    }
+
+
     private void Start()
     {
         IsEffectOn = PlayerPrefs.GetInt("IsEffectOn", 1);

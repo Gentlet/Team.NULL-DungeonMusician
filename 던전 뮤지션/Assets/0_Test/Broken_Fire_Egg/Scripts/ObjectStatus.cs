@@ -37,10 +37,11 @@ public class ObjectStatus : MonoBehaviour
         updateText();
     }
 
-    public virtual bool Upgrade()
+    public void Upgrade()
     {
         if (Player.Instance.Gold > upgrademoney)
         {
+            SoundManager.Instance.PlayEffectSound(1);
             Player.Instance.Gold -= upgrademoney;
 
             if (moneyrate == 0)
@@ -54,7 +55,11 @@ public class ObjectStatus : MonoBehaviour
 
             return true;
         }
-        return false;
+        else
+        {
+            SoundManager.Instance.PlayEffectSound(0);
+            return false;
+        }
     }
 
     public virtual void updateText()

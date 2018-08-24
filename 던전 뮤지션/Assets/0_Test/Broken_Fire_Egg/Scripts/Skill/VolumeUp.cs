@@ -40,12 +40,11 @@ public class VolumeUp : ObjectStatus
         textValues[3].text = text[0] + duration + text[1] + Total + text[2];
     }
 
-    new void Upgrade()
+    public new void Upgrade()
     {
         if (base.Upgrade())
         {
             duration++;
-
         }
     }
 }

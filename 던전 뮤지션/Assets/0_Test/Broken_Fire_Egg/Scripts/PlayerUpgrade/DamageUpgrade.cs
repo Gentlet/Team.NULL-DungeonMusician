@@ -33,7 +33,7 @@ public class DamageUpgrade : ObjectStatus
         textValues[3].text = text[0] + Total + text[1];
     }
 
-    new void Upgrade()
+    public new void Upgrade()
     {
         if (base.Upgrade())
         {

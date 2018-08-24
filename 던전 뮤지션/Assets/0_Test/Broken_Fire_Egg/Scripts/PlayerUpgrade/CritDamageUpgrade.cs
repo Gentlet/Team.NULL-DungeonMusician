@@ -8,11 +8,8 @@ public class CritDamageUpgrade : ObjectStatus
     {
         base.Awake();
         fomula = true;
-        //basepoint = 1;
-        //upgraderate = 1;
-        //param = 1;
-        //paramrate = 1;
-        
+
+        updateText();
     }
 
     public override void updateText()
@@ -37,7 +34,7 @@ public class CritDamageUpgrade : ObjectStatus
         textValues[3].text = text[0] + Total + text[1];
     }
 
-    new void Upgrade()
+    public new void Upgrade()
     {
         if (base.Upgrade())
         {
