@@ -4,17 +4,25 @@ using UnityEngine;
 
 public class Busking : ObjectStatus {
     //base 추가%
+    public static Busking instance;
     public int cooltime;
     public bool isActive;
     Relics relics;
     new void Awake()
     {
+        if (instance == null)
+            instance = this;
+        else
+            Destroy(gameObject);
         base.Awake();
         fomula = true;
 
         updateText();
     }
-
+    public new void Upgrade()
+    {
+        base.Upgrade();
+    }
     public override void updateText()
     {
         textValues[0].text = level.ToString();
@@ -53,6 +61,12 @@ public class Busking : ObjectStatus {
     }
     public void Off()
     {
-
+        if(isActive)
+        {
+            isActive = false;
+            Player.Instance.Relics.Remove(relics);
+            EffectStorage.Instance.EffectValuesReset();
+            ParticleManager.instance.PlayParticle(2, new Vector2(0,3.36f));
+        }
     }
 }

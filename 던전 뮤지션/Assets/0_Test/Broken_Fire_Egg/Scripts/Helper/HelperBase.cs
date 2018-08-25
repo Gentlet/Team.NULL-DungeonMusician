@@ -16,7 +16,7 @@ public class HelperBase : ObjectStatus
         else
             Destroy(gameObject);
         base.Awake();
-        
+
         fomula = true;
         //basepoint = 1;
         //upgraderate = 1;
@@ -25,7 +25,10 @@ public class HelperBase : ObjectStatus
 
         updateText();
     }
-
+    public new void Upgrade()
+    {
+        base.Upgrade();
+    }
     public override void updateText()
     {
         textValues[0].text = level.ToString();
@@ -46,5 +49,19 @@ public class HelperBase : ObjectStatus
         }
 
         textValues[3].text = text[0] + Total + text[1];
+    }
+
+    private void Update()
+    {
+
+            if (EnemyManager.Instance.Enemy.isActiveAndEnabled)
+                if (Random.Range(1, 300) == 1)
+                    AbilityActive();
+
+    }
+    public void AbilityActive()
+    {
+        //사실상 이펙트 효과
+        SpineObject.SetActive(true);
     }
 }

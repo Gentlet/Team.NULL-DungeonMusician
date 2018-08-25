@@ -23,7 +23,7 @@ public class VolumeUp : ObjectStatus
         if (isactive)
             return;
         isactive = true;
-
+        AnimationManager.instance.AnimationInstantiate(4, new Vector2(0, 3.36f));
         relics = new Relics("-1", "VolumeUp", "", null, new RelicsEffect("VolumeUp", "Strength", 0f, Total));
         Player.Instance.Relics.Add(relics);
         EffectStorage.Instance.EffectValuesReset();

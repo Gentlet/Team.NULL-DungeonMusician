@@ -17,6 +17,8 @@ public class SpineAnimationManager : MonoBehaviour
     public string attack = "";
     [SpineAnimation(dataField: "skeletonAnimation")]
     public string effect = "";
+    [SpineAnimation(dataField: "skeletonAnimation")]
+    public string die = "";
     public bool IsCanvas;
 
 
@@ -88,5 +90,18 @@ public class SpineAnimationManager : MonoBehaviour
         else
             Invoke("IdleAnimation", SA.AnimationState.SetAnimation(0, attack, false).animationEnd);
 
+    }
+    public void DyingAnimation(GameObject enemy)
+    {
+        StartCoroutine(DyingCoroutine(enemy));
+
+    }
+    public IEnumerator DyingCoroutine(GameObject enemy)
+    {
+        if(IsCanvas)
+            yield return new WaitForSpineAnimationComplete(SG.AnimationState.SetAnimation(0, die, false));
+        else
+            yield return new WaitForSpineAnimationComplete(SA.AnimationState.SetAnimation(0, die, false));
+        Destroy(enemy);
     }
 }

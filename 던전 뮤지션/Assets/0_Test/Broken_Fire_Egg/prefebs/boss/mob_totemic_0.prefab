@@ -275,6 +275,7 @@ MonoBehaviour:
   idle: idle_0
   attack: atk_0
   effect: 
+  die: die_0
   IsCanvas: 1
 --- !u!114 &114595376704078648
 MonoBehaviour:

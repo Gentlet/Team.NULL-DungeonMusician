@@ -7,7 +7,7 @@ public class AnimationManager : MonoBehaviour {
 
     public static AnimationManager instance;
     public Animator animator;
-    private void Start()
+    private void Awake()
     {
         if(instance == null)
             instance = this;

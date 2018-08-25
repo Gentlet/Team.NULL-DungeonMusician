@@ -13,7 +13,10 @@ public class Scream : ObjectStatus
 
         updateText();
     }
-
+    public new void Upgrade()
+    {
+        base.Upgrade();
+    }
     public override void updateText()
     {
         textValues[0].text = level.ToString();

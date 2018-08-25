@@ -13,7 +13,9 @@ public class StarGenerator : MonoBehaviour {
     public Animator anitor;
     float flowT;
     AsyncOperation async;
-
+    public bool useVector;
+    public int timess;
+    public Vector3 random;
     private void Awake()
     {
         flowT = 0f;
@@ -21,7 +23,8 @@ public class StarGenerator : MonoBehaviour {
     }
     private void Start()
     {
-        StartCoroutine(PreloadScene());
+        if (anitor != null)
+            StartCoroutine(PreloadScene());
    //     async = SceneManager.LoadSceneAsync(4);
     //    async.allowSceneActivation = false;
     }
@@ -29,7 +32,11 @@ public class StarGenerator : MonoBehaviour {
     // Update is called once per frame
     void Update () {
         flowT += Time.deltaTime;
-        int times = Random.Range(1,4);
+        int times;
+        if (timess == 0)
+            times = Random.Range(1, 4);
+        else
+            times = timess;
         if (flowT >= delay)
         {
             while (times > 0)
@@ -39,7 +46,14 @@ public class StarGenerator : MonoBehaviour {
                     if (pool[i] == null)
                     {
                         pool[i] = Instantiate(original, transform);
-                        pool[i].transform.localPosition = new Vector3(Random.Range(-540, 540), Random.Range(-180, 180));
+                        if (useVector)
+                        {
+                            pool[i].transform.localPosition = new Vector3(Random.Range(-random.x, random.x), Random.Range(-random.y, random.y)); 
+                        }
+                        else
+                        {
+                            pool[i].transform.localPosition = new Vector3(Random.Range(-540, 540), Random.Range(-180, 180));
+                        }
                         break;
                     }
                 }
@@ -48,6 +62,7 @@ public class StarGenerator : MonoBehaviour {
 
             flowT -= delay;
         }
+        if(anitor != null)
         if(Input.GetMouseButtonDown(0))
         {
             anitor.SetTrigger("Start");

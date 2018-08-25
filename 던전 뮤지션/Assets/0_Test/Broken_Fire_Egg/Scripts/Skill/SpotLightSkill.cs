@@ -16,7 +16,10 @@ public class SpotLightSkill : ObjectStatus {
 
         updateText();
     }
-
+    public new void Upgrade()
+    {
+        base.Upgrade();
+    }
     public override void updateText()
     {
         textValues[0].text = level.ToString();
@@ -49,7 +52,7 @@ public class SpotLightSkill : ObjectStatus {
         if (isactive)
             return;
         isactive = true;
-
+        ParticleManager.instance.PlayParticle(1, new Vector2(0, 3.36f));
         relics = new Relics("-1", "tmpSpotLight", "", null, new RelicsEffect("tmpSpotlight", "Criticalrate", 0f, 100f));
         Player.Instance.Relics.Add(relics);
         EffectStorage.Instance.EffectValuesReset();

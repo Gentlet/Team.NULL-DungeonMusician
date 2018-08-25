@@ -27,6 +27,7 @@ public class ObjectStatus : MonoBehaviour
 
     public void Awake()
     {
+
         LoadInformations();
 
         if (moneyrate == 0)
@@ -125,6 +126,14 @@ public class ObjectStatus : MonoBehaviour
         upgrademoney = PlayerPrefs.GetInt(GetType().Name + "upgrademoney", upgrademoney);
         moneyrate = PlayerPrefs.GetFloat(GetType().Name + "moneyrate", moneyrate);
     }
+
+    public void ObjectReset()
+    {
+        level = 1;
+        upgrademoney = firstmoney;
+        updateText();
+    }
+
     // 아래의 멤버변수, 메소드들은 상세 정보 팝업 관련 UI에 필요한 것임
     //[Multiline]
     //public string explain;

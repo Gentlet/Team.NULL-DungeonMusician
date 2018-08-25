@@ -9,7 +9,10 @@ public class Vibration : ObjectStatus
     //basepoint 데미지%
     public int cooltime;
     float dottime;
-
+    public new void Upgrade()
+    {
+        base.Upgrade();
+    }
     new void Awake()
     {
         base.Awake();
@@ -42,18 +45,19 @@ public class Vibration : ObjectStatus
 
     public void Active()
     {
+        AnimationManager.instance.AnimationInstantiate(3, new Vector2(0, 3.36f));
         StartCoroutine(vibreating());
     }
+    WaitForSeconds time5 = new WaitForSeconds(0.5f);
     IEnumerator vibreating()
     {
-
-        WaitForSeconds WS = new WaitForSeconds(dottime);
-        int times = 0;
-        while(times * dottime <= param)
+        int time = 0;
+        while(time <20)
         {
-            times++;
-            yield return WS;
+            EnemyManager.Instance.Enemy.AttackEnemy(Total * Player.Instance.GetStatus("Strength"));
+            yield return time5;
+            time++;
         }
-
+        
     }
 }

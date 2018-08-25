@@ -3083,6 +3083,63 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 156030829}
   m_CullTransparentMesh: 0
+--- !u!1 &163073820
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 163073821}
+  - component: {fileID: 163073822}
+  m_Layer: 0
+  m_Name: Busking
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &163073821
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 163073820}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2096624833}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &163073822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 163073820}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e12997fb34fe9104fb0ac531ad715978, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  level: 1
+  basepoint: 100
+  relicRate: 1
+  upgraderate: 50
+  firstmoney: 2000
+  moneyrate: 1000
+  param: 0
+  paramrate: 0
+  parambase: 0
+  explain: "\uB2E4\uC74C \uBAAC\uC2A4\uD130 \uBCF4\uC0C1\uC774 ~% \uC99D\uAC00\uD568"
+  textValues:
+  - {fileID: 1365447004}
+  - {fileID: 1678465918}
+  - {fileID: 1669031590}
+  - {fileID: 1771373708}
+  cooltime: 200
+  isActive: 0
 --- !u!1 &165014393
 GameObject:
   m_ObjectHideFlags: 0
@@ -3823,6 +3880,12 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 201451302}
   m_CullTransparentMesh: 0
+--- !u!114 &202180495 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114833156444538658, guid: 9c9debf2e75bbb046b3a7a33566a8b9c,
+    type: 2}
+  m_PrefabInternal: {fileID: 892697768}
+  m_Script: {fileID: 11500000, guid: b3288c9878daa3d4faaa10d9a46c4e10, type: 3}
 --- !u!1 &207566530
 GameObject:
   m_ObjectHideFlags: 0
@@ -3995,6 +4058,12 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 210904829}
   m_CullTransparentMesh: 0
+--- !u!114 &213232223 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114202046873807018, guid: 9c9debf2e75bbb046b3a7a33566a8b9c,
+    type: 2}
+  m_PrefabInternal: {fileID: 892697768}
+  m_Script: {fileID: 11500000, guid: 844e990679aa68a4ba87ed0fdb767288, type: 3}
 --- !u!1 &217547635
 GameObject:
   m_ObjectHideFlags: 0
@@ -5091,7 +5160,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1061772425}
+      - m_Target: {fileID: 1711655645}
         m_MethodName: Upgrade
         m_Mode: 1
         m_Arguments:
@@ -6415,11 +6484,11 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 921d39a6149d5a541866c4e8acd09762, type: 3}
   LeftImage: {fileID: 1957995840}
   RightImage: {fileID: 1884307775}
-  scream: {fileID: 1061772425}
-  vibration: {fileID: 1883603026}
-  volumeUp: {fileID: 1515016603}
-  busking: {fileID: 985395266}
-  spotLight: {fileID: 545835692}
+  scream: {fileID: 0}
+  vibration: {fileID: 0}
+  volumeUp: {fileID: 0}
+  busking: {fileID: 0}
+  spotLight: {fileID: 0}
   CTG: {fileID: 340126579}
   LeftSkill: -1
   RightSkill: -1
@@ -6718,7 +6787,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 545835692}
+      - m_Target: {fileID: 385491104}
         m_MethodName: Upgrade
         m_Mode: 1
         m_Arguments:
@@ -6800,6 +6869,64 @@ RectTransform:
   m_AnchoredPosition: {x: 155, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &385491102
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 385491103}
+  - component: {fileID: 385491104}
+  m_Layer: 0
+  m_Name: SpotLight
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &385491103
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 385491102}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2096624833}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &385491104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 385491102}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e02496b875bea92478bfcf01561f99f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  level: 1
+  basepoint: 10
+  relicRate: 1
+  upgraderate: 1
+  firstmoney: 2000
+  moneyrate: 1000
+  param: 0
+  paramrate: 0
+  parambase: 0
+  explain: "~\uCD08 \uB3D9\uC548 \uCE58\uBA85\uD0C0 \uD655\uB960\uC774 100%\uB85C
+    \uC99D\uAC00"
+  textValues:
+  - {fileID: 599816140}
+  - {fileID: 1985075541}
+  - {fileID: 1604977141}
+  - {fileID: 745168429}
+  cooltime: 200
+  isactive: 0
 --- !u!1 &392026816
 GameObject:
   m_ObjectHideFlags: 0
@@ -9279,7 +9406,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 506478160}
-  - component: {fileID: 506478161}
   m_Layer: 5
   m_Name: Drum
   m_TagString: Untagged
@@ -9306,33 +9432,6 @@ RectTransform:
   m_AnchoredPosition: {x: 540, y: -302.5}
   m_SizeDelta: {x: 100, y: 195}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &506478161
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 506478159}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b3fe72fc9a155154bad2e45930af7bd5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  level: 1
-  basepoint: 300
-  relicRate: 1
-  upgraderate: 30
-  firstmoney: 600
-  moneyrate: 0
-  param: 50
-  paramrate: 0
-  parambase: 0
-  explain: "50\uCF64\uBCF4\uB9C8\uB2E4 ~% \uB370\uBBF8\uC9C0\uB85C \uCD94\uAC00 \uACF5\uACA9"
-  textValues:
-  - {fileID: 481502683}
-  - {fileID: 1391752210}
-  - {fileID: 1608636132}
-  - {fileID: 1295297625}
-  SpineObject: {fileID: 2072043515}
 --- !u!1 &510115926
 GameObject:
   m_ObjectHideFlags: 0
@@ -9920,7 +10019,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 545835691}
-  - component: {fileID: 545835692}
   m_Layer: 5
   m_Name: SpotLight
   m_TagString: Untagged
@@ -9948,35 +10046,6 @@ RectTransform:
   m_AnchoredPosition: {x: 50, y: -917.5}
   m_SizeDelta: {x: 100, y: 195}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &545835692
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 545835690}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e02496b875bea92478bfcf01561f99f5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  level: 1
-  basepoint: 10
-  relicRate: 1
-  upgraderate: 1
-  firstmoney: 2000
-  moneyrate: 1000
-  param: 0
-  paramrate: 0
-  parambase: 0
-  explain: "~\uCD08 \uB3D9\uC548 \uCE58\uBA85\uD0C0 \uD655\uB960\uC774 100%\uB85C
-    \uC99D\uAC00"
-  textValues:
-  - {fileID: 599816140}
-  - {fileID: 1985075541}
-  - {fileID: 1604977141}
-  - {fileID: 745168429}
-  cooltime: 200
-  isactive: 0
 --- !u!1 &551120655
 GameObject:
   m_ObjectHideFlags: 0
@@ -10051,6 +10120,62 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 551120655}
   m_CullTransparentMesh: 0
+--- !u!1 &557637810
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 557637811}
+  - component: {fileID: 557637812}
+  m_Layer: 0
+  m_Name: Vibration
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &557637811
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 557637810}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2096624833}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &557637812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 557637810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e84ab575a40e5aa418b6fc8d78dd44de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  level: 1
+  basepoint: 1500
+  relicRate: 1
+  upgraderate: 150
+  firstmoney: 1200
+  moneyrate: 600
+  param: 0
+  paramrate: 0
+  parambase: 0
+  explain: "10\uCD08\uC5D0 \uAC78\uCCD0\uC11C ~%\uC758 \uB370\uBBF8\uC9C0\uB97C \uC90C"
+  textValues:
+  - {fileID: 1542680832}
+  - {fileID: 1571927198}
+  - {fileID: 1576958254}
+  - {fileID: 1969897576}
+  cooltime: 150
 --- !u!1 &561263667
 GameObject:
   m_ObjectHideFlags: 0
@@ -11837,7 +11962,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 702728982}
-  - component: {fileID: 702728983}
   m_Layer: 5
   m_Name: Bass
   m_TagString: Untagged
@@ -11864,34 +11988,47 @@ RectTransform:
   m_AnchoredPosition: {x: 540, y: -507.5}
   m_SizeDelta: {x: 100, y: 195}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &702728983
+--- !u!1 &714106628
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 714106630}
+  - component: {fileID: 714106629}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &714106629
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 702728981}
+  m_GameObject: {fileID: 714106628}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 844e990679aa68a4ba87ed0fdb767288, type: 3}
+  m_Script: {fileID: 11500000, guid: 4259be14b35f7d141bb2a0a39d12e3a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  level: 1
-  basepoint: 20
-  relicRate: 1
-  upgraderate: 0.2
-  firstmoney: 700
-  moneyrate: 0
-  param: 0
-  paramrate: 0
-  parambase: 0
-  explain: "\uB2E4\uB978 \uC870\uB825\uC790\uB4E4\uC758 \uACF5\uACA9\uB825\uC774 ~%
-    \uC99D\uAC00"
-  textValues:
-  - {fileID: 1421405383}
-  - {fileID: 310443616}
-  - {fileID: 1526117033}
-  - {fileID: 993264270}
-  SpineObject: {fileID: 1633752480}
+  objects: []
+--- !u!4 &714106630
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 714106628}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &719269815
 GameObject:
   m_ObjectHideFlags: 0
@@ -12553,6 +12690,12 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &781100659 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114298328204485466, guid: 9c9debf2e75bbb046b3a7a33566a8b9c,
+    type: 2}
+  m_PrefabInternal: {fileID: 892697768}
+  m_Script: {fileID: 11500000, guid: 575eeab6f4077e04e93adb5dcc3cfdf1, type: 3}
 --- !u!1 &789298789
 GameObject:
   m_ObjectHideFlags: 0
@@ -12826,6 +12969,12 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &822774413 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114960584218259030, guid: 9c9debf2e75bbb046b3a7a33566a8b9c,
+    type: 2}
+  m_PrefabInternal: {fileID: 892697768}
+  m_Script: {fileID: 11500000, guid: b3fe72fc9a155154bad2e45930af7bd5, type: 3}
 --- !u!1 &831079341
 GameObject:
   m_ObjectHideFlags: 0
@@ -13169,7 +13318,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 946720233}
+      - m_Target: {fileID: 202180495}
         m_MethodName: Upgrade
         m_Mode: 1
         m_Arguments:
@@ -13700,6 +13849,148 @@ MonoBehaviour:
     line: {fileID: 0}
     type: 0
     value: 0
+--- !u!1001 &892697768
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4740186957633096, guid: 9c9debf2e75bbb046b3a7a33566a8b9c, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4740186957633096, guid: 9c9debf2e75bbb046b3a7a33566a8b9c, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4740186957633096, guid: 9c9debf2e75bbb046b3a7a33566a8b9c, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4740186957633096, guid: 9c9debf2e75bbb046b3a7a33566a8b9c, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4740186957633096, guid: 9c9debf2e75bbb046b3a7a33566a8b9c, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4740186957633096, guid: 9c9debf2e75bbb046b3a7a33566a8b9c, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4740186957633096, guid: 9c9debf2e75bbb046b3a7a33566a8b9c, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4740186957633096, guid: 9c9debf2e75bbb046b3a7a33566a8b9c, type: 2}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 114298328204485466, guid: 9c9debf2e75bbb046b3a7a33566a8b9c,
+        type: 2}
+      propertyPath: textValues.Array.data[0]
+      value: 
+      objectReference: {fileID: 137055689}
+    - target: {fileID: 114298328204485466, guid: 9c9debf2e75bbb046b3a7a33566a8b9c,
+        type: 2}
+      propertyPath: textValues.Array.data[1]
+      value: 
+      objectReference: {fileID: 867398068}
+    - target: {fileID: 114298328204485466, guid: 9c9debf2e75bbb046b3a7a33566a8b9c,
+        type: 2}
+      propertyPath: textValues.Array.data[2]
+      value: 
+      objectReference: {fileID: 1372721004}
+    - target: {fileID: 114298328204485466, guid: 9c9debf2e75bbb046b3a7a33566a8b9c,
+        type: 2}
+      propertyPath: textValues.Array.data[3]
+      value: 
+      objectReference: {fileID: 1237562054}
+    - target: {fileID: 114298328204485466, guid: 9c9debf2e75bbb046b3a7a33566a8b9c,
+        type: 2}
+      propertyPath: SpineObject
+      value: 
+      objectReference: {fileID: 1959593574}
+    - target: {fileID: 114202046873807018, guid: 9c9debf2e75bbb046b3a7a33566a8b9c,
+        type: 2}
+      propertyPath: textValues.Array.data[0]
+      value: 
+      objectReference: {fileID: 1421405383}
+    - target: {fileID: 114202046873807018, guid: 9c9debf2e75bbb046b3a7a33566a8b9c,
+        type: 2}
+      propertyPath: textValues.Array.data[1]
+      value: 
+      objectReference: {fileID: 310443616}
+    - target: {fileID: 114202046873807018, guid: 9c9debf2e75bbb046b3a7a33566a8b9c,
+        type: 2}
+      propertyPath: textValues.Array.data[2]
+      value: 
+      objectReference: {fileID: 1526117033}
+    - target: {fileID: 114202046873807018, guid: 9c9debf2e75bbb046b3a7a33566a8b9c,
+        type: 2}
+      propertyPath: textValues.Array.data[3]
+      value: 
+      objectReference: {fileID: 993264270}
+    - target: {fileID: 114202046873807018, guid: 9c9debf2e75bbb046b3a7a33566a8b9c,
+        type: 2}
+      propertyPath: SpineObject
+      value: 
+      objectReference: {fileID: 1633752480}
+    - target: {fileID: 114960584218259030, guid: 9c9debf2e75bbb046b3a7a33566a8b9c,
+        type: 2}
+      propertyPath: textValues.Array.data[0]
+      value: 
+      objectReference: {fileID: 481502683}
+    - target: {fileID: 114960584218259030, guid: 9c9debf2e75bbb046b3a7a33566a8b9c,
+        type: 2}
+      propertyPath: textValues.Array.data[1]
+      value: 
+      objectReference: {fileID: 1391752210}
+    - target: {fileID: 114960584218259030, guid: 9c9debf2e75bbb046b3a7a33566a8b9c,
+        type: 2}
+      propertyPath: textValues.Array.data[2]
+      value: 
+      objectReference: {fileID: 1608636132}
+    - target: {fileID: 114960584218259030, guid: 9c9debf2e75bbb046b3a7a33566a8b9c,
+        type: 2}
+      propertyPath: textValues.Array.data[3]
+      value: 
+      objectReference: {fileID: 1295297625}
+    - target: {fileID: 114960584218259030, guid: 9c9debf2e75bbb046b3a7a33566a8b9c,
+        type: 2}
+      propertyPath: SpineObject
+      value: 
+      objectReference: {fileID: 2072043515}
+    - target: {fileID: 114833156444538658, guid: 9c9debf2e75bbb046b3a7a33566a8b9c,
+        type: 2}
+      propertyPath: textValues.Array.data[0]
+      value: 
+      objectReference: {fileID: 1304795589}
+    - target: {fileID: 114833156444538658, guid: 9c9debf2e75bbb046b3a7a33566a8b9c,
+        type: 2}
+      propertyPath: textValues.Array.data[1]
+      value: 
+      objectReference: {fileID: 1490233507}
+    - target: {fileID: 114833156444538658, guid: 9c9debf2e75bbb046b3a7a33566a8b9c,
+        type: 2}
+      propertyPath: textValues.Array.data[2]
+      value: 
+      objectReference: {fileID: 960170880}
+    - target: {fileID: 114833156444538658, guid: 9c9debf2e75bbb046b3a7a33566a8b9c,
+        type: 2}
+      propertyPath: textValues.Array.data[3]
+      value: 
+      objectReference: {fileID: 742660042}
+    - target: {fileID: 114833156444538658, guid: 9c9debf2e75bbb046b3a7a33566a8b9c,
+        type: 2}
+      propertyPath: SpineObject
+      value: 
+      objectReference: {fileID: 1647835208}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9c9debf2e75bbb046b3a7a33566a8b9c, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1 &896463775
 GameObject:
   m_ObjectHideFlags: 0
@@ -14048,6 +14339,26 @@ Prefab:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 23367883705375018, guid: 279505dd4760c894ba359c5e4216cc59,
+        type: 2}
+      propertyPath: m_SortingOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 23512706516513876, guid: 279505dd4760c894ba359c5e4216cc59,
+        type: 2}
+      propertyPath: m_SortingOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 23205657558710034, guid: 279505dd4760c894ba359c5e4216cc59,
+        type: 2}
+      propertyPath: m_SortingOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 23649493472780418, guid: 279505dd4760c894ba359c5e4216cc59,
+        type: 2}
+      propertyPath: m_SortingOrder
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 279505dd4760c894ba359c5e4216cc59, type: 2}
   m_IsPrefabAsset: 0
@@ -14222,7 +14533,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 946720232}
-  - component: {fileID: 946720233}
   m_Layer: 5
   m_Name: Guitar
   m_TagString: Untagged
@@ -14249,34 +14559,6 @@ RectTransform:
   m_AnchoredPosition: {x: 540, y: -97.5}
   m_SizeDelta: {x: 100, y: 195}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &946720233
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 946720231}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b3288c9878daa3d4faaa10d9a46c4e10, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  level: 1
-  basepoint: 30
-  relicRate: 1
-  upgraderate: 0.5
-  firstmoney: 500
-  moneyrate: 0
-  param: 0
-  paramrate: 0
-  parambase: 0
-  explain: "\uAE30\uBCF8 \uB178\uD2B8\uB97C \uD130\uCE58\uD560 \uB54C ~% \uB370\uBBF8\uC9C0\uB85C
-    \uCD94\uAC00\uACF5\uACA9"
-  textValues:
-  - {fileID: 1304795589}
-  - {fileID: 1490233507}
-  - {fileID: 960170880}
-  - {fileID: 742660042}
-  SpineObject: {fileID: 1647835208}
 --- !u!1 &953922632
 GameObject:
   m_ObjectHideFlags: 0
@@ -14881,7 +15163,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 985395265}
-  - component: {fileID: 985395266}
   m_Layer: 5
   m_Name: Busking
   m_TagString: Untagged
@@ -14909,34 +15190,6 @@ RectTransform:
   m_AnchoredPosition: {x: 50, y: -712.5}
   m_SizeDelta: {x: 100, y: 195}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &985395266
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 985395264}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e12997fb34fe9104fb0ac531ad715978, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  level: 1
-  basepoint: 100
-  relicRate: 1
-  upgraderate: 50
-  firstmoney: 2000
-  moneyrate: 1000
-  param: 0
-  paramrate: 0
-  parambase: 0
-  explain: "\uB2E4\uC74C \uBAAC\uC2A4\uD130 \uBCF4\uC0C1\uC774 ~% \uC99D\uAC00\uD568"
-  textValues:
-  - {fileID: 1365447004}
-  - {fileID: 1678465918}
-  - {fileID: 1669031590}
-  - {fileID: 1771373708}
-  cooltime: 200
-  isActive: 0
 --- !u!1001 &988205560
 Prefab:
   m_ObjectHideFlags: 0
@@ -16038,7 +16291,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1061772424}
-  - component: {fileID: 1061772425}
   m_Layer: 5
   m_Name: Scream
   m_TagString: Untagged
@@ -16066,33 +16318,6 @@ RectTransform:
   m_AnchoredPosition: {x: 50, y: -97.5}
   m_SizeDelta: {x: 100, y: 195}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1061772425
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1061772423}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1df93b031a6427a4ab0b01e635bb957c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  level: 1
-  basepoint: 1000
-  relicRate: 1
-  upgraderate: 100
-  firstmoney: 1000
-  moneyrate: 500
-  param: 0
-  paramrate: 0
-  parambase: 0
-  explain: "~%\uC758 \uB370\uBBF8\uC9C0\uB97C \uC90C"
-  textValues:
-  - {fileID: 392026817}
-  - {fileID: 408029810}
-  - {fileID: 1561921061}
-  - {fileID: 48299170}
-  cooltime: 100
 --- !u!1 &1077186621
 GameObject:
   m_ObjectHideFlags: 0
@@ -23044,7 +23269,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1515016603}
+      - m_Target: {fileID: 1655593429}
         m_MethodName: Upgrade
         m_Mode: 1
         m_Arguments:
@@ -23823,7 +24048,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1515016602}
-  - component: {fileID: 1515016603}
   m_Layer: 5
   m_Name: Volume Up!
   m_TagString: Untagged
@@ -23851,34 +24075,6 @@ RectTransform:
   m_AnchoredPosition: {x: 50, y: -507.5}
   m_SizeDelta: {x: 100, y: 195}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1515016603
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1515016601}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5661dab42a2b1f84ca5560580b449544, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  level: 1
-  basepoint: 60
-  relicRate: 1
-  upgraderate: 5
-  firstmoney: 1500
-  moneyrate: 750
-  param: 0
-  paramrate: 0
-  parambase: 0
-  explain: "~\uCD08\uB3D9\uC548 \uACF5\uACA9\uB825\uC774 ~% \uC99D\uAC00\uD568"
-  textValues:
-  - {fileID: 1409859940}
-  - {fileID: 41813613}
-  - {fileID: 244025201}
-  - {fileID: 116035119}
-  cooltime: 150
-  isactive: 0
 --- !u!1 &1518829231
 GameObject:
   m_ObjectHideFlags: 0
@@ -26053,7 +26249,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1883603026}
+      - m_Target: {fileID: 557637812}
         m_MethodName: Upgrade
         m_Mode: 1
         m_Arguments:
@@ -26365,6 +26561,63 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1710133305477074, guid: 279505dd4760c894ba359c5e4216cc59,
     type: 2}
   m_PrefabInternal: {fileID: 912302451}
+--- !u!1 &1655593427
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1655593428}
+  - component: {fileID: 1655593429}
+  m_Layer: 0
+  m_Name: Volume Up!
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1655593428
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1655593427}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2096624833}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1655593429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1655593427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5661dab42a2b1f84ca5560580b449544, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  level: 1
+  basepoint: 60
+  relicRate: 1
+  upgraderate: 5
+  firstmoney: 1500
+  moneyrate: 750
+  param: 0
+  paramrate: 0
+  parambase: 0
+  explain: "~\uCD08\uB3D9\uC548 \uACF5\uACA9\uB825\uC774 ~% \uC99D\uAC00\uD568"
+  textValues:
+  - {fileID: 1409859940}
+  - {fileID: 41813613}
+  - {fileID: 244025201}
+  - {fileID: 116035119}
+  cooltime: 150
+  isactive: 0
 --- !u!1 &1661440399
 GameObject:
   m_ObjectHideFlags: 0
@@ -27244,6 +27497,62 @@ RectTransform:
   m_AnchoredPosition: {x: -57.5, y: 24}
   m_SizeDelta: {x: 30, y: 58}
   m_Pivot: {x: 0, y: 0.5}
+--- !u!1 &1711655643
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1711655644}
+  - component: {fileID: 1711655645}
+  m_Layer: 0
+  m_Name: Scream
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1711655644
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1711655643}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2096624833}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1711655645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1711655643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1df93b031a6427a4ab0b01e635bb957c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  level: 1
+  basepoint: 1000
+  relicRate: 1
+  upgraderate: 100
+  firstmoney: 1000
+  moneyrate: 500
+  param: 0
+  paramrate: 0
+  parambase: 0
+  explain: "~%\uC758 \uB370\uBBF8\uC9C0\uB97C \uC90C"
+  textValues:
+  - {fileID: 392026817}
+  - {fileID: 408029810}
+  - {fileID: 1561921061}
+  - {fileID: 48299170}
+  cooltime: 100
 --- !u!1 &1719021562
 GameObject:
   m_ObjectHideFlags: 0
@@ -28367,7 +28676,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 985395266}
+      - m_Target: {fileID: 163073822}
         m_MethodName: Upgrade
         m_Mode: 1
         m_Arguments:
@@ -29019,7 +29328,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1883603025}
-  - component: {fileID: 1883603026}
   m_Layer: 5
   m_Name: Vibration
   m_TagString: Untagged
@@ -29047,33 +29355,6 @@ RectTransform:
   m_AnchoredPosition: {x: 50, y: -302.5}
   m_SizeDelta: {x: 100, y: 195}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1883603026
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1883603024}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e84ab575a40e5aa418b6fc8d78dd44de, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  level: 1
-  basepoint: 1500
-  relicRate: 1
-  upgraderate: 150
-  firstmoney: 1200
-  moneyrate: 600
-  param: 0
-  paramrate: 0
-  parambase: 0
-  explain: "10\uCD08\uC5D0 \uAC78\uCCD0\uC11C ~%\uC758 \uB370\uBBF8\uC9C0\uB97C \uC90C"
-  textValues:
-  - {fileID: 1542680832}
-  - {fileID: 1571927198}
-  - {fileID: 1576958254}
-  - {fileID: 1969897576}
-  cooltime: 150
 --- !u!1 &1884307772
 GameObject:
   m_ObjectHideFlags: 0
@@ -29441,7 +29722,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 506478161}
+      - m_Target: {fileID: 822774413}
         m_MethodName: Upgrade
         m_Mode: 1
         m_Arguments:
@@ -31614,7 +31895,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 702728983}
+      - m_Target: {fileID: 213232223}
         m_MethodName: Upgrade
         m_Mode: 1
         m_Arguments:
@@ -32208,7 +32489,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2057778767}
-  - component: {fileID: 2057778768}
   m_Layer: 5
   m_Name: Keyboard
   m_TagString: Untagged
@@ -32235,34 +32515,6 @@ RectTransform:
   m_AnchoredPosition: {x: 540, y: -712.5}
   m_SizeDelta: {x: 100, y: 195}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2057778768
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2057778766}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 575eeab6f4077e04e93adb5dcc3cfdf1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  level: 1
-  basepoint: 300
-  relicRate: 1
-  upgraderate: 3
-  firstmoney: 800
-  moneyrate: 0
-  param: 0
-  paramrate: 0
-  parambase: 0
-  explain: "30% \uD655\uB960\uB85C \uAE30\uBCF8 \uB178\uB4DC\uB97C ~% \uB370\uBBF8\uC9C0\uB97C
-    \uC8FC\uB294 \uD2B9\uC218 \uB178\uB4DC\uB85C \uBCC0\uD658"
-  textValues:
-  - {fileID: 137055689}
-  - {fileID: 867398068}
-  - {fileID: 1372721004}
-  - {fileID: 1237562054}
-  SpineObject: {fileID: 1959593574}
 --- !u!1 &2058198752
 GameObject:
   m_ObjectHideFlags: 0
@@ -32579,7 +32831,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2057778768}
+      - m_Target: {fileID: 781100659}
         m_MethodName: Upgrade
         m_Mode: 1
         m_Arguments:
@@ -32840,6 +33092,39 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2092659437}
   m_CullTransparentMesh: 0
+--- !u!1 &2096624832
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2096624833}
+  m_Layer: 0
+  m_Name: ActiveSkill
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2096624833
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2096624832}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1711655644}
+  - {fileID: 557637811}
+  - {fileID: 1655593428}
+  - {fileID: 163073821}
+  - {fileID: 385491103}
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2097820000
 GameObject:
   m_ObjectHideFlags: 0

@@ -8,8 +8,8 @@ public class ParticleManager : MonoBehaviour {
     public GameObject[] longnote;      //롱 노트용 파티클 (4개다 위치 맞춰주셈)(끄는 함수 호출 해주셈)
     public GameObject[] loopingParticle;//루핑하는 파티클 (타이머를 지정 or 끄는 함수 호출 해주셈),(위치 맞춰주셈)
 
-    public static ParticleManager instance;
-    private void Start()
+    public static ParticleManager instance = null;
+    private void Awake()
     {
         if (instance == null)
             instance = this;
