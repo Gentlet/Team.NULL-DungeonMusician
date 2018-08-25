@@ -37,7 +37,7 @@ public class ObjectStatus : MonoBehaviour
         updateText();
     }
 
-    public void Upgrade()
+    public virtual bool Upgrade()
     {
         if (Player.Instance.Gold > upgrademoney)
         {
