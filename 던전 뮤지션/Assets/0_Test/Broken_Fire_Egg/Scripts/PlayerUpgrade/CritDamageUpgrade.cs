@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CritDamageUpgrade : ObjectStatus
 {
+    Relics relics;
     new void Awake()
     {
         base.Awake();
@@ -38,7 +39,11 @@ public class CritDamageUpgrade : ObjectStatus
     {
         if (base.Upgrade())
         {
-            Player.Instance.Criticaldamage = Total;
+            if (relics.name == "CritDamageUpgrade") //이미 있는가?
+                Player.Instance.Relics.Remove(relics);
+            relics = new Relics("-1", "CritDamageUpgrade", "", null, new RelicsEffect("CritDamageUpgrade", "Criticaldamage", 0f, Total));
+            Player.Instance.Relics.Add(relics);
+            EffectStorage.Instance.EffectValuesReset();
         }
     }
 }

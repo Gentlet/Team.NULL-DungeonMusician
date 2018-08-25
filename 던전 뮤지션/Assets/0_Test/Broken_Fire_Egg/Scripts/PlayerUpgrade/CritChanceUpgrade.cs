@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CritChanceUpgrade : ObjectStatus
 {
+    Relics relics;
     new void Awake()
     {
         base.Awake();
@@ -38,7 +39,11 @@ public class CritChanceUpgrade : ObjectStatus
     {
         if(base.Upgrade())
         {
-            Player.Instance.Criticalrate = Total;
+            if (relics.name == "Criticalrate") //이미 있는가?
+                Player.Instance.Relics.Remove(relics);
+            relics = new Relics("-1", "Criticalrate", "", null, new RelicsEffect("Criticalrate", "Criticalrate", 0f, Total));
+            Player.Instance.Relics.Add(relics);
+            EffectStorage.Instance.EffectValuesReset();
         }
     }
     

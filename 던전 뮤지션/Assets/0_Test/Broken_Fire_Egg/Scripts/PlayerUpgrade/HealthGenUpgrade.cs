@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class HealthGenUpgrade : ObjectStatus
 {
+    Relics relics;
     new void Awake()
     {
         base.Awake();
@@ -38,8 +39,11 @@ public class HealthGenUpgrade : ObjectStatus
     {
         if (base.Upgrade())
         {
-            base.Upgrade();
-            Player.Instance.Healthdrainrate = Total;
+            if (relics.name == "Healthdrainrate") //이미 있는가?
+                Player.Instance.Relics.Remove(relics);
+            relics = new Relics("-1", "Healthdrainrate", "", null, new RelicsEffect("Healthdrainrate", "Healthdrainrate", 0f, Total));
+            Player.Instance.Relics.Add(relics);
+            EffectStorage.Instance.EffectValuesReset();
         }
     }
 }

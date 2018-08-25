@@ -3,11 +3,12 @@ using UnityEngine;
 
 public class DamageUpgrade : ObjectStatus
 {
+    Relics relics;
     new void Awake()
     {
         base.Awake();
         fomula = true;
-
+        
         updateText();
     }
 
@@ -37,7 +38,13 @@ public class DamageUpgrade : ObjectStatus
     {
         if (base.Upgrade())
         {
-            Player.Instance.Strength = Total;
+
+            //Player.Instance.Strength = Total;
+            if (relics.name == "DamageUpgrade") //이미 있는가?
+                Player.Instance.Relics.Remove(relics);
+            relics = new Relics("-1", "DamageUpgrade", "", null, new RelicsEffect("DamageUpgrade", "Strength", 0f, Total));
+            Player.Instance.Relics.Add(relics);
+            EffectStorage.Instance.EffectValuesReset();
         }
     }
 }

@@ -5,9 +5,15 @@ using UnityEngine;
 public class HelperKeyboard : ObjectStatus
 {
     //param * paramrate % 확률로 기본 노드 대신 total * playerDMG * HelperBase.total% 의 데미지를 주는 특수노드로 변환
-
+    public static HelperKeyboard instance;
+    public GameObject SpineObject;
     new void Awake()
     {
+        if (instance == null)
+            instance = this;
+        else
+            Destroy(gameObject);
+
         base.Awake();
         fomula = true;
         relicRate = 1;
@@ -47,7 +53,7 @@ public class HelperKeyboard : ObjectStatus
         if(Random.Range(0,100) < param)
         {
             EnemyManager.Instance.Enemy.AttackEnemy(Total * Player.Instance.GetStatus("Strength") * HelperBase.instance.Total);
-            Debug.Log("키보드");
+            SpineObject.SetActive(true);
         }
     }
     public void UpgradeParam()

@@ -4,10 +4,16 @@ using UnityEngine;
 
 public class HelperDrum : ObjectStatus
 {
-    //플레이어가 param콤보 할 때마다 total * playerDMG * HelperBase.total%의 데미지로 추가 공격
 
+    //플레이어가 param콤보 할 때마다 total * playerDMG * HelperBase.total%의 데미지로 추가 공격
+    public static HelperDrum instance;
+    public GameObject SpineObject;
     new void Awake()
     {
+        if (instance == null)
+            instance = this;
+        else
+            Destroy(gameObject);
         base.Awake();
         fomula = true;
 
@@ -45,7 +51,9 @@ public class HelperDrum : ObjectStatus
     {
         if (combo % param == 0)
         {
+            SpineObject.SetActive(true);
             EnemyManager.Instance.Enemy.AttackEnemy(Total * Player.Instance.GetStatus("Strength") * HelperBase.instance.Total);
         }
     }
+
 }

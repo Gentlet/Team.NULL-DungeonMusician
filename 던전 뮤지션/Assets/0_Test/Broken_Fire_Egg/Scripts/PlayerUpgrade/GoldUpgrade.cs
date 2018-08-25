@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class GoldUpgrade : ObjectStatus
 {
+    Relics relics;
     new void Awake()
     {
         base.Awake();
@@ -38,7 +39,11 @@ public class GoldUpgrade : ObjectStatus
     {
         if (base.Upgrade())
         {
-            Player.Instance.Extragoldrate = Total;
+            if (relics.name == "Gold") //이미 있는가?
+                Player.Instance.Relics.Remove(relics);
+            relics = new Relics("-1", "Gold", "", null, new RelicsEffect("Gold", "Gold", 0f, Total));
+            Player.Instance.Relics.Add(relics);
+            EffectStorage.Instance.EffectValuesReset();
         }
     }
 }

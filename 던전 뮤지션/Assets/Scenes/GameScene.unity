@@ -3515,6 +3515,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   touchline: {fileID: 1545328942}
+  linebutton: {fileID: 0}
+  buttonsrpite: []
 --- !u!1 &196491849
 GameObject:
   m_ObjectHideFlags: 0
@@ -9321,7 +9323,7 @@ MonoBehaviour:
   upgraderate: 30
   firstmoney: 600
   moneyrate: 0
-  param: 0
+  param: 50
   paramrate: 0
   parambase: 0
   explain: "50\uCF64\uBCF4\uB9C8\uB2E4 ~% \uB370\uBBF8\uC9C0\uB85C \uCD94\uAC00 \uACF5\uACA9"
@@ -9330,6 +9332,7 @@ MonoBehaviour:
   - {fileID: 1391752210}
   - {fileID: 1608636132}
   - {fileID: 1295297625}
+  SpineObject: {fileID: 2072043515}
 --- !u!1 &510115926
 GameObject:
   m_ObjectHideFlags: 0
@@ -11888,6 +11891,7 @@ MonoBehaviour:
   - {fileID: 310443616}
   - {fileID: 1526117033}
   - {fileID: 993264270}
+  SpineObject: {fileID: 1633752480}
 --- !u!1 &719269815
 GameObject:
   m_ObjectHideFlags: 0
@@ -14024,6 +14028,26 @@ Prefab:
       propertyPath: OnOffs.Array.data[4]
       value: 
       objectReference: {fileID: 642297678}
+    - target: {fileID: 33985695247635032, guid: 279505dd4760c894ba359c5e4216cc59,
+        type: 2}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 33633991526699656, guid: 279505dd4760c894ba359c5e4216cc59,
+        type: 2}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 33321410525045760, guid: 279505dd4760c894ba359c5e4216cc59,
+        type: 2}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 33291723745975654, guid: 279505dd4760c894ba359c5e4216cc59,
+        type: 2}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 279505dd4760c894ba359c5e4216cc59, type: 2}
   m_IsPrefabAsset: 0
@@ -14252,6 +14276,7 @@ MonoBehaviour:
   - {fileID: 1490233507}
   - {fileID: 960170880}
   - {fileID: 742660042}
+  SpineObject: {fileID: 1647835208}
 --- !u!1 &953922632
 GameObject:
   m_ObjectHideFlags: 0
@@ -25775,6 +25800,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   touchline: {fileID: 1389221603}
+  linebutton: {fileID: 0}
+  buttonsrpite: []
 --- !u!4 &1616733826
 Transform:
   m_ObjectHideFlags: 0
@@ -26109,6 +26136,11 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 1166}
   m_Pivot: {x: 0, y: 1}
+--- !u!1 &1633752480 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1824567953028182, guid: 279505dd4760c894ba359c5e4216cc59,
+    type: 2}
+  m_PrefabInternal: {fileID: 912302451}
 --- !u!1 &1641794899
 GameObject:
   m_ObjectHideFlags: 0
@@ -26328,6 +26360,11 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1647284034}
   m_CullTransparentMesh: 0
+--- !u!1 &1647835208 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1710133305477074, guid: 279505dd4760c894ba359c5e4216cc59,
+    type: 2}
+  m_PrefabInternal: {fileID: 912302451}
 --- !u!1 &1661440399
 GameObject:
   m_ObjectHideFlags: 0
@@ -30383,6 +30420,11 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1957995837}
   m_CullTransparentMesh: 0
+--- !u!1 &1959593574 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1712035025580562, guid: 279505dd4760c894ba359c5e4216cc59,
+    type: 2}
+  m_PrefabInternal: {fileID: 912302451}
 --- !u!1 &1966777629
 GameObject:
   m_ObjectHideFlags: 0
@@ -30715,6 +30757,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   touchline: {fileID: 1336483993}
+  linebutton: {fileID: 0}
+  buttonsrpite: []
 --- !u!1 &1984303805
 GameObject:
   m_ObjectHideFlags: 0
@@ -30977,6 +31021,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   touchline: {fileID: 1433989413}
+  linebutton: {fileID: 0}
+  buttonsrpite: []
 --- !u!1 &1995632995
 GameObject:
   m_ObjectHideFlags: 0
@@ -32216,6 +32262,7 @@ MonoBehaviour:
   - {fileID: 867398068}
   - {fileID: 1372721004}
   - {fileID: 1237562054}
+  SpineObject: {fileID: 1959593574}
 --- !u!1 &2058198752
 GameObject:
   m_ObjectHideFlags: 0
@@ -32450,6 +32497,11 @@ Transform:
   m_Father: {fileID: 421740018}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2072043515 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1671059304075018, guid: 279505dd4760c894ba359c5e4216cc59,
+    type: 2}
+  m_PrefabInternal: {fileID: 912302451}
 --- !u!1 &2086853247
 GameObject:
   m_ObjectHideFlags: 0

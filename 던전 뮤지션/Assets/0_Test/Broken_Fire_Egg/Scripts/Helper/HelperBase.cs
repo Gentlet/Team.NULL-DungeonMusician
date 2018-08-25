@@ -8,7 +8,7 @@ public class HelperBase : ObjectStatus
     //다른 조력자들이 버프를 받기 위해 이 클래스를 참조한다
     //그래서 초기화 말곤 아무것도 할게 없어 보인다.
     public static HelperBase instance;
-    
+    public GameObject SpineObject;
     new void Awake()
     {
         if (instance == null)

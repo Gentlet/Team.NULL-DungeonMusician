@@ -6,9 +6,14 @@ public class HelperGuitar : ObjectStatus
 {
 
     //플레이어가 기본 노드를 터치할 때마다 total * playerDMG * HelperBase의 total%의 데미지로 추가 공격
-
+    public static HelperGuitar instance;
+    public GameObject SpineObject;
     new void Awake()
     {
+        if (instance == null)
+            instance = this;
+        else
+            Destroy(gameObject);
         base.Awake();
         fomula = true;
         //basepoint = 1;
@@ -43,7 +48,7 @@ public class HelperGuitar : ObjectStatus
 
     public void AbilityActive()
     {
-
+        SpineObject.SetActive(true);
         EnemyManager.Instance.Enemy.AttackEnemy(Total * Player.Instance.GetStatus("Strength") * HelperBase.instance.Total);
     }
 }
