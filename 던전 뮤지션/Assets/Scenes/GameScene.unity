@@ -1150,7 +1150,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   num: 4
-  startSize: 0.1
+  minSize: 0
+  maxSize: 0
   multiplier: 1.3
 --- !u!212 &51952612
 SpriteRenderer:
@@ -1458,7 +1459,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   num: 8
-  startSize: 0.1
+  minSize: 0
+  maxSize: 0
   multiplier: 1.1
 --- !u!212 &60561519
 SpriteRenderer:
@@ -1619,7 +1621,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   num: 1
-  startSize: 0.1
+  minSize: 0
+  maxSize: 0
   multiplier: 1.3
 --- !u!212 &64166904
 SpriteRenderer:
@@ -6484,11 +6487,11 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 921d39a6149d5a541866c4e8acd09762, type: 3}
   LeftImage: {fileID: 1957995840}
   RightImage: {fileID: 1884307775}
-  scream: {fileID: 0}
-  vibration: {fileID: 0}
-  volumeUp: {fileID: 0}
-  busking: {fileID: 0}
-  spotLight: {fileID: 0}
+  scream: {fileID: 1711655645}
+  vibration: {fileID: 557637812}
+  volumeUp: {fileID: 1655593429}
+  busking: {fileID: 163073822}
+  spotLight: {fileID: 385491104}
   CTG: {fileID: 340126579}
   LeftSkill: -1
   RightSkill: -1
@@ -9279,52 +9282,6 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 497866593}
   m_CullTransparentMesh: 0
---- !u!1001 &503251981
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4661738271579698, guid: 07879d98251d8ea4080bec362682739d, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4661738271579698, guid: 07879d98251d8ea4080bec362682739d, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4661738271579698, guid: 07879d98251d8ea4080bec362682739d, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4661738271579698, guid: 07879d98251d8ea4080bec362682739d, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4661738271579698, guid: 07879d98251d8ea4080bec362682739d, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4661738271579698, guid: 07879d98251d8ea4080bec362682739d, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4661738271579698, guid: 07879d98251d8ea4080bec362682739d, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4661738271579698, guid: 07879d98251d8ea4080bec362682739d, type: 2}
-      propertyPath: m_RootOrder
-      value: 11
-      objectReference: {fileID: 0}
-    - target: {fileID: 1745853869563616, guid: 07879d98251d8ea4080bec362682739d, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 07879d98251d8ea4080bec362682739d, type: 2}
-  m_IsPrefabAsset: 0
 --- !u!1 &503796205
 GameObject:
   m_ObjectHideFlags: 0
@@ -10368,7 +10325,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   num: 7
-  startSize: 0.1
+  minSize: 0
+  maxSize: 0
   multiplier: 1.1
 --- !u!212 &590235474
 SpriteRenderer:
@@ -12027,7 +11985,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &719269815
 GameObject:
@@ -13886,7 +13844,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4740186957633096, guid: 9c9debf2e75bbb046b3a7a33566a8b9c, type: 2}
       propertyPath: m_RootOrder
-      value: 12
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 114298328204485466, guid: 9c9debf2e75bbb046b3a7a33566a8b9c,
         type: 2}
@@ -17474,7 +17432,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d33c17a5618a43f4f8edd94257687f39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxScale: 7.2
+  _audio: {fileID: 0}
 --- !u!81 &1144033146
 AudioListener:
   m_ObjectHideFlags: 0
@@ -17732,7 +17690,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   num: 0
-  startSize: 0.1
+  minSize: 0
+  maxSize: 0
   multiplier: 1.3
 --- !u!212 &1163030496
 SpriteRenderer:
@@ -18275,7 +18234,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   num: 2
-  startSize: 0.1
+  minSize: 0
+  maxSize: 0
   multiplier: 1.3
 --- !u!212 &1203021949
 SpriteRenderer:
@@ -18508,7 +18468,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   num: 10
-  startSize: 0.1
+  minSize: 0
+  maxSize: 0
   multiplier: 1.1
 --- !u!212 &1215818966
 SpriteRenderer:
@@ -21041,6 +21002,7 @@ MonoBehaviour:
   idle: idle_0
   attack: atk_0
   effect: 
+  die: 
   IsCanvas: 1
 --- !u!114 &1347981925
 MonoBehaviour:
@@ -21918,7 +21880,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   num: 3
-  startSize: 0.1
+  minSize: 0
+  maxSize: 0
   multiplier: 1.3
 --- !u!212 &1390248181
 SpriteRenderer:
@@ -22782,7 +22745,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   num: 6
-  startSize: 0.1
+  minSize: 0
+  maxSize: 0
   multiplier: 1.1
 --- !u!212 &1422407312
 SpriteRenderer:
@@ -26055,7 +26019,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   num: 5
-  startSize: 0.1
+  minSize: 0
+  maxSize: 0
   multiplier: 1.3
 --- !u!212 &1621397732
 SpriteRenderer:
@@ -29430,7 +29395,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1884307775}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 359434361}
+        m_MethodName: SkillActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1884307775
@@ -30053,7 +30029,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   num: 9
-  startSize: 0.1
+  minSize: 0
+  maxSize: 0
   multiplier: 1.1
 --- !u!212 &1941502980
 SpriteRenderer:
@@ -30664,7 +30641,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1957995840}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 359434361}
+        m_MethodName: SkillActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1957995840
@@ -30748,7 +30736,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   num: 11
-  startSize: 0.1
+  minSize: 0
+  maxSize: 0
   multiplier: 1.1
 --- !u!212 &1966777632
 SpriteRenderer:
@@ -33123,7 +33112,7 @@ Transform:
   - {fileID: 163073821}
   - {fileID: 385491103}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2097820000
 GameObject:

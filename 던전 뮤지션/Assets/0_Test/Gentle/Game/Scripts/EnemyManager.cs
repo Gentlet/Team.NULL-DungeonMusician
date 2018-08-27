@@ -29,8 +29,8 @@ public class EnemyManager : SingletonGameObject<EnemyManager> {
 
             killcount += 1;
             Player.Instance.Gold += (int)(gold * Player.Instance.GetStatus("Extragoldrate"));
-
-            if(0 < enemyprefabs.Length)
+            Busking.instance.Off();
+            if (0 < enemyprefabs.Length)
             {
                 CreateEnemy(Random.Range(0, enemyprefabs.Length));
             }
