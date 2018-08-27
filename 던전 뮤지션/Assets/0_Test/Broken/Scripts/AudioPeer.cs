@@ -3,28 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-public class AudioPeer : MonoBehaviour
+public class AudioPeer : SingletonGameObject<AudioPeer>
 {
-    AudioSource audioSource;
-    AudioSource _audioSource
-    {
-        get
-        {
-            if (audioSource == null)
-            {
-                audioSource = FindObjectOfType(typeof(AudioSource)) as AudioSource;
-            }
-            return audioSource;
-        }
-    }
+    public AudioSource _audio;
 
-    public static float[] _samples = new float[4096];
+    public static float[] _samples = new float[1024];
     public static float[] _freqBand = new float[20];
-
-    public float maxScale;
 
     private void Start()
     {
+        //_audio = FindObjectOfType<AudioSource>();
     }
 
     private void Update()
@@ -33,33 +21,41 @@ public class AudioPeer : MonoBehaviour
         MakeFrequenctBands();
     }
 
+    private void GetAudioSource()
+    {
+        if (_audio == null)
+            _audio = SoundManager.Instance.GetPlayingMusic();
+    }
     void GetAudioSpectrum()
     {
-        _audioSource.GetSpectrumData(_samples, 0, FFTWindow.Blackman);
+        _audio.GetSpectrumData(_samples, 0, FFTWindow.Blackman);
     }
     void MakeFrequenctBands()
     {
+        int num = 1;
         int count = 0;
 
-        for (int i = 0; i < 12; i++)
+        for (int i = 0; i < 20; i++)
         {
-            float average = 0f;
-            int sampleCount = (int)Mathf.Pow(2, i)/* * 2*/;
-
-            //if (i == 13)
-            //    sampleCount += 2;
-            for (int j = 0; j < sampleCount; j++)
+            if (i < 10)
             {
-                average += _samples[count] * (count + 1);
-                count++;
+                float average = 0f;
+                int sampleCount = (int)(Mathf.Pow(2, i));
+
+                for (int j = 0; j < sampleCount; j++)
+                {
+                    average += _samples[count] * (count + 1);
+                    count++;
+                }
+                average /= count;
+                _freqBand[i] = average * 10;
+            }
+            else
+            {
+                _freqBand[i] = _freqBand[i - num];
+                num += 2;
             }
 
-            average /= count;
-
-            _freqBand[i] = average * 10;
-
-            if (_freqBand[i] > maxScale)
-                _freqBand[i] = maxScale;
         }
     }
 }

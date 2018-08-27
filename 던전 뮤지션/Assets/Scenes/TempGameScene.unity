@@ -354,9 +354,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   num: 12
-  startSize: 20
+  minSize: 20
   maxSize: 900
-  multiplier: 100
+  multiplier: 600
 --- !u!114 &11523819
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -747,9 +747,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   num: 10
-  startSize: 20
+  minSize: 20
   maxSize: 900
-  multiplier: 200
+  multiplier: 600
 --- !u!114 &44786298
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3018,9 +3018,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   num: 17
-  startSize: 20
+  minSize: 20
   maxSize: 900
-  multiplier: 250
+  multiplier: 600
 --- !u!114 &176680838
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3566,9 +3566,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   num: 7
-  startSize: 20
+  minSize: 20
   maxSize: 900
-  multiplier: 100
+  multiplier: 600
 --- !u!114 &244343074
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4636,9 +4636,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   num: 3
-  startSize: 20
+  minSize: 20
   maxSize: 900
-  multiplier: 250
+  multiplier: 600
 --- !u!114 &282893960
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5930,7 +5930,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 6e325e83fdcc7fd47ad3cbbdf8f55388, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.5
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -6437,9 +6437,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   num: 0
-  startSize: 20
+  minSize: 20
   maxSize: 900
-  multiplier: 250
+  multiplier: 600
 --- !u!114 &405167295
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6734,9 +6734,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   num: 8
-  startSize: 20
+  minSize: 20
   maxSize: 900
-  multiplier: 100
+  multiplier: 600
 --- !u!114 &427579985
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7224,9 +7224,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   num: 4
-  startSize: 20
+  minSize: 20
   maxSize: 900
-  multiplier: 250
+  multiplier: 600
 --- !u!114 &491363501
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8405,9 +8405,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   num: 11
-  startSize: 20
+  minSize: 20
   maxSize: 900
-  multiplier: 100
+  multiplier: 600
 --- !u!114 &572963760
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10354,9 +10354,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   num: 18
-  startSize: 20
+  minSize: 20
   maxSize: 900
-  multiplier: 250
+  multiplier: 600
 --- !u!114 &691306765
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14932,9 +14932,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   num: 16
-  startSize: 20
+  minSize: 20
   maxSize: 900
-  multiplier: 250
+  multiplier: 600
 --- !u!114 &955984572
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16000,7 +16000,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d33c17a5618a43f4f8edd94257687f39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxScale: 900
+  _audio: {fileID: 374125850}
 --- !u!81 &999991561
 AudioListener:
   m_ObjectHideFlags: 0
@@ -21026,9 +21026,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   num: 1
-  startSize: 20
+  minSize: 20
   maxSize: 900
-  multiplier: 250
+  multiplier: 600
 --- !u!114 &1239102948
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22533,9 +22533,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   num: 2
-  startSize: 20
+  minSize: 20
   maxSize: 900
-  multiplier: 250
+  multiplier: 600
 --- !u!114 &1331817711
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23520,9 +23520,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   num: 14
-  startSize: 20
+  minSize: 20
   maxSize: 900
-  multiplier: 100
+  multiplier: 600
 --- !u!114 &1412333681
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24513,9 +24513,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   num: 6
-  startSize: 20
+  minSize: 20
   maxSize: 900
-  multiplier: 100
+  multiplier: 600
 --- !u!114 &1475416675
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25316,9 +25316,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   num: 15
-  startSize: 20
+  minSize: 20
   maxSize: 900
-  multiplier: 250
+  multiplier: 600
 --- !u!114 &1495234201
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27838,9 +27838,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   num: 13
-  startSize: 20
+  minSize: 20
   maxSize: 900
-  multiplier: 100
+  multiplier: 600
 --- !u!114 &1633719970
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29363,9 +29363,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   num: 5
-  startSize: 20
+  minSize: 20
   maxSize: 900
-  multiplier: 100
+  multiplier: 600
 --- !u!114 &1721504800
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29619,9 +29619,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   num: 9
-  startSize: 20
+  minSize: 20
   maxSize: 900
-  multiplier: 200
+  multiplier: 600
 --- !u!114 &1729808598
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31962,9 +31962,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   num: 19
-  startSize: 20
+  minSize: 20
   maxSize: 900
-  multiplier: 250
+  multiplier: 600
 --- !u!114 &1886535425
 MonoBehaviour:
   m_ObjectHideFlags: 0

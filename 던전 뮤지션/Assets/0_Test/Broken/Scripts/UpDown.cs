@@ -8,7 +8,7 @@ public class UpDown : MonoBehaviour
     private RectTransform ren;
 
     public int num;
-    public float startSize;
+    public float minSize;
     public float maxSize;
     public float multiplier;
 
@@ -19,8 +19,9 @@ public class UpDown : MonoBehaviour
 
     private void Update()
     {
-        float size = startSize + (AudioPeer._freqBand[num] * multiplier) > maxSize ? startSize + (AudioPeer._freqBand[num] * multiplier) : maxSize;
+        Debug.Log(num.ToString() + " : " + AudioPeer._freqBand[num].ToString());
+        float size = minSize + (AudioPeer._freqBand[num] * multiplier) > maxSize ? maxSize : minSize + (AudioPeer._freqBand[num] * multiplier);
 
-        ren.sizeDelta = new Vector2(ren.sizeDelta.x, startSize + (AudioPeer._freqBand[num] * multiplier));
+        ren.sizeDelta = new Vector2(ren.sizeDelta.x, size);
     }
 }
