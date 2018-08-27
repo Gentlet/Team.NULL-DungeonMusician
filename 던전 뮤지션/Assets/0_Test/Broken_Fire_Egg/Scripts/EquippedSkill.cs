@@ -38,12 +38,12 @@ public class EquippedSkill : MonoBehaviour
         {
             if (CTG.toggles[i].isOn)
             {
-                if (LeftSkill == -1)
+                if (LeftSkill == -1 && i != RightSkill)
                 {
                     LeftSkill = i;
                     LeftImage.sprite = sprites[i];
                 }
-                else
+                else if(RightSkill == -1 && i != LeftSkill)
                 {
                     RightSkill = i;
                     RightImage.sprite = sprites[i];

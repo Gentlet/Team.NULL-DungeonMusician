@@ -75,9 +75,15 @@ public class Player : SingletonGameObject<Player> {
         ParticleManager.instance.PlayParticle(4, Vector2.zero);
         Invoke("ActuallyRevive",1.5f);
     }
+    public ObjectStatus[] objects;
     public void ActuallyRevive()
     {
-        
+        for (int i = 0; i < objects.Length; i++)
+        {
+            objects[i].ObjectReset();
+            Gold = 500000;
+            objects[i].SaveInformations();
+        }
     }
 
     #region Properties

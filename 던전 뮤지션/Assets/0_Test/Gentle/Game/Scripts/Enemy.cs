@@ -36,7 +36,7 @@ public class Enemy : MonoBehaviour {
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.U))
-            StartCoroutine(Skill2());
+            StartCoroutine(Skill1());
     }
 
     public void AttackEnemy(float damage)
@@ -53,8 +53,8 @@ public class Enemy : MonoBehaviour {
 
     public IEnumerator Skill1()
     {
-        spine.AttackAnimation();
-
+       time = spine.AttackAnimation();
+        ParticleManager.instance.BossEffectParticle(0, new Vector2(0, 3.36f));
         yield return new WaitForSeconds(time);
 
         for (int i = 0; i < Random.Range(4, 7); i++)

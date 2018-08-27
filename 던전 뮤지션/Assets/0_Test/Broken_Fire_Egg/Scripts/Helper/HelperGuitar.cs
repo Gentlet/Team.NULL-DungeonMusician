@@ -48,9 +48,13 @@ public class HelperGuitar : ObjectStatus
 
         textValues[3].text = text[0] + Total + text[1];
     }
+    private void Update()
+    {
 
+    }
     public void AbilityActive()
     {
+        if(Random.Range(1,10) < 3)
         SpineObject.SetActive(true);
         EnemyManager.Instance.Enemy.AttackEnemy(Total * Player.Instance.GetStatus("Strength") * HelperBase.instance.Total);
     }

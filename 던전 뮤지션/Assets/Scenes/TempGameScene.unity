@@ -354,9 +354,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   num: 12
-  startSize: 20
+  minSize: 20
   maxSize: 900
-  multiplier: 100
+  multiplier: 600
 --- !u!114 &11523819
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -747,9 +747,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   num: 10
-  startSize: 20
+  minSize: 20
   maxSize: 900
-  multiplier: 200
+  multiplier: 600
 --- !u!114 &44786298
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -873,6 +873,118 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 47483756}
   m_CullTransparentMesh: 0
+--- !u!1001 &48341733
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4229869829319516, guid: 279505dd4760c894ba359c5e4216cc59, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4229869829319516, guid: 279505dd4760c894ba359c5e4216cc59, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.41
+      objectReference: {fileID: 0}
+    - target: {fileID: 4229869829319516, guid: 279505dd4760c894ba359c5e4216cc59, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4229869829319516, guid: 279505dd4760c894ba359c5e4216cc59, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4229869829319516, guid: 279505dd4760c894ba359c5e4216cc59, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4229869829319516, guid: 279505dd4760c894ba359c5e4216cc59, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4229869829319516, guid: 279505dd4760c894ba359c5e4216cc59, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4229869829319516, guid: 279505dd4760c894ba359c5e4216cc59, type: 2}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 114973173649390666, guid: 279505dd4760c894ba359c5e4216cc59,
+        type: 2}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 1331210634}
+    - target: {fileID: 114973173649390666, guid: 279505dd4760c894ba359c5e4216cc59,
+        type: 2}
+      propertyPath: OnOffs.Array.data[4]
+      value: 
+      objectReference: {fileID: 306620062}
+    - target: {fileID: 33985695247635032, guid: 279505dd4760c894ba359c5e4216cc59,
+        type: 2}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 33633991526699656, guid: 279505dd4760c894ba359c5e4216cc59,
+        type: 2}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 33321410525045760, guid: 279505dd4760c894ba359c5e4216cc59,
+        type: 2}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 33291723745975654, guid: 279505dd4760c894ba359c5e4216cc59,
+        type: 2}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 23367883705375018, guid: 279505dd4760c894ba359c5e4216cc59,
+        type: 2}
+      propertyPath: m_SortingOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 23512706516513876, guid: 279505dd4760c894ba359c5e4216cc59,
+        type: 2}
+      propertyPath: m_SortingOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 23205657558710034, guid: 279505dd4760c894ba359c5e4216cc59,
+        type: 2}
+      propertyPath: m_SortingOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 23649493472780418, guid: 279505dd4760c894ba359c5e4216cc59,
+        type: 2}
+      propertyPath: m_SortingOrder
+      value: 6
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 279505dd4760c894ba359c5e4216cc59, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!1 &48341734 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1712035025580562, guid: 279505dd4760c894ba359c5e4216cc59,
+    type: 2}
+  m_PrefabInternal: {fileID: 48341733}
+--- !u!1 &48341735 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1824567953028182, guid: 279505dd4760c894ba359c5e4216cc59,
+    type: 2}
+  m_PrefabInternal: {fileID: 48341733}
+--- !u!1 &48341736 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1671059304075018, guid: 279505dd4760c894ba359c5e4216cc59,
+    type: 2}
+  m_PrefabInternal: {fileID: 48341733}
+--- !u!1 &48341737 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1710133305477074, guid: 279505dd4760c894ba359c5e4216cc59,
+    type: 2}
+  m_PrefabInternal: {fileID: 48341733}
 --- !u!1 &50843570
 GameObject:
   m_ObjectHideFlags: 0
@@ -1568,7 +1680,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 76162285}
-  - component: {fileID: 76162286}
   m_Layer: 5
   m_Name: Guitar
   m_TagString: Untagged
@@ -1595,34 +1706,6 @@ RectTransform:
   m_AnchoredPosition: {x: 540, y: -97.5}
   m_SizeDelta: {x: 100, y: 195}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &76162286
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 76162284}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b3288c9878daa3d4faaa10d9a46c4e10, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  level: 1
-  basepoint: 30
-  relicRate: 1
-  upgraderate: 0.5
-  firstmoney: 500
-  moneyrate: 0
-  param: 0
-  paramrate: 0
-  parambase: 0
-  explain: "\uAE30\uBCF8 \uB178\uD2B8\uB97C \uD130\uCE58\uD560 \uB54C ~% \uB370\uBBF8\uC9C0\uB85C
-    \uCD94\uAC00\uACF5\uACA9"
-  textValues:
-  - {fileID: 865840006}
-  - {fileID: 1933068484}
-  - {fileID: 23908003}
-  - {fileID: 1424326271}
-  SpineObject: {fileID: 0}
 --- !u!1 &78965104
 GameObject:
   m_ObjectHideFlags: 0
@@ -3018,9 +3101,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   num: 17
-  startSize: 20
+  minSize: 20
   maxSize: 900
-  multiplier: 250
+  multiplier: 600
 --- !u!114 &176680838
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3566,9 +3649,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   num: 7
-  startSize: 20
+  minSize: 20
   maxSize: 900
-  multiplier: 100
+  multiplier: 600
 --- !u!114 &244343074
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3946,7 +4029,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 252909938}
-  - component: {fileID: 252909939}
   m_Layer: 5
   m_Name: GoldUp
   m_TagString: Untagged
@@ -3973,32 +4055,6 @@ RectTransform:
   m_AnchoredPosition: {x: 50.000004, y: -917.5}
   m_SizeDelta: {x: 100, y: 195}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &252909939
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 252909937}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d814b3a5999a394a8c8159e4603e05a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  level: 1
-  basepoint: 10
-  relicRate: 1
-  upgraderate: 10
-  firstmoney: 500
-  moneyrate: 0
-  param: 0
-  paramrate: 0
-  parambase: 0
-  explain: "~% \uC99D\uAC00\uD568"
-  textValues:
-  - {fileID: 568793342}
-  - {fileID: 1820924424}
-  - {fileID: 375500242}
-  - {fileID: 980626767}
 --- !u!1 &254289080
 GameObject:
   m_ObjectHideFlags: 0
@@ -4252,6 +4308,7 @@ RectTransform:
   - {fileID: 1564341763}
   - {fileID: 841584303}
   - {fileID: 1870571128}
+  - {fileID: 743119365}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4636,9 +4693,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   num: 3
-  startSize: 20
+  minSize: 20
   maxSize: 900
-  multiplier: 250
+  multiplier: 600
 --- !u!114 &282893960
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4833,7 +4890,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1375746776}
+      - m_Target: {fileID: 1126321564}
         m_MethodName: Upgrade
         m_Mode: 1
         m_Arguments:
@@ -4880,6 +4937,11 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 306293092}
   m_CullTransparentMesh: 0
+--- !u!1 &306620062 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1148240430299574, guid: cac8a4f74c848d74cbfe47c4a7584201,
+    type: 2}
+  m_PrefabInternal: {fileID: 743119364}
 --- !u!1 &308141379
 GameObject:
   m_ObjectHideFlags: 0
@@ -5139,7 +5201,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 319397868}
-  - component: {fileID: 319397869}
   m_Layer: 5
   m_Name: HPHealUp
   m_TagString: Untagged
@@ -5166,32 +5227,6 @@ RectTransform:
   m_AnchoredPosition: {x: 50, y: -712.5}
   m_SizeDelta: {x: 100, y: 195}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &319397869
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 319397867}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 71f1567f0b40ea24195a27b69e82f8c5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  level: 1
-  basepoint: 3
-  relicRate: 1
-  upgraderate: 1
-  firstmoney: 1000
-  moneyrate: 0
-  param: 0
-  paramrate: 0
-  parambase: 0
-  explain: "~% \uC99D\uAC00\uD568"
-  textValues:
-  - {fileID: 1271222881}
-  - {fileID: 1492875280}
-  - {fileID: 951237304}
-  - {fileID: 1720656654}
 --- !u!1 &319893169
 GameObject:
   m_ObjectHideFlags: 0
@@ -5665,7 +5700,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 348042748}
-  - component: {fileID: 348042749}
   m_Layer: 5
   m_Name: Keyboard
   m_TagString: Untagged
@@ -5692,34 +5726,6 @@ RectTransform:
   m_AnchoredPosition: {x: 540, y: -712.5}
   m_SizeDelta: {x: 100, y: 195}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &348042749
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 348042747}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 575eeab6f4077e04e93adb5dcc3cfdf1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  level: 1
-  basepoint: 300
-  relicRate: 1
-  upgraderate: 3
-  firstmoney: 800
-  moneyrate: 0
-  param: 0
-  paramrate: 0
-  parambase: 0
-  explain: "30% \uD655\uB960\uB85C \uAE30\uBCF8 \uB178\uB4DC\uB97C ~% \uB370\uBBF8\uC9C0\uB97C
-    \uC8FC\uB294 \uD2B9\uC218 \uB178\uB4DC\uB85C \uBCC0\uD658"
-  textValues:
-  - {fileID: 1310738078}
-  - {fileID: 1929438656}
-  - {fileID: 1919048220}
-  - {fileID: 787643348}
-  SpineObject: {fileID: 0}
 --- !u!1 &361769618
 GameObject:
   m_ObjectHideFlags: 0
@@ -5930,7 +5936,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 6e325e83fdcc7fd47ad3cbbdf8f55388, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.5
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -6314,6 +6320,149 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 384938743}
   m_CullTransparentMesh: 0
+--- !u!1 &399110710
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 399110715}
+  - component: {fileID: 399110714}
+  - component: {fileID: 399110713}
+  - component: {fileID: 399110712}
+  - component: {fileID: 399110711}
+  m_Layer: 0
+  m_Name: Helpers
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &399110711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 399110710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 575eeab6f4077e04e93adb5dcc3cfdf1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  level: 1
+  basepoint: 300
+  relicRate: 1
+  upgraderate: 3
+  firstmoney: 800
+  moneyrate: 0
+  param: 0
+  paramrate: 0
+  parambase: 0
+  explain: "30% \uD655\uB960\uB85C \uAE30\uBCF8 \uB178\uB4DC\uB97C ~% \uB370\uBBF8\uC9C0\uB97C
+    \uC8FC\uB294 \uD2B9\uC218 \uB178\uB4DC\uB85C \uBCC0\uD658"
+  textValues:
+  - {fileID: 1310738078}
+  - {fileID: 1929438656}
+  - {fileID: 1919048220}
+  - {fileID: 787643348}
+  SpineObject: {fileID: 48341734}
+--- !u!114 &399110712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 399110710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 844e990679aa68a4ba87ed0fdb767288, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  level: 1
+  basepoint: 20
+  relicRate: 1
+  upgraderate: 0.2
+  firstmoney: 700
+  moneyrate: 0
+  param: 0
+  paramrate: 0
+  parambase: 0
+  explain: "\uB2E4\uB978 \uC870\uB825\uC790\uB4E4\uC758 \uACF5\uACA9\uB825\uC774 ~%
+    \uC99D\uAC00"
+  textValues:
+  - {fileID: 1684917785}
+  - {fileID: 496893566}
+  - {fileID: 770292927}
+  - {fileID: 75597410}
+  SpineObject: {fileID: 48341735}
+--- !u!114 &399110713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 399110710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3fe72fc9a155154bad2e45930af7bd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  level: 1
+  basepoint: 300
+  relicRate: 1
+  upgraderate: 30
+  firstmoney: 600
+  moneyrate: 0
+  param: 50
+  paramrate: 0
+  parambase: 0
+  explain: "50\uCF64\uBCF4\uB9C8\uB2E4 ~% \uB370\uBBF8\uC9C0\uB85C \uCD94\uAC00 \uACF5\uACA9"
+  textValues:
+  - {fileID: 172056261}
+  - {fileID: 1833774570}
+  - {fileID: 1014019367}
+  - {fileID: 857803801}
+  SpineObject: {fileID: 48341736}
+--- !u!114 &399110714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 399110710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3288c9878daa3d4faaa10d9a46c4e10, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  level: 1
+  basepoint: 30
+  relicRate: 1
+  upgraderate: 0.5
+  firstmoney: 500
+  moneyrate: 0
+  param: 0
+  paramrate: 0
+  parambase: 0
+  explain: "\uAE30\uBCF8 \uB178\uD2B8\uB97C \uD130\uCE58\uD560 \uB54C ~% \uB370\uBBF8\uC9C0\uB85C
+    \uCD94\uAC00\uACF5\uACA9"
+  textValues:
+  - {fileID: 865840006}
+  - {fileID: 1933068484}
+  - {fileID: 23908003}
+  - {fileID: 1424326271}
+  SpineObject: {fileID: 48341737}
+--- !u!4 &399110715
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 399110710}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &404500715
 GameObject:
   m_ObjectHideFlags: 0
@@ -6437,9 +6586,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   num: 0
-  startSize: 20
+  minSize: 20
   maxSize: 900
-  multiplier: 250
+  multiplier: 600
 --- !u!114 &405167295
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6734,9 +6883,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   num: 8
-  startSize: 20
+  minSize: 20
   maxSize: 900
-  multiplier: 100
+  multiplier: 600
 --- !u!114 &427579985
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6848,7 +6997,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 810946130}
+      - m_Target: {fileID: 1126321569}
         m_MethodName: Upgrade
         m_Mode: 1
         m_Arguments:
@@ -7224,9 +7373,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   num: 4
-  startSize: 20
+  minSize: 20
   maxSize: 900
-  multiplier: 250
+  multiplier: 600
 --- !u!114 &491363501
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7919,7 +8068,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2107294988}
+      - m_Target: {fileID: 1126321566}
         m_MethodName: Upgrade
         m_Mode: 1
         m_Arguments:
@@ -8405,9 +8554,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   num: 11
-  startSize: 20
+  minSize: 20
   maxSize: 900
-  multiplier: 100
+  multiplier: 600
 --- !u!114 &572963760
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10354,9 +10503,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   num: 18
-  startSize: 20
+  minSize: 20
   maxSize: 900
-  multiplier: 250
+  multiplier: 600
 --- !u!114 &691306765
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11116,7 +11265,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 730783131}
-  - component: {fileID: 730783132}
   m_Layer: 5
   m_Name: Volume Up!
   m_TagString: Untagged
@@ -11144,34 +11292,6 @@ RectTransform:
   m_AnchoredPosition: {x: 50, y: -507.5}
   m_SizeDelta: {x: 100, y: 195}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &730783132
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 730783130}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5661dab42a2b1f84ca5560580b449544, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  level: 1
-  basepoint: 60
-  relicRate: 1
-  upgraderate: 5
-  firstmoney: 1500
-  moneyrate: 750
-  param: 0
-  paramrate: 0
-  parambase: 0
-  explain: "~\uCD08\uB3D9\uC548 \uACF5\uACA9\uB825\uC774 ~% \uC99D\uAC00\uD568"
-  textValues:
-  - {fileID: 421811950}
-  - {fileID: 1087127645}
-  - {fileID: 508585154}
-  - {fileID: 80692433}
-  cooltime: 150
-  isactive: 0
 --- !u!1 &737772676
 GameObject:
   m_ObjectHideFlags: 0
@@ -11249,7 +11369,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2049947078}
+      - m_Target: {fileID: 1126321565}
         m_MethodName: Upgrade
         m_Mode: 1
         m_Arguments:
@@ -11401,6 +11521,135 @@ Transform:
   m_Father: {fileID: 1020795440}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &743119364
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 271140647}
+    m_Modifications:
+    - target: {fileID: 224624397822028272, guid: cac8a4f74c848d74cbfe47c4a7584201,
+        type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224624397822028272, guid: cac8a4f74c848d74cbfe47c4a7584201,
+        type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224624397822028272, guid: cac8a4f74c848d74cbfe47c4a7584201,
+        type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224624397822028272, guid: cac8a4f74c848d74cbfe47c4a7584201,
+        type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224624397822028272, guid: cac8a4f74c848d74cbfe47c4a7584201,
+        type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224624397822028272, guid: cac8a4f74c848d74cbfe47c4a7584201,
+        type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224624397822028272, guid: cac8a4f74c848d74cbfe47c4a7584201,
+        type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224624397822028272, guid: cac8a4f74c848d74cbfe47c4a7584201,
+        type: 2}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 224624397822028272, guid: cac8a4f74c848d74cbfe47c4a7584201,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224624397822028272, guid: cac8a4f74c848d74cbfe47c4a7584201,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224624397822028272, guid: cac8a4f74c848d74cbfe47c4a7584201,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 1080
+      objectReference: {fileID: 0}
+    - target: {fileID: 224624397822028272, guid: cac8a4f74c848d74cbfe47c4a7584201,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 224624397822028272, guid: cac8a4f74c848d74cbfe47c4a7584201,
+        type: 2}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224624397822028272, guid: cac8a4f74c848d74cbfe47c4a7584201,
+        type: 2}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224624397822028272, guid: cac8a4f74c848d74cbfe47c4a7584201,
+        type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224624397822028272, guid: cac8a4f74c848d74cbfe47c4a7584201,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224624397822028272, guid: cac8a4f74c848d74cbfe47c4a7584201,
+        type: 2}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224624397822028272, guid: cac8a4f74c848d74cbfe47c4a7584201,
+        type: 2}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1148240430299574, guid: cac8a4f74c848d74cbfe47c4a7584201, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114555520248198768, guid: cac8a4f74c848d74cbfe47c4a7584201,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 224624397822028272, guid: cac8a4f74c848d74cbfe47c4a7584201,
+        type: 2}
+      propertyPath: m_LocalScale.x
+      value: 1.00032
+      objectReference: {fileID: 0}
+    - target: {fileID: 224624397822028272, guid: cac8a4f74c848d74cbfe47c4a7584201,
+        type: 2}
+      propertyPath: m_LocalScale.y
+      value: 1.00032
+      objectReference: {fileID: 0}
+    - target: {fileID: 224624397822028272, guid: cac8a4f74c848d74cbfe47c4a7584201,
+        type: 2}
+      propertyPath: m_LocalScale.z
+      value: 1.00032
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: cac8a4f74c848d74cbfe47c4a7584201, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!224 &743119365 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 224624397822028272, guid: cac8a4f74c848d74cbfe47c4a7584201,
+    type: 2}
+  m_PrefabInternal: {fileID: 743119364}
 --- !u!1 &745497856
 GameObject:
   m_ObjectHideFlags: 0
@@ -12065,7 +12314,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 802588395}
-  - component: {fileID: 802588396}
   m_Layer: 5
   m_Name: CritDMGUp
   m_TagString: Untagged
@@ -12092,32 +12340,6 @@ RectTransform:
   m_AnchoredPosition: {x: 50, y: -507.5}
   m_SizeDelta: {x: 100, y: 195}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &802588396
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 802588394}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 466067b43a2da8740a48b46e1d0012c2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  level: 1
-  basepoint: 200
-  relicRate: 1
-  upgraderate: 10
-  firstmoney: 400
-  moneyrate: 0
-  param: 0
-  paramrate: 0
-  parambase: 0
-  explain: "~% \uC99D\uAC00\uD568"
-  textValues:
-  - {fileID: 37508709}
-  - {fileID: 1256446254}
-  - {fileID: 1044508691}
-  - {fileID: 860678501}
 --- !u!1 &806684707
 GameObject:
   m_ObjectHideFlags: 0
@@ -12304,7 +12526,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 810946129}
-  - component: {fileID: 810946130}
   m_Layer: 5
   m_Name: Vibration
   m_TagString: Untagged
@@ -12332,33 +12553,6 @@ RectTransform:
   m_AnchoredPosition: {x: 50, y: -302.5}
   m_SizeDelta: {x: 100, y: 195}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &810946130
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 810946128}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e84ab575a40e5aa418b6fc8d78dd44de, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  level: 1
-  basepoint: 1500
-  relicRate: 1
-  upgraderate: 150
-  firstmoney: 1200
-  moneyrate: 600
-  param: 0
-  paramrate: 0
-  parambase: 0
-  explain: "10\uCD08\uC5D0 \uAC78\uCCD0\uC11C ~%\uC758 \uB370\uBBF8\uC9C0\uB97C \uC90C"
-  textValues:
-  - {fileID: 1023775182}
-  - {fileID: 315534135}
-  - {fileID: 278014210}
-  - {fileID: 1021212032}
-  cooltime: 150
 --- !u!1 &813264198
 GameObject:
   m_ObjectHideFlags: 0
@@ -13559,7 +13753,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1024763995}
+      - m_Target: {fileID: 1126321570}
         m_MethodName: Upgrade
         m_Mode: 1
         m_Arguments:
@@ -13843,6 +14037,21 @@ MonoBehaviour:
   relics: []
   goldtext: {fileID: 347507791}
   revivepointtext: {fileID: 270109410}
+  objects:
+  - {fileID: 1126321570}
+  - {fileID: 1126321569}
+  - {fileID: 1126321568}
+  - {fileID: 1126321567}
+  - {fileID: 1126321566}
+  - {fileID: 1126321565}
+  - {fileID: 1126321564}
+  - {fileID: 1126321563}
+  - {fileID: 1126321562}
+  - {fileID: 1126321561}
+  - {fileID: 399110714}
+  - {fileID: 399110713}
+  - {fileID: 399110712}
+  - {fileID: 399110711}
 --- !u!114 &898755085
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14932,9 +15141,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   num: 16
-  startSize: 20
+  minSize: 20
   maxSize: 900
-  multiplier: 250
+  multiplier: 600
 --- !u!114 &955984572
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16000,7 +16209,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d33c17a5618a43f4f8edd94257687f39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxScale: 900
+  _audio: {fileID: 374125850}
 --- !u!81 &999991561
 AudioListener:
   m_ObjectHideFlags: 0
@@ -16495,7 +16704,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1024763994}
-  - component: {fileID: 1024763995}
   m_Layer: 5
   m_Name: Scream
   m_TagString: Untagged
@@ -16523,33 +16731,6 @@ RectTransform:
   m_AnchoredPosition: {x: 50, y: -97.5}
   m_SizeDelta: {x: 100, y: 195}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1024763995
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1024763993}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1df93b031a6427a4ab0b01e635bb957c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  level: 1
-  basepoint: 1000
-  relicRate: 1
-  upgraderate: 100
-  firstmoney: 1000
-  moneyrate: 500
-  param: 0
-  paramrate: 0
-  parambase: 0
-  explain: "~%\uC758 \uB370\uBBF8\uC9C0\uB97C \uC90C"
-  textValues:
-  - {fileID: 272962234}
-  - {fileID: 361769620}
-  - {fileID: 1104097255}
-  - {fileID: 684564547}
-  cooltime: 100
 --- !u!1 &1028307761
 GameObject:
   m_ObjectHideFlags: 0
@@ -17075,7 +17256,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 76162286}
+      - m_Target: {fileID: 399110714}
         m_MethodName: Upgrade
         m_Mode: 1
         m_Arguments:
@@ -17668,7 +17849,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1072829268}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1448766870}
+        m_MethodName: SkillActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1072829268
@@ -18630,6 +18822,313 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.Toggle+ToggleEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
   m_IsOn: 1
+--- !u!1 &1126321560
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1126321571}
+  - component: {fileID: 1126321570}
+  - component: {fileID: 1126321569}
+  - component: {fileID: 1126321568}
+  - component: {fileID: 1126321567}
+  - component: {fileID: 1126321566}
+  - component: {fileID: 1126321565}
+  - component: {fileID: 1126321564}
+  - component: {fileID: 1126321563}
+  - component: {fileID: 1126321562}
+  - component: {fileID: 1126321561}
+  m_Layer: 0
+  m_Name: Skills
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1126321561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1126321560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d814b3a5999a394a8c8159e4603e05a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  level: 1
+  basepoint: 10
+  relicRate: 1
+  upgraderate: 10
+  firstmoney: 500
+  moneyrate: 0
+  param: 0
+  paramrate: 0
+  parambase: 0
+  explain: "~% \uC99D\uAC00\uD568"
+  textValues:
+  - {fileID: 568793342}
+  - {fileID: 1820924424}
+  - {fileID: 375500242}
+  - {fileID: 980626767}
+--- !u!114 &1126321562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1126321560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71f1567f0b40ea24195a27b69e82f8c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  level: 1
+  basepoint: 3
+  relicRate: 1
+  upgraderate: 1
+  firstmoney: 1000
+  moneyrate: 0
+  param: 0
+  paramrate: 0
+  parambase: 0
+  explain: "~% \uC99D\uAC00\uD568"
+  textValues:
+  - {fileID: 1271222881}
+  - {fileID: 1492875280}
+  - {fileID: 951237304}
+  - {fileID: 1720656654}
+--- !u!114 &1126321563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1126321560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 466067b43a2da8740a48b46e1d0012c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  level: 1
+  basepoint: 200
+  relicRate: 1
+  upgraderate: 10
+  firstmoney: 400
+  moneyrate: 0
+  param: 0
+  paramrate: 0
+  parambase: 0
+  explain: "~% \uC99D\uAC00\uD568"
+  textValues:
+  - {fileID: 37508709}
+  - {fileID: 1256446254}
+  - {fileID: 1044508691}
+  - {fileID: 860678501}
+--- !u!114 &1126321564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1126321560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb591343459c8734ab0b090fdaaa4328, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  level: 1
+  basepoint: 20
+  relicRate: 1
+  upgraderate: 0.1
+  firstmoney: 300
+  moneyrate: 0
+  param: 0
+  paramrate: 0
+  parambase: 0
+  explain: "~% \uC99D\uAC00\uD568"
+  textValues:
+  - {fileID: 597521613}
+  - {fileID: 808323134}
+  - {fileID: 715130256}
+  - {fileID: 154901521}
+--- !u!114 &1126321565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1126321560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be1e282b45a33b843a5bd8f98d21ed9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  level: 1
+  basepoint: 1
+  relicRate: 1
+  upgraderate: 1
+  firstmoney: 200
+  moneyrate: 0
+  param: 0
+  paramrate: 0
+  parambase: 0
+  explain: "~% \uC99D\uAC00\uD568"
+  textValues:
+  - {fileID: 967034557}
+  - {fileID: 58019938}
+  - {fileID: 919534112}
+  - {fileID: 2021449128}
+--- !u!114 &1126321566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1126321560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e02496b875bea92478bfcf01561f99f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  level: 1
+  basepoint: 10
+  relicRate: 1
+  upgraderate: 1
+  firstmoney: 2000
+  moneyrate: 1000
+  param: 0
+  paramrate: 0
+  parambase: 0
+  explain: "~\uCD08 \uB3D9\uC548 \uCE58\uBA85\uD0C0 \uD655\uB960\uC774 100%\uB85C
+    \uC99D\uAC00"
+  textValues:
+  - {fileID: 1623120453}
+  - {fileID: 1404969579}
+  - {fileID: 1295594201}
+  - {fileID: 1687544716}
+  cooltime: 200
+  isactive: 0
+--- !u!114 &1126321567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1126321560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e12997fb34fe9104fb0ac531ad715978, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  level: 1
+  basepoint: 100
+  relicRate: 1
+  upgraderate: 50
+  firstmoney: 2000
+  moneyrate: 1000
+  param: 0
+  paramrate: 0
+  parambase: 0
+  explain: "\uB2E4\uC74C \uBAAC\uC2A4\uD130 \uBCF4\uC0C1\uC774 ~% \uC99D\uAC00\uD568"
+  textValues:
+  - {fileID: 1068844731}
+  - {fileID: 1073488998}
+  - {fileID: 1112406267}
+  - {fileID: 311619106}
+  cooltime: 200
+  isActive: 0
+--- !u!114 &1126321568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1126321560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5661dab42a2b1f84ca5560580b449544, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  level: 1
+  basepoint: 60
+  relicRate: 1
+  upgraderate: 5
+  firstmoney: 1500
+  moneyrate: 750
+  param: 0
+  paramrate: 0
+  parambase: 0
+  explain: "~\uCD08\uB3D9\uC548 \uACF5\uACA9\uB825\uC774 ~% \uC99D\uAC00\uD568"
+  textValues:
+  - {fileID: 421811950}
+  - {fileID: 1087127645}
+  - {fileID: 508585154}
+  - {fileID: 80692433}
+  cooltime: 150
+  isactive: 0
+--- !u!114 &1126321569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1126321560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e84ab575a40e5aa418b6fc8d78dd44de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  level: 1
+  basepoint: 1500
+  relicRate: 1
+  upgraderate: 150
+  firstmoney: 1200
+  moneyrate: 600
+  param: 0
+  paramrate: 0
+  parambase: 0
+  explain: "10\uCD08\uC5D0 \uAC78\uCCD0\uC11C ~%\uC758 \uB370\uBBF8\uC9C0\uB97C \uC90C"
+  textValues:
+  - {fileID: 1023775182}
+  - {fileID: 315534135}
+  - {fileID: 278014210}
+  - {fileID: 1021212032}
+  cooltime: 150
+--- !u!114 &1126321570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1126321560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1df93b031a6427a4ab0b01e635bb957c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  level: 1
+  basepoint: 1000
+  relicRate: 1
+  upgraderate: 100
+  firstmoney: 1000
+  moneyrate: 500
+  param: 0
+  paramrate: 0
+  parambase: 0
+  explain: "~%\uC758 \uB370\uBBF8\uC9C0\uB97C \uC90C"
+  textValues:
+  - {fileID: 272962234}
+  - {fileID: 361769620}
+  - {fileID: 1104097255}
+  - {fileID: 684564547}
+  cooltime: 100
+--- !u!4 &1126321571
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1126321560}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1132206963
 GameObject:
   m_ObjectHideFlags: 0
@@ -19325,7 +19824,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1162946116}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1448766870}
+        m_MethodName: SkillActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1162946116
@@ -19552,7 +20062,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 730783132}
+      - m_Target: {fileID: 1126321568}
         m_MethodName: Upgrade
         m_Mode: 1
         m_Arguments:
@@ -21026,9 +21536,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   num: 1
-  startSize: 20
+  minSize: 20
   maxSize: 900
-  multiplier: 250
+  multiplier: 600
 --- !u!114 &1239102948
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21915,7 +22425,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1302655331}
+      - m_Target: {fileID: 399110713}
         m_MethodName: Upgrade
         m_Mode: 1
         m_Arguments:
@@ -22120,7 +22630,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1302655330}
-  - component: {fileID: 1302655331}
   m_Layer: 5
   m_Name: Drum
   m_TagString: Untagged
@@ -22147,33 +22656,6 @@ RectTransform:
   m_AnchoredPosition: {x: 540, y: -302.5}
   m_SizeDelta: {x: 100, y: 195}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1302655331
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1302655329}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b3fe72fc9a155154bad2e45930af7bd5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  level: 1
-  basepoint: 300
-  relicRate: 1
-  upgraderate: 30
-  firstmoney: 600
-  moneyrate: 0
-  param: 0
-  paramrate: 0
-  parambase: 0
-  explain: "50\uCF64\uBCF4\uB9C8\uB2E4 ~% \uB370\uBBF8\uC9C0\uB85C \uCD94\uAC00 \uACF5\uACA9"
-  textValues:
-  - {fileID: 172056261}
-  - {fileID: 1833774570}
-  - {fileID: 1014019367}
-  - {fileID: 857803801}
-  SpineObject: {fileID: 0}
 --- !u!1 &1303207714
 GameObject:
   m_ObjectHideFlags: 0
@@ -22454,6 +22936,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1331210633}
+  - component: {fileID: 1331210634}
   m_Layer: 5
   m_Name: TopUI
   m_TagString: Untagged
@@ -22485,6 +22968,24 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 910}
   m_SizeDelta: {x: 1080, y: 900}
   m_Pivot: {x: 0.5, y: 1}
+--- !u!95 &1331210634
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1331210632}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f68cf5585eacc484db4a95a5475ec57d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1331817708
 GameObject:
   m_ObjectHideFlags: 0
@@ -22533,9 +23034,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   num: 2
-  startSize: 20
+  minSize: 20
   maxSize: 900
-  multiplier: 250
+  multiplier: 600
 --- !u!114 &1331817711
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22893,7 +23394,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1375746775}
-  - component: {fileID: 1375746776}
   m_Layer: 5
   m_Name: CritPercentUp
   m_TagString: Untagged
@@ -22920,32 +23420,6 @@ RectTransform:
   m_AnchoredPosition: {x: 50, y: -302.5}
   m_SizeDelta: {x: 100, y: 195}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1375746776
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1375746774}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb591343459c8734ab0b090fdaaa4328, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  level: 1
-  basepoint: 20
-  relicRate: 1
-  upgraderate: 0.1
-  firstmoney: 300
-  moneyrate: 0
-  param: 0
-  paramrate: 0
-  parambase: 0
-  explain: "~% \uC99D\uAC00\uD568"
-  textValues:
-  - {fileID: 597521613}
-  - {fileID: 808323134}
-  - {fileID: 715130256}
-  - {fileID: 154901521}
 --- !u!1 &1384150455
 GameObject:
   m_ObjectHideFlags: 0
@@ -23312,7 +23786,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 252909939}
+      - m_Target: {fileID: 1126321561}
         m_MethodName: Upgrade
         m_Mode: 1
         m_Arguments:
@@ -23520,9 +23994,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   num: 14
-  startSize: 20
+  minSize: 20
   maxSize: 900
-  multiplier: 100
+  multiplier: 600
 --- !u!114 &1412333681
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23983,13 +24457,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1448766869}
+  - component: {fileID: 1448766870}
   m_Layer: 5
   m_Name: Skill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1448766869
 RectTransform:
   m_ObjectHideFlags: 0
@@ -24010,6 +24485,33 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 510}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1448766870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1448766868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7467d48f80958048bb17ef36781dd58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprites:
+  - {fileID: 21300000, guid: 804aac646ecfc754d8a76ebda7b7814d, type: 3}
+  - {fileID: 21300000, guid: 2a26a228e1e3cb248b7acbb974c4ff4b, type: 3}
+  - {fileID: 21300000, guid: 565613395e53a2a409bf04b188bce9fd, type: 3}
+  - {fileID: 21300000, guid: 99256a3416afed14b9ebe6f2f5da468f, type: 3}
+  - {fileID: 21300000, guid: 921d39a6149d5a541866c4e8acd09762, type: 3}
+  LeftImage: {fileID: 1143040177}
+  RightImage: {fileID: 1011219366}
+  scream: {fileID: 1126321570}
+  vibration: {fileID: 1126321569}
+  volumeUp: {fileID: 1126321568}
+  busking: {fileID: 1126321567}
+  spotLight: {fileID: 1126321566}
+  CTG: {fileID: 1766837645}
+  LeftSkill: -1
+  RightSkill: -1
 --- !u!1 &1453388747
 GameObject:
   m_ObjectHideFlags: 0
@@ -24513,9 +25015,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   num: 6
-  startSize: 20
+  minSize: 20
   maxSize: 900
-  multiplier: 100
+  multiplier: 600
 --- !u!114 &1475416675
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25316,9 +25818,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   num: 15
-  startSize: 20
+  minSize: 20
   maxSize: 900
-  multiplier: 250
+  multiplier: 600
 --- !u!114 &1495234201
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26311,7 +26813,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1564341763
 RectTransform:
   m_ObjectHideFlags: 0
@@ -26409,7 +26911,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2124723692}
+      - m_Target: {fileID: 1126321567}
         m_MethodName: Upgrade
         m_Mode: 1
         m_Arguments:
@@ -26786,7 +27288,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1594103762}
-  - component: {fileID: 1594103763}
   m_Layer: 5
   m_Name: Bass
   m_TagString: Untagged
@@ -26813,34 +27314,6 @@ RectTransform:
   m_AnchoredPosition: {x: 540, y: -507.5}
   m_SizeDelta: {x: 100, y: 195}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1594103763
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1594103761}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 844e990679aa68a4ba87ed0fdb767288, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  level: 1
-  basepoint: 20
-  relicRate: 1
-  upgraderate: 0.2
-  firstmoney: 700
-  moneyrate: 0
-  param: 0
-  paramrate: 0
-  parambase: 0
-  explain: "\uB2E4\uB978 \uC870\uB825\uC790\uB4E4\uC758 \uACF5\uACA9\uB825\uC774 ~%
-    \uC99D\uAC00"
-  textValues:
-  - {fileID: 1684917785}
-  - {fileID: 496893566}
-  - {fileID: 770292927}
-  - {fileID: 75597410}
-  SpineObject: {fileID: 0}
 --- !u!1 &1598896015
 GameObject:
   m_ObjectHideFlags: 0
@@ -26961,7 +27434,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spine: {fileID: 1819147064}
   info: "Lv.01 \uAC15\uC5EC\uBA85"
-  maxhp: 1e+19
+  maxhp: 1000
   gold: 0
   test: {x: 0, y: 0.1}
   time: 0
@@ -27838,9 +28311,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   num: 13
-  startSize: 20
+  minSize: 20
   maxSize: 900
-  multiplier: 100
+  multiplier: 600
 --- !u!114 &1633719970
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28818,7 +29291,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1594103763}
+      - m_Target: {fileID: 399110712}
         m_MethodName: Upgrade
         m_Mode: 1
         m_Arguments:
@@ -29363,9 +29836,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   num: 5
-  startSize: 20
+  minSize: 20
   maxSize: 900
-  multiplier: 100
+  multiplier: 600
 --- !u!114 &1721504800
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29619,9 +30092,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   num: 9
-  startSize: 20
+  minSize: 20
   maxSize: 900
-  multiplier: 200
+  multiplier: 600
 --- !u!114 &1729808598
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30676,7 +31149,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 802588396}
+      - m_Target: {fileID: 1126321563}
         m_MethodName: Upgrade
         m_Mode: 1
         m_Arguments:
@@ -31962,9 +32435,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   num: 19
-  startSize: 20
+  minSize: 20
   maxSize: 900
-  multiplier: 250
+  multiplier: 600
 --- !u!114 &1886535425
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32295,7 +32768,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 319397869}
+      - m_Target: {fileID: 1126321562}
         m_MethodName: Upgrade
         m_Mode: 1
         m_Arguments:
@@ -32906,6 +33379,84 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1933068482}
   m_CullTransparentMesh: 0
+--- !u!1001 &1937333452
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4156734013583932, guid: 90e403e1549d3944bae95cd3d2c6e66e, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4156734013583932, guid: 90e403e1549d3944bae95cd3d2c6e66e, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4156734013583932, guid: 90e403e1549d3944bae95cd3d2c6e66e, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4156734013583932, guid: 90e403e1549d3944bae95cd3d2c6e66e, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4156734013583932, guid: 90e403e1549d3944bae95cd3d2c6e66e, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4156734013583932, guid: 90e403e1549d3944bae95cd3d2c6e66e, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4156734013583932, guid: 90e403e1549d3944bae95cd3d2c6e66e, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4156734013583932, guid: 90e403e1549d3944bae95cd3d2c6e66e, type: 2}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4574404376766070, guid: 90e403e1549d3944bae95cd3d2c6e66e, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -3.57
+      objectReference: {fileID: 0}
+    - target: {fileID: 4574404376766070, guid: 90e403e1549d3944bae95cd3d2c6e66e, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -2.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 4821293592316166, guid: 90e403e1549d3944bae95cd3d2c6e66e, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -3.53
+      objectReference: {fileID: 0}
+    - target: {fileID: 4821293592316166, guid: 90e403e1549d3944bae95cd3d2c6e66e, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -0.71
+      objectReference: {fileID: 0}
+    - target: {fileID: 4758964318981032, guid: 90e403e1549d3944bae95cd3d2c6e66e, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -3.49
+      objectReference: {fileID: 0}
+    - target: {fileID: 4758964318981032, guid: 90e403e1549d3944bae95cd3d2c6e66e, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0.71
+      objectReference: {fileID: 0}
+    - target: {fileID: 4285729877716626, guid: 90e403e1549d3944bae95cd3d2c6e66e, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 2.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 4285729877716626, guid: 90e403e1549d3944bae95cd3d2c6e66e, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -3.53
+      objectReference: {fileID: 0}
+    - target: {fileID: 1768693139135594, guid: 90e403e1549d3944bae95cd3d2c6e66e, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 90e403e1549d3944bae95cd3d2c6e66e, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1 &1938450179
 GameObject:
   m_ObjectHideFlags: 0
@@ -33016,7 +33567,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1943614190}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 898755084}
+        m_MethodName: Revive
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1943614190
@@ -34085,7 +34647,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2031977622
 RectTransform:
   m_ObjectHideFlags: 0
@@ -34455,7 +35017,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2049947077}
-  - component: {fileID: 2049947078}
   m_Layer: 5
   m_Name: STRUp
   m_TagString: Untagged
@@ -34482,32 +35043,6 @@ RectTransform:
   m_AnchoredPosition: {x: 50, y: -97.5}
   m_SizeDelta: {x: 100, y: 195}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2049947078
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2049947076}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: be1e282b45a33b843a5bd8f98d21ed9c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  level: 1
-  basepoint: 1
-  relicRate: 1
-  upgraderate: 1
-  firstmoney: 200
-  moneyrate: 0
-  param: 0
-  paramrate: 0
-  parambase: 0
-  explain: "~% \uC99D\uAC00\uD568"
-  textValues:
-  - {fileID: 967034557}
-  - {fileID: 58019938}
-  - {fileID: 919534112}
-  - {fileID: 2021449128}
 --- !u!1 &2054938261
 GameObject:
   m_ObjectHideFlags: 0
@@ -34585,7 +35120,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 348042749}
+      - m_Target: {fileID: 399110711}
         m_MethodName: Upgrade
         m_Mode: 1
         m_Arguments:
@@ -35309,7 +35844,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2107294987}
-  - component: {fileID: 2107294988}
   m_Layer: 5
   m_Name: SpotLight
   m_TagString: Untagged
@@ -35337,35 +35871,6 @@ RectTransform:
   m_AnchoredPosition: {x: 50, y: -917.5}
   m_SizeDelta: {x: 100, y: 195}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2107294988
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2107294986}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e02496b875bea92478bfcf01561f99f5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  level: 1
-  basepoint: 10
-  relicRate: 1
-  upgraderate: 1
-  firstmoney: 2000
-  moneyrate: 1000
-  param: 0
-  paramrate: 0
-  parambase: 0
-  explain: "~\uCD08 \uB3D9\uC548 \uCE58\uBA85\uD0C0 \uD655\uB960\uC774 100%\uB85C
-    \uC99D\uAC00"
-  textValues:
-  - {fileID: 1623120453}
-  - {fileID: 1404969579}
-  - {fileID: 1295594201}
-  - {fileID: 1687544716}
-  cooltime: 200
-  isactive: 0
 --- !u!1 &2119328678
 GameObject:
   m_ObjectHideFlags: 0
@@ -35660,7 +36165,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2124723691}
-  - component: {fileID: 2124723692}
   m_Layer: 5
   m_Name: Busking
   m_TagString: Untagged
@@ -35688,34 +36192,6 @@ RectTransform:
   m_AnchoredPosition: {x: 50, y: -712.5}
   m_SizeDelta: {x: 100, y: 195}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2124723692
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2124723690}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e12997fb34fe9104fb0ac531ad715978, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  level: 1
-  basepoint: 100
-  relicRate: 1
-  upgraderate: 50
-  firstmoney: 2000
-  moneyrate: 1000
-  param: 0
-  paramrate: 0
-  parambase: 0
-  explain: "\uB2E4\uC74C \uBAAC\uC2A4\uD130 \uBCF4\uC0C1\uC774 ~% \uC99D\uAC00\uD568"
-  textValues:
-  - {fileID: 1068844731}
-  - {fileID: 1073488998}
-  - {fileID: 1112406267}
-  - {fileID: 311619106}
-  cooltime: 200
-  isActive: 0
 --- !u!1 &2130796382
 GameObject:
   m_ObjectHideFlags: 0

@@ -110,5 +110,16 @@ public class SoundManager : SingletonGameObject<SoundManager>
                 return;
             }
     }
+
+    public AudioSource GetPlayingMusic()
+    {
+        for (int i = 0; i < Musics.Length; i++)
+        {
+            if (Musics[i].isPlaying)
+                return Musics[i];
+        }
+        return null;
+
+    }
 }
 

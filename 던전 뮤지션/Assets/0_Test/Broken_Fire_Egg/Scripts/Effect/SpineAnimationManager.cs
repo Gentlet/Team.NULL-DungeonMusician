@@ -67,8 +67,8 @@ public class SpineAnimationManager : MonoBehaviour
     {
         if (IsCanvas == true)
         {
-            if (SG.AnimationState.GetCurrent(0).animation != SG.SkeletonData.FindAnimation(hit))
-                Invoke("IdleAnimation", SG.AnimationState.SetAnimation(0, hit, false).animationEnd);
+        //    if (SG.AnimationState.GetCurrent(0).animation != SG.SkeletonData.FindAnimation(hit))
+//Invoke("IdleAnimation", SG.AnimationState.SetAnimation(0, hit, false).animationEnd);
         }
         else
         {
@@ -83,13 +83,22 @@ public class SpineAnimationManager : MonoBehaviour
         else
             SA.AnimationState.SetAnimation(0, idle, true);
     }
-    public void AttackAnimation()
+    public float AttackAnimation()
     {
         if (IsCanvas == true)
-            Invoke("IdleAnimation", SG.AnimationState.SetAnimation(0, attack, false).animationEnd);
+        {
+            float result;
+            result = SG.AnimationState.SetAnimation(0, attack, false).animationEnd;
+            Invoke("IdleAnimation", result);
+            return result;
+        }
         else
-            Invoke("IdleAnimation", SA.AnimationState.SetAnimation(0, attack, false).animationEnd);
-
+        {
+            float result;
+            result = SA.AnimationState.SetAnimation(0, attack, false).animationEnd;
+            Invoke("IdleAnimation", result);
+            return result;
+        }
     }
     public void DyingAnimation(GameObject enemy)
     {

@@ -27,7 +27,7 @@ public class ParticleManager : MonoBehaviour {
     public void longNoteDown(int n)
     {
         longnote[n].SetActive(true);
-    
+        
     }
 
     public void longNoteUp(int n)

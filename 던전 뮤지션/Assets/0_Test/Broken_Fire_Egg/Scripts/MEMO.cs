@@ -14,14 +14,10 @@ public class MEMO : MonoBehaviour {
 
     public void Actuallyrevive()
     {
-        for(int i=0; i<objects.Length; i++)
-        {
-            objects[i].ObjectReset();
-            Player.Instance.Gold = 500000;
-        }
+
     }
     public void KillEnemy()
     {
-        Busking.instance.Off();
+ 
     }
 }

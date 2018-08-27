@@ -36,7 +36,7 @@ public class Note : MonoBehaviour
     private int ischecked = 0;
 
     public NoteData notedata;
-
+    int i;
     private void FixedUpdate()
     {
         transform.position += (Vector3)Variation;
@@ -55,6 +55,8 @@ public class Note : MonoBehaviour
 
         if (EndPos.y < -4f)
         {
+            ParticleManager.instance.longNoteUp(i);
+
             //if (!(NoteType.LONG <= type && type <= NoteType.LONG_END))
             GameManager.Instance.Combo = 0;
 
@@ -80,6 +82,17 @@ public class Note : MonoBehaviour
         this.size = size;
 
         transform.localScale = line.StartObjectScale;
+        Line[] lines;
+        lines = GameManager.Instance.Lines;
+        i = -1;
+        for (i = 0; i < lines.Length; i++)
+        {
+            if (lines[i] == line)
+            {
+                break;
+            }
+
+        }
 
         if (type == NoteType.SLIDER)
             sprite.sprite = GameManager.Instance.SliderNoteSprite;
@@ -153,10 +166,13 @@ public class Note : MonoBehaviour
         {
             temp = Vector2.Distance(StartPos, line.EndPos);
 
+
+
             if (temp < 2f)
             {
                 distance = temp * 0.5f;
                 Ischecked = 1;
+                ParticleManager.instance.longNoteDown(i);
             }
             else
                 isactive = false;
@@ -164,6 +180,8 @@ public class Note : MonoBehaviour
         else if (temptype == NoteType.LONG_LINE && phase == TouchPhase.Stationary && Ischecked != 0 && Ischecked != 3)
         {
             temp = Vector2.Distance((Position + ((Position.y > line.EndPos.y ? 1f : -1f) * (line.Direction * Vector2.Distance(line.EndPos, Position)))), line.EndPos);
+
+            //Debug.Log("linein");
 
             if (temp < 2f)
             {
@@ -175,6 +193,8 @@ public class Note : MonoBehaviour
         }
         else if (temptype == NoteType.LONG_LINE && phase == TouchPhase.Ended && Ischecked != 0 && Ischecked != 3)
         {
+            ParticleManager.instance.longNoteUp(i);
+
             Ischecked = 3;
 
             longnotes[0].sprite.color = longnotes[0].sprite.color + new Color(0, 0, 0, -0.5f);
@@ -183,6 +203,7 @@ public class Note : MonoBehaviour
         }
         else if (temptype == NoteType.LONG_END && phase == TouchPhase.Ended && Ischecked != 3)
         {
+
             temp = Vector2.Distance(EndPos, line.EndPos);
 
             if (temp < 2f)
@@ -192,13 +213,17 @@ public class Note : MonoBehaviour
 
                 if (Vector2.Distance(line.EndPos, (Vector2)longnotes[2].transform.position) < 0.5f)
                 {
+                    ParticleManager.instance.longNoteUp(i);
                     longnotes[0].DestroyNote();
                     longnotes[1].DestroyNote();
                     longnotes[2].DestroyNote();
                 }
             }
             else
+            {
+
                 isactive = false;
+            }
         }
         else if (temptype == NoteType.SLIDER && (phase == TouchPhase.Moved || phase == TouchPhase.Stationary))
         {

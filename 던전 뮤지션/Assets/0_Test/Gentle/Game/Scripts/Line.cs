@@ -83,6 +83,8 @@ public class Line : MonoBehaviour
 
         //if (gameObject.name == "Line 3")
         //    Debug.Log(gameObject.name + " : " + linephase.ToString() + ":::" + Random.Range(1, 6));
+        //if (gameObject.name == "Line 1")
+        //    Debug.Log(linephase.ToString() + ":::" + Random.Range(1, 6));
     }
 
     //0 == Began
@@ -97,6 +99,7 @@ public class Line : MonoBehaviour
             case TouchPhase.Began:
                 linephase = phase;
                 linebutton.sprite = buttonsrpite[1];
+
                 touchline.SetActive(true);
                 break;
             case TouchPhase.Moved:
@@ -107,7 +110,7 @@ public class Line : MonoBehaviour
                 break;
             case TouchPhase.Ended:
                 PointerUp();
-                return;
+                //return;
                 break;
             case TouchPhase.Canceled:
                 break;
@@ -135,7 +138,10 @@ public class Line : MonoBehaviour
                     rank *= 0.3f;
                 }
                 else
+                {
+                    ParticleManager.instance.PlayParticle(0, EndPos);
                     GameManager.Instance.Combo += 1;
+                }
 
 
                 float damage = rank * Player.Instance.GetStatus("Strength") * (Random.Range(0f, 100f) < Player.Instance.GetStatus("Criticalrate") ? Player.Instance.GetStatus("Criticaldamage") / 100f : 1f);
@@ -165,9 +171,10 @@ public class Line : MonoBehaviour
     {
         for (int i = 0; i < 4; i++)
         {
+            //Debug.Log(Vector2.Distance(GameManager.Instance.Lines[i].Linebutton.transform.position, Camera.main.ScreenToWorldPoint(Input.mousePosition)) + " ::" + i);
             if (Vector2.Distance(GameManager.Instance.Lines[i].Linebutton.transform.position, Camera.main.ScreenToWorldPoint(Input.mousePosition)) < 1f)
             {
-                GameManager.Instance.Lines[i].linephase = -1;
+                GameManager.Instance.Lines[i].linephase = 3;
                 GameManager.Instance.Lines[i].Linebutton.sprite = GameManager.Instance.Lines[i].buttonsrpite[0];
                 GameManager.Instance.Lines[i].touchline.SetActive(false);
             }
