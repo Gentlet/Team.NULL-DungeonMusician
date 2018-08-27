@@ -6412,7 +6412,7 @@ MonoBehaviour:
   upgraderate: 30
   firstmoney: 600
   moneyrate: 0
-  param: 0
+  param: 50
   paramrate: 0
   parambase: 0
   explain: "50\uCF64\uBCF4\uB9C8\uB2E4 ~% \uB370\uBBF8\uC9C0\uB85C \uCD94\uAC00 \uACF5\uACA9"
@@ -17849,7 +17849,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1072829268}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1448766870}
+        m_MethodName: SkillActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1072829268
@@ -19813,7 +19824,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1162946116}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1448766870}
+        m_MethodName: SkillActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1162946116
@@ -26791,7 +26813,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1564341763
 RectTransform:
   m_ObjectHideFlags: 0
@@ -27412,7 +27434,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spine: {fileID: 1819147064}
   info: "Lv.01 \uAC15\uC5EC\uBA85"
-  maxhp: 1e+19
+  maxhp: 1000
   gold: 0
   test: {x: 0, y: 0.1}
   time: 0
@@ -33396,6 +33418,42 @@ Prefab:
       propertyPath: m_RootOrder
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 4574404376766070, guid: 90e403e1549d3944bae95cd3d2c6e66e, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -3.57
+      objectReference: {fileID: 0}
+    - target: {fileID: 4574404376766070, guid: 90e403e1549d3944bae95cd3d2c6e66e, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -2.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 4821293592316166, guid: 90e403e1549d3944bae95cd3d2c6e66e, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -3.53
+      objectReference: {fileID: 0}
+    - target: {fileID: 4821293592316166, guid: 90e403e1549d3944bae95cd3d2c6e66e, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -0.71
+      objectReference: {fileID: 0}
+    - target: {fileID: 4758964318981032, guid: 90e403e1549d3944bae95cd3d2c6e66e, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -3.49
+      objectReference: {fileID: 0}
+    - target: {fileID: 4758964318981032, guid: 90e403e1549d3944bae95cd3d2c6e66e, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0.71
+      objectReference: {fileID: 0}
+    - target: {fileID: 4285729877716626, guid: 90e403e1549d3944bae95cd3d2c6e66e, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 2.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 4285729877716626, guid: 90e403e1549d3944bae95cd3d2c6e66e, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -3.53
+      objectReference: {fileID: 0}
+    - target: {fileID: 1768693139135594, guid: 90e403e1549d3944bae95cd3d2c6e66e, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 90e403e1549d3944bae95cd3d2c6e66e, type: 2}
   m_IsPrefabAsset: 0
@@ -34589,7 +34647,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2031977622
 RectTransform:
   m_ObjectHideFlags: 0

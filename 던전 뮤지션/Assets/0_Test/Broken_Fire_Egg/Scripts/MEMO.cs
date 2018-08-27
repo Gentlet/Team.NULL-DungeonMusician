@@ -18,6 +18,6 @@ public class MEMO : MonoBehaviour {
     }
     public void KillEnemy()
     {
-        Busking.instance.Off();
+ 
     }
 }
