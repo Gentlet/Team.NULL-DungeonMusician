@@ -41,6 +41,7 @@ public class Scream : ObjectStatus
 
     public void Active()
     {
+        AnimationManager.instance.AnimationInstantiate(1, new Vector2(0, 3.36f));
         EnemyManager.Instance.Enemy.AttackEnemy(Player.Instance.GetStatus("Strength") * basepoint);
     }
 }
