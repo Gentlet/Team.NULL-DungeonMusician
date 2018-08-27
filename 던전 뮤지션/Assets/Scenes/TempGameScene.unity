@@ -13741,7 +13741,7 @@ MonoBehaviour:
     - {fileID: 1761011351}
     - {fileID: 1225649002}
     - {fileID: 1261103832}
-    longnotesprite: {fileID: 21300000, guid: d491b747be5d5fb46b674ebfc00d4a53, type: 3}
+    longnotesprite: {fileID: 21300000, guid: 2b88c55db34848645a4df291286aa8b1, type: 3}
     slidernotesprite: {fileID: 21300000, guid: 81b95385c34138c4ea629381d299330f, type: 3}
     notes: []
     speed: 0.1

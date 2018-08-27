@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 224725643839284938}
   - component: {fileID: 114770653154079316}
   m_Layer: 5
-  m_Name: mob_whale_0
+  m_Name: n_mob_whale_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -398,6 +398,7 @@ MonoBehaviour:
   idle: idle_0
   attack: atk_0
   effect: 
+  die: 
   IsCanvas: 1
 --- !u!114 &114822061109043872
 MonoBehaviour:
