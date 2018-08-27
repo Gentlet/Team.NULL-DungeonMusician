@@ -19,7 +19,7 @@ public class AudioPeer : MonoBehaviour
     }
 
     public static float[] _samples = new float[4096];
-    public static float[] _freqBand = new float[12];
+    public static float[] _freqBand = new float[20];
 
     public float maxScale;
 

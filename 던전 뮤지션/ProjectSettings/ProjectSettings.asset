@@ -737,7 +737,7 @@ PlayerSettings:
   facebookSdkVersion: 7.9.4
   apiCompatibilityLevel: 2
   cloudProjectId: 0e768c3c-223a-4082-83fb-7879d2b44736
-  projectName: "\uB358\uC804 \uBBA4\uC9C0\uC158"
+  projectName: DungeonMusician
   organizationId: cryangel
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0

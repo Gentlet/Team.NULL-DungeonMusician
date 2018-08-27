@@ -24,6 +24,7 @@ public class Line : MonoBehaviour
     private void Awake()
     {
         //touchsim = TouchSim.Instance;
+        linephase = -1;
 
         if (start == null)
             start = transform.GetChild(0).gameObject;
@@ -75,10 +76,13 @@ public class Line : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if ((TouchPhase)Linephase == TouchPhase.Moved)
+        if ((TouchPhase)linephase == TouchPhase.Moved)
             TouchLineBtn(1);
-        else if ((TouchPhase)Linephase == TouchPhase.Stationary)
+        else if ((TouchPhase)linephase == TouchPhase.Stationary)
             TouchLineBtn(2);
+
+        //if (gameObject.name == "Line 3")
+        //    Debug.Log(gameObject.name + " : " + linephase.ToString() + ":::" + Random.Range(1, 6));
     }
 
     //0 == Began
@@ -88,20 +92,22 @@ public class Line : MonoBehaviour
     //4 == Canceled
     public void TouchLineBtn(int phase)
     {
-
         switch ((TouchPhase)phase)
         {
             case TouchPhase.Began:
-                Linephase = phase;
+                linephase = phase;
                 linebutton.sprite = buttonsrpite[1];
+                touchline.SetActive(true);
                 break;
             case TouchPhase.Moved:
-                Linephase = phase;
+                if ((TouchPhase)linephase == TouchPhase.Stationary)
+                    linephase = phase;
                 break;
             case TouchPhase.Stationary:
                 break;
             case TouchPhase.Ended:
-                Linephase = phase;
+                PointerUp();
+                return;
                 break;
             case TouchPhase.Canceled:
                 break;
@@ -110,13 +116,12 @@ public class Line : MonoBehaviour
         }
         
 
-        touchline.SetActive(true);
 
         Note note = GameManager.Instance.NearestNote(this);
 
         if (note != null && note.Isactive == true)
         {
-            float rank = note.TouchedNote((TouchPhase)Linephase);
+            float rank = note.TouchedNote((TouchPhase)linephase);
 
             if (note.IsDestroy)
                 note.DestroyNote();
@@ -144,8 +149,8 @@ public class Line : MonoBehaviour
 
         }
 
-        if ((TouchPhase)Linephase == TouchPhase.Began)
-            Linephase = (int)TouchPhase.Stationary;
+        if ((TouchPhase)linephase == TouchPhase.Began)
+            linephase = (int)TouchPhase.Stationary;
 
         if ((TouchPhase)phase == TouchPhase.Ended)
         {
@@ -153,26 +158,37 @@ public class Line : MonoBehaviour
             linebutton.sprite = buttonsrpite[0];
             linephase = -1;
         }
+
     }
 
-    public void PointerEnterLineBtn()
+    public void PointerUp()
     {
         for (int i = 0; i < 4; i++)
         {
-            if ((TouchPhase)GameManager.Instance.Lines[i].Linephase == TouchPhase.Moved)
+            if (Vector2.Distance(GameManager.Instance.Lines[i].Linebutton.transform.position, Camera.main.ScreenToWorldPoint(Input.mousePosition)) < 1f)
             {
-                GameManager.Instance.Lines[i].Linephase = -1;
-
-                linephase = (int)TouchPhase.Moved;
-                linebutton.sprite = buttonsrpite[1];
-                break;
+                GameManager.Instance.Lines[i].linephase = -1;
+                GameManager.Instance.Lines[i].Linebutton.sprite = GameManager.Instance.Lines[i].buttonsrpite[0];
+                GameManager.Instance.Lines[i].touchline.SetActive(false);
             }
         }
     }
 
-    public void TESTFUNCTION(string text)
+    public void PointerEnterLineBtn()
     {
-        Debug.Log(text);
+        if ((Input.GetMouseButton(0) || Input.touchCount > 0))
+        {
+            linephase = (int)TouchPhase.Moved;
+            linebutton.sprite = buttonsrpite[1];
+            touchline.SetActive(true);
+        }
+    }
+
+    public void PointerExitLineBtn()
+    {
+        linephase = -1;
+        linebutton.sprite = buttonsrpite[0];
+        touchline.SetActive(false);
     }
 
     #region Operators
@@ -246,6 +262,19 @@ public class Line : MonoBehaviour
         }
     }
 
+    public Image Linebutton
+    {
+        get
+        {
+            return linebutton;
+        }
+
+        set
+        {
+            linebutton = value;
+        }
+    }
+
     public int Linephase
     {
         get
@@ -256,12 +285,6 @@ public class Line : MonoBehaviour
         set
         {
             linephase = value;
-
-            if (linephase == -1)
-            {
-                linebutton.sprite = buttonsrpite[0];
-                touchline.SetActive(false);
-            }
         }
     }
     #endregion
