@@ -311,6 +311,7 @@ public class GameManager : SingletonGameObject<GameManager>
 
             if (notevalues.combo != 0)
             {
+                HelperGuitar.instance.AbilityActive();
                 StartCoroutine(CreateComboText(notevalues.combo));
             }
         }

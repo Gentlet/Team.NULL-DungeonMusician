@@ -2482,8 +2482,8 @@ MonoBehaviour:
   - {fileID: 212868489692673400, guid: dc8de101585f2144c9abf2b8b7a0c1f1, type: 2}
   - {fileID: 212520187255690168, guid: cb8e6a6b9090e3f419b4ecde30b4b550, type: 2}
   - {fileID: 212133494206063838, guid: 7cb00bfa3234adc4da827e308c91bf81, type: 2}
-  notetype: 5
-  size: 0
+  notetype: 0
+  size: 5
   audio: {fileID: 913208479}
 --- !u!4 &157516677
 Transform:
@@ -22236,7 +22236,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spine: {fileID: 283208898}
   info: "Lv.01 \uAC15\uC5EC\uBA85"
-  maxhp: 1e+19
+  maxhp: 100
   gold: 0
   test: {x: 0, y: 0.1}
   time: 0

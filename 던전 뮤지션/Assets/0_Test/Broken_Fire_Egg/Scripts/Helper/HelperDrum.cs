@@ -49,10 +49,13 @@ public class HelperDrum : ObjectStatus
 
         textValues[3].text = text[0] + Total + text[1];
     }
-
+    private void Update()
+    {
+        AbilityActive(GameManager.Instance.Combo);
+    }
     public void AbilityActive(int combo)
     {
-        if (combo % param == 0)
+        if (combo != 0 &&combo % param == 0)
         {
             SpineObject.SetActive(true);
             EnemyManager.Instance.Enemy.AttackEnemy(Total * Player.Instance.GetStatus("Strength") * HelperBase.instance.Total);

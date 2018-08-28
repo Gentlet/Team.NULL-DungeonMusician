@@ -82,6 +82,7 @@ public class Player : SingletonGameObject<Player> {
         {
             objects[i].ObjectReset();
             Gold = 500000;
+            objects[i].SaveInformations();
         }
     }
 
