@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class EnemyManager : SingletonGameObject<EnemyManager> {
     [Header("Enemy Objects")]
@@ -15,10 +16,20 @@ public class EnemyManager : SingletonGameObject<EnemyManager> {
 
     private int killcount = 0;
 
+    [Space]
+    [Header("Boss")]
+    public Sprite[] bgsprites;
+    public Image bg;
+
 
     public void CreateEnemy(int num = -1)
     {
-        enemy = Instantiate(enemyprefabs[(num == -1 ? killcount : num)], gameui.transform);
+        enemy = Instantiate(enemyprefabs[(num == -1 ? killcount % enemyprefabs.Length : num)], gameui.transform);
+
+        if(killcount % enemyprefabs.Length == enemyprefabs.Length - 1)
+            bg.sprite = bgsprites[1];
+        else
+            bg.sprite = bgsprites[0];
     }
 
     public void KillEnemy(int gold)
@@ -30,10 +41,14 @@ public class EnemyManager : SingletonGameObject<EnemyManager> {
             killcount += 1;
             Player.Instance.Gold += (int)(gold * Player.Instance.GetStatus("Extragoldrate"));
             Busking.instance.Off();
-            if (0 < enemyprefabs.Length)
-            {
-                CreateEnemy(Random.Range(0, enemyprefabs.Length));
-            }
+
+            enemy = null;
+
+            if (killcount % enemyprefabs.Length != enemyprefabs.Length - 1 && killcount % enemyprefabs.Length != 0)
+                CreateEnemy();
+            else
+                GameManager.Instance.TurnOffGame();
+
         }
     }
 

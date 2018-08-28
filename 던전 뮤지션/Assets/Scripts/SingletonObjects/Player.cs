@@ -21,12 +21,12 @@ public class Player : SingletonGameObject<Player> {
     private int gold;
     private int revivepoint;
 
-    private float strength = 1f;
+    private float strength = 0f;
     private float criticalrate = 50f;
     private float criticaldamage = 150f;
     private float healthdrainrate;
 
-    private float extragoldrate;
+    private float extragoldrate = 1;
 
     private TempSkill[] skills;
     

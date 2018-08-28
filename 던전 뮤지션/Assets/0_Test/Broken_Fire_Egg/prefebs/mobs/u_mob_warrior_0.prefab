@@ -508,7 +508,7 @@ MonoBehaviour:
   spine: {fileID: 114315991528357706}
   info: "Lv.01 \uAC15\uC5EC\uBA85"
   maxhp: 3000
-  gold: 0
+  gold: 100000
   test: {x: 0, y: 0.1}
   time: 0
 --- !u!198 &198501481258541826
@@ -1284,7 +1284,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 5
+      scalar: 3
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -5817,7 +5817,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 5
+      scalar: 3
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -10350,7 +10350,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 5
+      scalar: 3
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -14883,7 +14883,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 5
+      scalar: 3
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -19416,7 +19416,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 5
+      scalar: 3
       minScalar: 10
       maxCurve:
         serializedVersion: 2

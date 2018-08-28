@@ -24,7 +24,6 @@ public class Note : MonoBehaviour
 
     private NoteType type;
     private Line line;
-    private float speed;
 
     private float size;
 
@@ -35,8 +34,12 @@ public class Note : MonoBehaviour
 
     private int ischecked = 0;
 
+    private bool isreverse = false;
+
+    public int linenum;
+
     public NoteData notedata;
-    int i;
+    
     private void FixedUpdate()
     {
         transform.position += (Vector3)Variation;
@@ -47,7 +50,7 @@ public class Note : MonoBehaviour
         {
             Vector3 scale = transform.localScale;
             scale.y = size * 1.27f;
-            scale.x = 1f;
+            scale.x = 0.6f;
 
             transform.localScale = scale;
         }
@@ -55,7 +58,7 @@ public class Note : MonoBehaviour
 
         if (EndPos.y < -4f)
         {
-            ParticleManager.instance.longNoteUp(i);
+            ParticleManager.instance.longNoteUp(linenum);
 
             //if (!(NoteType.LONG <= type && type <= NoteType.LONG_END))
             GameManager.Instance.Combo = 0;
@@ -77,17 +80,17 @@ public class Note : MonoBehaviour
         transform.position = line.StartPos;
         this.line = line;
         this.type = type;
-        this.speed = speed;
+        //this.Speed = speed;
 
         this.size = size;
 
         transform.localScale = line.StartObjectScale;
         Line[] lines;
         lines = GameManager.Instance.Lines;
-        i = -1;
-        for (i = 0; i < lines.Length; i++)
+        linenum = -1;
+        for (linenum = 0; linenum < lines.Length; linenum++)
         {
-            if (lines[i] == line)
+            if (lines[linenum] == line)
             {
                 break;
             }
@@ -95,7 +98,17 @@ public class Note : MonoBehaviour
         }
 
         if (type == NoteType.SLIDER)
-            sprite.sprite = GameManager.Instance.SliderNoteSprite;
+        {
+            for (int i = 0; i < 4; i++)
+            {
+                if(line == GameManager.Instance.Lines[i])
+                {
+                    sprite.sprite = GameManager.Instance.SliderNoteSprite[((i == 0 || i == 3) ? 0 : 1)];
+
+                    break;
+                }
+            }
+        }
 
         if (size != 0f)
         {
@@ -172,7 +185,7 @@ public class Note : MonoBehaviour
             {
                 distance = temp * 0.5f;
                 Ischecked = 1;
-                ParticleManager.instance.longNoteDown(i);
+                ParticleManager.instance.longNoteDown(linenum);
             }
             else
                 isactive = false;
@@ -193,9 +206,10 @@ public class Note : MonoBehaviour
         }
         else if (temptype == NoteType.LONG_LINE && phase == TouchPhase.Ended && Ischecked != 0 && Ischecked != 3)
         {
-            ParticleManager.instance.longNoteUp(i);
+            ParticleManager.instance.longNoteUp(linenum);
 
             Ischecked = 3;
+            GameManager.Instance.Combo = 0;
 
             longnotes[0].sprite.color = longnotes[0].sprite.color + new Color(0, 0, 0, -0.5f);
             longnotes[1].sprite.color = longnotes[1].sprite.color + new Color(0, 0, 0, -0.5f);
@@ -213,7 +227,7 @@ public class Note : MonoBehaviour
 
                 if (Vector2.Distance(line.EndPos, (Vector2)longnotes[2].transform.position) < 0.5f)
                 {
-                    ParticleManager.instance.longNoteUp(i);
+                    ParticleManager.instance.longNoteUp(linenum);
                     longnotes[0].DestroyNote();
                     longnotes[1].DestroyNote();
                     longnotes[2].DestroyNote();
@@ -407,20 +421,12 @@ public class Note : MonoBehaviour
     {
         get
         {
-            return (speed < 0f);
+            return isreverse;
         }
         set
         {
-            if (value == true)
-            {
-                if (IsReverse == false)
-                    speed *= -1f;
-            }
-            else
-            {
-                if (IsReverse == true)
-                    speed *= -1f;
-            }
+
+            isreverse = value;
         }
     }
 
@@ -436,7 +442,7 @@ public class Note : MonoBehaviour
     {
         get
         {
-            return line.Direction * speed;
+            return line.Direction * Speed;
         }
     }
 
@@ -452,6 +458,14 @@ public class Note : MonoBehaviour
             longnotes[0].ischecked = value;
             longnotes[1].ischecked = value;
             longnotes[2].ischecked = value;
+        }
+    }
+
+    public float Speed
+    {
+        get
+        {
+            return GameManager.Instance.NoteSpeed * (isreverse == true ? -1f : 1f);
         }
     }
     #endregion

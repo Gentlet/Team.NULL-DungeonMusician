@@ -36,7 +36,7 @@ public class Enemy : MonoBehaviour {
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.U))
-            StartCoroutine(Skill1());
+            StartCoroutine(Skill2());
     }
 
     public void AttackEnemy(float damage)
@@ -67,15 +67,38 @@ public class Enemy : MonoBehaviour {
 
     public IEnumerator Skill2()
     {
+        //spine.AttackAnimation();
+
+        //yield return new WaitForSeconds(time);
+
+        //GameManager.Instance.IsReverse = true;
+        //GameManager.Instance.audio.pitch = -1;
+
+        //yield return new WaitForSeconds(1f);
+
+        //GameManager.Instance.IsReverse = false;
+        //GameManager.Instance.audio.pitch = 1;
+
+
+
+
         spine.AttackAnimation();
 
         yield return new WaitForSeconds(time);
+        float orispeed = GameManager.Instance.NoteSpeed;
 
-        GameManager.Instance.IsReverse = true;
+        for (int i = 0; i <2; i++)
+        {
+            GameManager.Instance.NoteSpeed = 0;
+            GameManager.Instance.audio.pitch = 0;
 
-        yield return new WaitForSeconds(1f);
+            yield return new WaitForSeconds(Random.Range(0.1f, 0.15f));
 
-        GameManager.Instance.IsReverse = false;
+            GameManager.Instance.audio.pitch = 1;
+            GameManager.Instance.NoteSpeed = orispeed;
+
+            yield return new WaitForSeconds(Random.Range(0.2f, 0.5f));
+        }
     }
 
     public IEnumerator Skill3()

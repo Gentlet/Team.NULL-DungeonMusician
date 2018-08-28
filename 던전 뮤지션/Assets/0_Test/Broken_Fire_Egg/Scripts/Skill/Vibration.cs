@@ -45,7 +45,7 @@ public class Vibration : ObjectStatus
 
     public void Active()
     {
-        AnimationManager.instance.AnimationInstantiate(3, new Vector2(0, 3.36f));
+        AnimationManager.instance.AnimationInstantiate(3, new Vector2(0, 2.55f));
         StartCoroutine(vibreating());
     }
     WaitForSeconds time5 = new WaitForSeconds(0.5f);

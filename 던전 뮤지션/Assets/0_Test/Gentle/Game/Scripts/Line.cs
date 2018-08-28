@@ -94,6 +94,9 @@ public class Line : MonoBehaviour
     //4 == Canceled
     public void TouchLineBtn(int phase)
     {
+        if (GameManager.Instance.IsReverse == true)
+            return;
+
         switch ((TouchPhase)phase)
         {
             case TouchPhase.Began:
@@ -109,7 +112,9 @@ public class Line : MonoBehaviour
             case TouchPhase.Stationary:
                 break;
             case TouchPhase.Ended:
-                PointerUp();
+                //PointerUp();
+                Linephase = phase;
+
                 //return;
                 break;
             case TouchPhase.Canceled:
@@ -144,7 +149,7 @@ public class Line : MonoBehaviour
                 }
 
 
-                float damage = rank * Player.Instance.GetStatus("Strength") * (Random.Range(0f, 100f) < Player.Instance.GetStatus("Criticalrate") ? Player.Instance.GetStatus("Criticaldamage") / 100f : 1f);
+                float damage = rank * Player.Instance.GetStatus("Strength") * (Random.Range(0f, 100f) < Player.Instance.GetStatus("Criticalrate") ? Player.Instance.GetStatus("Criticaldamage") / 100f : 1f) * (1f + ((GameManager.Instance.Combo == 0 ? 1 : GameManager.Instance.Combo) * 0.005f));
                 EnemyManager.Instance.Enemy.AttackEnemy(damage);
                 Player.Instance.Health += damage * Player.Instance.GetStatus("Healthdrainrate");
 
@@ -179,6 +184,13 @@ public class Line : MonoBehaviour
                 GameManager.Instance.Lines[i].touchline.SetActive(false);
             }
         }
+    }
+
+    public void EndGame()
+    {
+        touchline.SetActive(false);
+        linebutton.sprite = buttonsrpite[0];
+        linephase = -1;
     }
 
     public void PointerEnterLineBtn()

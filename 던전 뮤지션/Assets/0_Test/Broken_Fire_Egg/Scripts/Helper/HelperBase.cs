@@ -53,7 +53,7 @@ public class HelperBase : ObjectStatus
 
     private void Update()
     {
-
+        if(EnemyManager.Instance.Enemy != null)
             if (EnemyManager.Instance.Enemy.isActiveAndEnabled)
                 if (Random.Range(1, 300) == 1)
                     AbilityActive();
